@@ -16,14 +16,31 @@ Anh Phát, Giám đốc một chuỗi Phân phối Điện máy khu vực Miền
 - **Tuần 4 (Tròn 30 ngày):** Các tài khoản AI bị lãng quên, bám bụi kỹ thuật số. Doanh nghiệp của anh Phát quay về với cái máng lợn Cũ: File Excel nhì nhằng, Tăng ca mù mịt và Tranh cãi Nội bộ.
 
 **Vì Sao Thất Bại?**
-Anh Phát mắc phải Lỗi sai Hệ thống kinh điển: Cứ nghĩ mua Gươm Báu (Tool) phát cho nhân viên là họ tự động trở thành Tướng Quân.
 Chuyển đổi số không phải là thay đổi Công cụ. Chuyển đổi số là thay đổi **Thói Quen Hành Vi (Behavioral Shifts)** và tái cấu trúc **Quy Trình Công Việc (Processes)**.
-
-Chương cuối cùng này cung cấp cho Sếp một **Lộ Trình Trồng Cây AI 30 Tuần Tự Khắc Khổ**. Không có phép màu 1 đêm. Từ "Người Tiên Phong Đơn Độc" (Sếp) cho đến "Ăn Sâu Vào Máu Toàn Tổ Chức".
 
 ---
 
-## 2. Bản Đồ Tác Chiến 30 Ngày (The 30-Day SME Onboarding Roadmap)
+## 2. Bác Sĩ Cấp Cứu: 3 Dấu Hiệu Bạn Phải "Cấm Cửa" AI Ngay Lập Tức
+
+Đừng mơ mộng hão huyền. Antigravity không phải là Viên Thuốc Tiên (Silver Bullet) chữa bách bệnh. Nếu doanh nghiệp của Sếp đang có 1 trong 3 dấu hiệu "Ung Thư Vận Hành" dưới đây, Sếp tuyệt đối KHÔNG ĐƯỢC mua AI về dùng. Hãy chữa gốc rễ rác rưởi trước khi cấy Thần Y vào:
+
+**☣️ Dấu hiệu 1: Chưa Từng Số Hóa (Digitize)**
+- Sếp vẫn bắt Lính in Hóa Đơn ra tờ Giấy A4 để Sếp cầm Bút Bi Ký Tươi? Sau đó lấy điện thoại chụp hình lại gửi qua Zalo cho Kế toán?
+- *Phán Quyết:* **Dừng Lại!** AI không đọc được suy nghĩ của Sếp. Nếu Data (Dữ liệu) chưa tồn tại dưới dạng File Mềm (Excel, PDF, CSV) trên máy tính, thì mọi nỗ lực Tự động hóa (Automate) là vô nghĩa.
+
+**☣️ Dấu hiệu 2: Dữ Liệu Rác "Data Silos"**
+- Kế toán lưu tên khách hàng là "Cô Lan Thuốc Tây". Sale B2B lưu tên khách là "Nhà Thuốc Lan Anh". Hàng ngàn file Excel lộn xộn, không có Mã Khách Hàng Thống Nhất (Unique ID).
+- *Phán Quyết:* **Dừng Lại!** Rác Đầu Vào thì Rác Đầu Ra (Garbage In, Garbage Out). AI sẽ nối nhầm thông tin và tính sai doanh thu. Sếp phải bắt lính dọn Dữ Liệu Sạch (Clean Data) và thống nhất tên cột trước.
+
+**☣️ Dấu hiệu 3: "Dưới Làm Trên Phá"**
+- Trưởng phòng háo hức cài Antigravity. Nhưng Sếp Tổng lại bảo: *"Mấy cái máy này tao không tin, cứ in báo cáo ra giấy đem lên bàn cho tao duyệt"*.
+- *Phán Quyết:* **Dừng Lại!** Trưởng phòng sẽ chán nản vứt bỏ AI vì làm gấp đôi thao tác: Vừa phải làm cho Máy đọc, vừa phải làm cho Sếp đọc. Lãnh đạo phải là người đập vỡ quy trình cũ.
+
+Nếu công ty của Sếp đã vượt qua 3 lệnh Cấm Cửa trên, và Data đã gom về dạng File. Xin chúc mừng. Dưới đây là Lộ Trình Lột Xác 30 Tuần Tự Khắt Khe Dành Cho Sếp.
+
+---
+
+## 3. Bản Đồ Tác Chiến 30 Ngày (The 30-Day SME Onboarding Roadmap)
 
 ![Lộ trình 30 ngày áp dụng AI cho SME — từ Sếp dẫn đầu đến Hệ thống hóa toàn công ty](images/kpi_30_day_railway.png)
 

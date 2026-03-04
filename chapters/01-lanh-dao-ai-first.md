@@ -78,7 +78,32 @@ Sự chênh lệch giữa việc giải quyết 3 Điểm nghẽn trên bằng "
 
 ---
 
-## 3. Khung Mô Hình Lãnh Đạo Nhất Thể: "The AI-Leader Matrix"
+## 3. Tâm Lý Học Tổ Chức: Nghệ Thuật Quản Trị Sự Chống Đối (Change Management)
+
+*Đây là MẢNH GHÉP ĐEN TỐI NHẤT mà 80% SME thất bại khi áp dụng AI thường né tránh nhắc đến: **Nhân viên của bạn sẽ SỢ MẤT VIỆC và TẨY CHAY NGẦM Antigravity.***
+
+Khi Sếp đem một con AI có khả năng xử lý 1.000 hóa đơn trong 8 giây về phòng Kế toán, Chị Kế toán trưởng lập tức nhảy số trong đầu: *"Tuần sau mình sẽ bị sa thải"*.
+Và từ sự sợ hãi đó, họ sinh ra sự **Chống đối ngầm (Silent Sabotage)**:
+
+- Cố tình nhập sai Data gốc để AI chạy ra kết quả lỗi, rồi báo cáo Sếp: *"Thấy chưa, máy dỏm lắm, không bằng người làm đâu"*.
+- Kéo dài thời gian bấm nút Duyệt (Review), khiến quy trình tự động bị đứt gãy.
+
+### 🎭 Kịch Bản Truyền Thông Nội Bộ (Internal Comms Script) Dành Cho CEO
+
+Thay vì hùng hồn tuyên bố *"AI sẽ làm thay 50% công việc của các bạn"*, một Lãnh đạo AI-First phải tung ra Đòn Tâm Lý Khắc Chế: **"AI không cướp việc của bạn. Người biết dùng AI sẽ cướp việc của người không biết dùng AI."**
+
+**Hãy họp toàn công ty và đọc rành mạch kịch bản sau:**
+
+> *"Chào các anh em. Tôi vừa mang Antigravity về công ty. Mục đích không phải để sa thải ai cả. Mục đích là để GẤP ĐÔI NĂNG SUẤT của mỗi người để chúng ta có thể GẤP ĐÔI DOANH THU và TĂNG LƯƠNG.
+> Chị Kế toán, từ nay chị không phải thức đến 2h sáng gõ hóa đơn nữa. AI sẽ gõ tay cho chị. Chị sẽ DẠY nó gõ. Sau khi nó gõ xong, chị lấy thời gian đó Phân tích cho tôi xem Giá vốn hàng bán tháng này biến động ra sao.
+> Em Marketing, AI sẽ viết 100 bài SEO nháp. Em không làm thợ gõ chữ nữa, em thăng cấp thành TỔNG BIÊN TẬP (Editor), em chỉ việc Duyệt và Sửa đoạn nào AI viết chán.
+> Công ty sẽ trả lương cao hơn cho một Người Quản Trị Data (Orchestrator), chứ không trả lương cao cho một Cái Máy Photocopy chạy bằng cơm."*
+
+Sự xuất hiện của Antigravity là Đòn Bẩy (Leverage) để Sếp ép toàn bộ nhân sự Hành chính/Phổ thông thăng cấp ép buộc lên tầng Tư duy Phân tích (Analytics). Khi họ hiểu "Antigravity là Lính Đánh Thuê của riêng họ, chứ không phải Kẻ Thù", sự chống đối sẽ chấm dứt.
+
+---
+
+## 4. Khung Mô Hình Lãnh Đạo Nhất Thể: "The AI-Leader Matrix"
 
 ![Ma Trận Lãnh Đạo AI — Từ Thủ Lĩnh Truyền Thống đến Orchestrator](images/ai_leader_matrix_final.png)
 

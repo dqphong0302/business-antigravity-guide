@@ -63,7 +63,26 @@ Google phân mảng Cấu trúc Trí Tuệ theo Tiền Cước như sau:
 
 ---
 
-## 4. Bảng Chốt Quyền: Ma Trận Chọn Tướng Bắt Tay (Matrix Tooling)
+## 4. Bảng Khái Toán Chi Phí Thực Tế (The True Cost of AI)
+
+Nhiều Giám đốc SME ngần ngại áp dụng Antigravity vì sợ "Công nghệ AI chắc đắt tiền lắm". Sự thật là: **Chạy API AI rẻ hơn tiền điện văn phòng của bạn.**
+
+Sự khác biệt lớn nhất của việc dùng API (Vertex AI / Anthropic Console) so với mua phần mềm là mô hình **Pay-As-You-Go (Dùng bao nhiêu trả bấy nhiêu)**, tính tiền theo từng "Token" (Âm tiết/Từ).
+
+Hãy thử lấy một bài toán cụ thể: **Xử lý 10.000 tờ Hóa Đơn Mỗi Tháng**.
+
+| Phương Án | Chi Phí Hàng Tháng | Nhược Điểm |
+| :--- | :--- | :--- |
+| **Tuyển Nhân Sự (Data Entry)** | **15,000,000 VNĐ** (2 Kế toán x 7.5tr) + BHXH. | Chậm, sai sót do mỏi mắt, không làm thứ 7, CN. Cần chỗ ngồi, máy tính, điện nước. |
+| **Mua Phần Mềm Kế Toán Điện Tử (SaaS OCR)** | **~3,000,000 - 5,000,000 VNĐ/tháng** (Gói Subscription). | Tiền đóng cố định hàng tháng dù rảnh việc. Nhiều khi phần mềm không khớp Form mẫu đặc thù của công ty. |
+| **Antigravity (Chạy API Gemini 1.5 Flash/Pro)** | **Khoảng 2 - 5 USD (~50,000 - 120,000 VNĐ)**. Cụ thể: 10K hóa đơn rớt vào khoảng 20 Triệu Token Input. | Cần học cách thiết lập Sudo Prompt ban đầu (sẽ hướng dẫn cực dễ ở các chương sau). |
+
+**Kết luận đẫm máu:** Tiền trả cho Cỗ máy AI (Brain API) để cày nát lượng công việc của 2 con người trong nguyên 1 tháng RẺ HƠN TIỀN 2 LY TRÀ SỮA GONGCHA.
+Bạn không tốn 1 đồng phí duy trì (Fix cost) nào cả. Tháng nào công ty ế khách, số lượng File ít đi $\rightarrow$ Tiền API tự động giảm về 0.
+
+---
+
+## 5. Bảng Chốt Quyền: Ma Trận Chọn Tướng Bắt Tay (Matrix Tooling)
 
 Đừng để Công Việc Vỡ Đứt Giữa Chừng Vì Chọn Sai Não Bộ. Lưu Bảng Này Và In Ra Đặt Trực Tiếp Trên Bàn Trưởng Phòng:
 
