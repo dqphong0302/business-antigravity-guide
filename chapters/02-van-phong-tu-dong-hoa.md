@@ -85,4 +85,58 @@ HR tạo một thư mục `/Tuyen_Dung_Digital` ném toàn bộ CV vào đây (P
 
 Tư duy này không phải là Dùng Tool AI (Công Cụ), Đây là Tư duy của một **Automation Workflow Designer (Nhà thiết kế Dòng Chảy Tự Động)**. Khi nhân viên hành chính nắm được cốt tủy của "Thuật Giao Task Tối Thượng" này, giá trị của họ trên bàn lương và sự tôn trọng của Doanh nghiệp dành cho họ tăng cường gấp 1,000 lần.
 
-Trong lộ trình tiếp theo, chúng ta vươn đến Khối Xương Sống khó nhằn nhất của Mọi Doanh Nghiệp công nghệ số: Đội Dev - Những chàng lập trình viên bảo thủ, "Tưởng như không cần AI hướng dẫn", nhưng lại là "Cục tạ rủi ro hệ thống" nặng nề nhất. Cùng sang Chương 3!
+---
+
+## 4. Case Study Thực Tế
+
+### 📋 Case Study 1: Công Ty Thủy Sản Minh Phú — Giải Cứu Kế Toán Khỏi "Địa Ngục" Hóa Đơn
+
+**Bối cảnh:** Công ty xuất nhập khẩu thủy sản, mỗi tháng nhận 800 hóa đơn PDF từ 120 nhà cung cấp. Phòng Kế toán (3 người) mất 5 ngày cuối tháng chỉ để gõ lại thông tin từ hóa đơn vào bảng kê khai thuế. Sai sót trung bình: 15 hóa đơn/tháng bị nhập sai MST.
+
+**Giải pháp bằng Antigravity:**
+
+1. Kế toán trưởng tạo thư mục `/Hoa_Don_Thang_8/` chứa 800 file PDF.
+2. Gõ Prompt gọi Skill [`trich_xuat_hoa_don`](../skills/trich_xuat_hoa_don/SKILL.md):
+
+> *"Antigravity, dùng Skill trích xuất hóa đơn. Quét toàn bộ 800 file PDF trong `/Hoa_Don_Thang_8/`. Trích xuất Mã số thuế, Tên NCC, Cộng tiền hàng, Tiền thuế GTGT. Xuất bảng `Bang_Ke_Mua_Vao_T8.xlsx`. File nào lỗi font đưa sang sheet riêng."*
+
+**Kết quả:**
+
+- ⏱️ Thời gian xử lý: **47 giây** (thay vì 5 ngày).
+- ✅ Tỷ lệ chính xác: 98.5% (12 file lỗi font được ghi nhận riêng để kiểm tra thủ công).
+- 💰 Tiết kiệm: 3 nhân sự × 5 ngày = **15 ngày công/tháng** → Quy đổi ~22.5 triệu đồng.
+
+---
+
+### 📋 Case Study 2: Startup Fintech "PayGo" — Tuyển 5 Developer Trong 72h
+
+**Bối cảnh:** CEO cần gấp 5 Backend Developer cho dự án mới. HR đăng JD lên TopCV, 3 ngày nhận 450 CV. Team HR (2 người) ước tính mất 1 tuần để đọc hết. CEO nói: *"Anh cần danh sách 20 người phỏng vấn trong 3 ngày."*
+
+**Giải pháp bằng Antigravity:**
+
+1. HR đổ 450 file CV vào thư mục `/Tuyen_Backend/CV/`.
+2. Viết file JD tiêu chuẩn: `yeu_cau_backend.txt` (Python ≥ 3 năm, PostgreSQL, Docker, Tiếng Anh đọc hiểu).
+3. Gõ Prompt gọi Skill [`loc_cv_ung_vien`](../skills/loc_cv_ung_vien/SKILL.md):
+
+> *"Dùng Skill lọc CV ứng viên. Thư mục CV: `/Tuyen_Backend/CV/`. File JD: `/Tuyen_Backend/yeu_cau_backend.txt`. Rubric: Python ≥3 năm (4đ), PostgreSQL (2đ), Docker (2đ), tiếng Anh (2đ). Ngưỡng đạt: 6/10. Di chuyển CV đạt vào `/Moi_PV/`, không đạt vào `/Tu_Choi/`. Xuất `Top_20_Ung_Vien.xlsx`."*
+
+**Kết quả:**
+
+- ⏱️ Thời gian: **3 phút** quét + chấm điểm 450 CV.
+- 📊 Kết quả: 38 CV đạt ≥ 6 điểm, Top 20 được xếp hạng với lý do chấm điểm chi tiết.
+- 🎯 CEO có danh sách phỏng vấn trong buổi chiều cùng ngày thay vì 1 tuần.
+
+---
+
+## 5. Bảng Tổng Hợp Skills Áp Dụng Cho Chương Này
+
+| Vấn đề cần giải quyết | Skill tương ứng | Prompt mẫu |
+| :--- | :--- | :--- |
+| Trích xuất hóa đơn PDF hàng loạt | [`trich_xuat_hoa_don`](../skills/trich_xuat_hoa_don/) | *"Quét file PDF, trích MST + Tiền hàng + VAT"* |
+| Đối soát Sổ kế toán vs Sao kê NH | [`doi_soat_ngan_hang`](../skills/doi_soat_ngan_hang/) | *"So sánh 2 file, tìm giao dịch lệch, xuất báo cáo tô đỏ"* |
+| Báo cáo doanh thu tổng hợp | [`bao_cao_doanh_thu`](../skills/bao_cao_doanh_thu/) | *"Gộp 5 file Excel, nhóm theo chi nhánh, vẽ biểu đồ"* |
+| Lọc & xếp hạng CV ứng viên | [`loc_cv_ung_vien`](../skills/loc_cv_ung_vien/) | *"Quét 300 CV, chấm theo JD, phân loại Đạt/Không"* |
+
+---
+
+*(Chương tiếp theo: Khối Kỹ thuật Dev & Ops — Nơi Legacy Code và Technical Debt sẽ bị AI "Mổ xẻ".)*

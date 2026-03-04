@@ -119,5 +119,43 @@ Qua quy trình Đọc - Đối Chiếu - Lập báo cáo này, bạn có thể t
 3. **Phòng Mua Hàng:** Đưa 1 bản Báo cáo Mẫu cũ (2024) và 1 bản Báo giá mới (2025). Gọi AI đối chiếu để xem từng mặt hàng tăng giảm giá ra sao, phát hiện mặt hàng gài giá tăng bất hợp lý.
 
 Ứng dụng Antigravity không phải là một Cuộc thi gõ code hay. Ứng dụng AI là Nghệ thuật của sự Lười Biếng Thông Minh: **"Làm sao để tôi nói đúng 1 câu Phân chia Task, 3 Agent ảo tự bóc tách ra làm, và 1 file chốt lỗi bôi đỏ đập thẳng vào mắt tôi?"**
-Và bạn vừa học được nghệ thuật đó!
-*(Mời Sếp xem tiếp Chương Bảo Mật 5 - Kỹ năng cài 'Khóa An Toàn' cho dây chuyền tự động này).*
+
+---
+
+## 5. Case Study Thực Tế
+
+### 📋 Case Study: Công Ty Ecommerce "ShopViet" — Đối Soát COD Với Giao Hàng Tiết Kiệm
+
+**Bối cảnh:** ShopViet bán hàng trên Shopee & Lazada, ship COD qua GHTK. Mỗi tuần có ~3,000 đơn hàng. Cuối tháng, Kế toán nhận 2 file:
+
+- **File A:** Bảng kê bán hàng từ KiotViet (3,200 dòng — vì có đơn hủy/hoàn).
+- **File B:** Bảng đối soát thu hộ từ GHTK (2,950 dòng).
+
+Kế toán phải tìm ra: (1) Đơn nào ship rồi mà GHTK chưa trả tiền? (2) Đơn nào GHTK báo đã chuyển nhưng KiotViet không có — có thể là đơn khống? (3) Đơn nào số tiền bị lệch giữa 2 bên?
+
+Trước đây: 2 kế toán ngồi VLOOKUP mất **3 ngày**, sai sót ~5 triệu đồng/tháng.
+
+**Giải pháp — Gọi Skill [`doi_soat_ngan_hang`](../skills/doi_soat_ngan_hang/SKILL.md):**
+
+> *"Antigravity, dùng Skill đối soát ngân hàng. File A: `/DoiSoat/KiotViet_T8.xlsx`, cột khóa: 'Mã Vận Đơn'. File B: `/DoiSoat/GHTK_T8.csv`, cột khóa: 'Ma_Van_Don'. Chuẩn hóa: trim + uppercase cột khóa, bỏ dấu phẩy cột tiền. Tìm: (1) Có ở A mà không có ở B, (2) Có ở B mà không có ở A, (3) Có ở cả hai nhưng tiền lệch. Xuất `BaoCao_DoiSoat_T8.xlsx` với 3 sheet, tô đỏ ô lệch."*
+
+**Kết quả:**
+
+- ⏱️ Thời gian: **8 giây** (thay vì 3 ngày).
+- 🔍 Phát hiện: 47 đơn GHTK chưa trả tiền (tổng 12.8 triệu), 3 đơn nghi khống, 15 đơn lệch số tiền do phí ship.
+- 💰 CEO gọi điện cho GHTK ngay chiều hôm đó → Thu hồi 12.8 triệu trong 24h.
+
+---
+
+## 6. Bảng Tổng Hợp Skills Áp Dụng Cho Chương Này
+
+| Vấn đề cần giải quyết | Skill tương ứng | Khi nào dùng |
+| :--- | :--- | :--- |
+| Đối chiếu 2 file Excel/CSV | [`doi_soat_ngan_hang`](../skills/doi_soat_ngan_hang/) | Cuối tháng đối soát COD, sao kê NH, bảng kê thuế |
+| Tổng hợp nhiều file doanh thu | [`bao_cao_doanh_thu`](../skills/bao_cao_doanh_thu/) | Gộp data từ nhiều chi nhánh/ngày |
+| Cảnh báo tồn kho sắp hết | [`canh_bao_ton_kho`](../skills/canh_bao_ton_kho/) | Quét tồn kho hàng ngày, gửi alert Telegram |
+| Hỗ trợ quyết định tăng/giảm giá | [`phan_tich_quyet_dinh`](../skills/phan_tich_quyet_dinh/) | Phân tích elasticity trước khi điều chỉnh giá |
+
+---
+
+*(Chương tiếp: AI trong Ra Quyết Định Kinh Doanh — Từ "Linh Cảm" sang "Data-Driven".)*
