@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 30 Ngày Làm Chủ Antigravity
+# 🚀 30 Ngày Làm Chủ Antigravity cho SME Việt Nam
 
 ### Cẩm Nang AI Thực Chiến Cho Doanh Nghiệp SME Việt Nam
 
@@ -59,26 +59,26 @@
 | 01 | [Kỷ Nguyên Lãnh Đạo AI-First](chapters/01-lanh-dao-ai-first.md) | Pain points SME. Ma Trận Lãnh Đạo AI. Sudo Prompt mẫu. |
 | 02 | [So Sánh Model AI — Gemini vs Opus](chapters/02-mo-hinh-ai-quyen-luc.md) | Giải phẫu 2 model, Bảng Quota, Ma Trận Chọn Tướng. |
 
-### 🏢 Phần II — Thực Hành Theo Phòng Ban
+### 🏢 Phần II — Thực Hành Theo Lĩnh Vực & Phòng Ban
 
-> *Tự động hóa từng bộ phận: Kế toán, HR, Marketing — không cần code.*
+> *Biến AI thành chuyên viên xuất sắc cho từng khối phòng ban thông qua các Use-case thực chiến.*
 
-| # | Chương | Nội dung chính |
-| :---: | :--- | :--- |
-| 03 | [Khối Văn Phòng — Zero-Code Automation](chapters/03-van-phong-tu-dong-hoa.md) | OCR hóa đơn, ATS lọc CV, tự động hóa HR & Kế toán. |
-| 04 | [Multi-Agent — Điều Binh Đa Đặc Vụ](chapters/04-multi-agent.md) | 3 mô hình Agent, 3 Case Study thực chiến trên Antigravity. |
+| # | Khối / Phòng Ban | Chương Tương Ứng | Nội dung chính |
+| :---: | :--- | :--- | :--- |
+| 03 | **Hành Chính & Kế Toán Nhập Liệu** | [Zero-Code Automation](chapters/03-van-phong-tu-dong-hoa.md) | OCR bóc tách hàng loạt hóa đơn PDF, Hệ thống ATS học và chấm điểm CV ứng viên tự động. |
+| 04 | **Marketing, Giao Vận & CSKH** | [Điều Binh Đa Đặc Vụ](chapters/04-multi-agent.md) | Viết bài SEO số lượng lớn, Phân tích Sentiment Review Khách hàng, Quản lý chuỗi cung ứng. |
+| 05 | **Sales B2B & Phát Triển Kinh Doanh** | [Siêu Dự Án Mở Rộng](chapters/05-mega-projects.md) | Cào Data giám đốc B2B qua Browser, Lọc Lead Zalo tự động xuyên đêm đẩy vào CRM. |
+| 06 | **Tài Chính (CFO) & Data Analyst** | [Khai Khoáng Dữ Liệu](chapters/06-data-pipeline.md) | Xây dựng Data Pipeline đối soát chéo COD vs KiotViet, xuất Excel báo cáo lỗi thất thoát. |
 
-### 🔥 Phần III — Siêu Dự Án & Chuyên Sâu
+### 🔥 Phần III — Ban Giám Đốc & Nâng Cấp Kỹ Thuật
 
-> *Dự án thật, dữ liệu thật — từ cào B2B đến mô phỏng quyết định CEO.*
+> *Mở khóa quyền năng cao cấp của Agentic AI để thao túng toàn diện hệ thống doanh nghiệp.*
 
-| # | Chương | Nội dung chính |
-| :---: | :--- | :--- |
-| 05 | [Mega Projects — Siêu Dự Án Thực Chiến](chapters/05-mega-projects.md) | Binh Đoàn Nhện Cào Data B2B, Lọc Lead Zalo tự động. |
-| 06 | [Data Pipeline — Khai Khoáng Dữ Liệu](chapters/06-data-pipeline.md) | Đối soát chéo, so sánh 2 nguồn data, xuất Excel tô đỏ. |
-| 07 | [AI Trong Ra Quyết Định Kinh Doanh](chapters/07-business-decision-making.md) | Tháp 3 tầng DSS, Monte Carlo, mô phỏng kịch bản giá. |
-| 08 | [Skills & Workflows — Kho Vũ Khí Bí Mật](chapters/08-skills-va-workflows.md) | Đóng gói trí nhớ tổ chức, Slash Commands, `// turbo-all`. |
-| 09 | [MCP — Kết Nối Hệ Thống](chapters/09-mcp-ket-noi-he-thong.md) | Model Context Protocol, kết nối Google Sheets/DB/Slack. |
+| # | Nhóm Quyền Lực | Chương Tương Ứng | Nội dung chính |
+| :---: | :--- | :--- | :--- |
+| 07 | **Ban Giám Đốc (CEO/BOD)** | [Ra Quyết Định Kinh Doanh](chapters/07-business-decision-making.md) | Tháp Lãnh đạo DSS, Mô phỏng Monte Carlo dự báo ROI, AI đóng vai 'Luật sư ác quỷ' phản biện. |
+| 08 | **Nhóm Vận Hành (COO/Manager)** | [Kho Skills & Workflows](chapters/08-skills-va-workflows.md) | Đóng gói "Trí nhớ tổ chức" thành Lệnh Slash Commands (`/`), Hẹn giờ chạy tự động không chạm. |
+| 09 | **Nhóm Kỹ Thuật (CTO/IT)** | [Cánh Cổng Kết Nối MCP](chapters/09-mcp-ket-noi-he-thong.md) | Cắm mạch máu LLM đọc Live Database (MySQL) và Google Sheets, gửi Auto-report vào Slack. |
 
 ### 🛡️ Phần IV — Bảo Mật & Lộ Trình
 

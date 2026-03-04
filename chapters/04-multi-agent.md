@@ -4,7 +4,9 @@
 
 ---
 
-## 1. Mở Đầu: Tại Sao "Một Mình Một Ngựa" Là Cách Dùng AI Tệ Nhất?
+## 1. Mở Đầu: Đã Có "Sơ Đồ Chức Vụ" Ở Chương 3, Tại Sao Vẫn Thất Bại Khi Dùng AI Giải Quyết Việc Lớn?
+
+Sau khi vạch ra **Ma Trận 6 Phòng Ban** ở Chương 3, Sếp đã phân chia rành mạch chức năng của AI tại từng lăng kính của công ty. Tuy nhiên, trong chiến trường thực tiễn, không một công việc kinh doanh nào đứng đơn độc. Muốn giải quyết một quy trình khép kín (Ví dụ: Từ lúc Cào Data Khách Hàng $\rightarrow$ Đến lúc Chốt Đơn), bạn không thể dùng duy nhất 1 Agent. Bạn cần một **Binh Đoàn Đặc Vụ (Multi-Agent System)** phối hợp nhịp nhàng với nhau rẽ nhánh và không biết mệt mỏi.
 
 ### 📖 Câu Chuyện: Cú Sốc Marketing Của Chị Trang
 
