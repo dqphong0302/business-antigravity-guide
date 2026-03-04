@@ -48,6 +48,36 @@ Kết quả là gì? Vị cố vấn nói bằng mồm, còn kẻ phải è lưn
 
 ---
 
+## 🩺 Bài Test Sẵn Sàng AI: Công Ty Bạn Có Đủ "Sức Khỏe" Để Tiếp Nhận Antigravity Không?
+
+*Trước khi lao vào 13 chương tiếp theo, hãy dành ĐÚNG 3 PHÚT làm bài tự chấm điểm này. Vòng tròn đáp án, cộng tổng điểm và đọc kết quả bên dưới. Nếu dưới 40 điểm — hãy dừng lại, chữa bệnh nền đã.*
+
+| # | Câu hỏi tự đánh giá | Có (10đ) | Một phần (5đ) | Không (0đ) |
+| :---: | :--- | :---: | :---: | :---: |
+| 1 | Công ty bạn đã lưu **80% tài liệu** dưới dạng File Mềm (Excel, PDF, Google Sheets) thay vì Giấy tờ/Zalo? | ⬜ | ⬜ | ⬜ |
+| 2 | Có ít nhất **1 người** trong công ty biết mở Terminal / Command Prompt trên máy tính? | ⬜ | ⬜ | ⬜ |
+| 3 | Sếp Tổng (CEO) **cá nhân ủng hộ** và sẵn sàng tự tay dùng AI trước khi bắt nhân viên dùng? | ⬜ | ⬜ | ⬜ |
+| 4 | Các file Excel bán hàng, kế toán có **Mã khách hàng thống nhất** (Unique ID) xuyên suốt giữa các phòng ban? | ⬜ | ⬜ | ⬜ |
+| 5 | Công ty có **Internet ổn định** (>10 Mbps) cho máy tính nhân viên? | ⬜ | ⬜ | ⬜ |
+| 6 | Sếp sẵn sàng chi **dưới 500,000 VNĐ/tháng** cho phí API Cloud (rẻ hơn 1 bữa nhậu) để chạy AI? | ⬜ | ⬜ | ⬜ |
+| 7 | Công ty có Quy trình nào đang **lặp đi lặp lại hàng ngày** khiến nhân viên chán nản (nhập liệu, đối soát, lọc file)? | ⬜ | ⬜ | ⬜ |
+| 8 | Sếp có thể **chỉ định 1 người** (IT hoặc Trưởng phòng trẻ) làm "Đại sứ AI" phụ trách triển khai? | ⬜ | ⬜ | ⬜ |
+| 9 | Nhân viên của bạn **không bị cấm** dùng công cụ mới mà không cần xin phép 5 cấp quản lý? | ⬜ | ⬜ | ⬜ |
+| 10 | Sếp chấp nhận rằng AI **sẽ sai** trong 2 tuần đầu, và xem đó là quá trình Dạy Lính chứ không phải thất bại? | ⬜ | ⬜ | ⬜ |
+
+### Thang Điểm Chẩn Đoán
+
+| Tổng Điểm | Trạng Thái | Kê Đơn |
+| :---: | :--- | :--- |
+| **80 - 100** | 🟢 **Sẵn sàng tuyệt đối.** | Lật Chương 1 ngay. 30 ngày nữa công ty bạn sẽ lột xác. |
+| **50 - 75** | 🟡 **Cần vá vài lỗ thủng.** | Đọc Ebook nhưng tập trung Chương 13 (Lộ Trình) trước. Dành 1 tuần dọn Data rồi mới triển khai. |
+| **25 - 45** | 🟠 **Bệnh nền nặng.** | Dừng lại. Số hóa tài liệu cơ bản, dọn Data Silos, thuyết phục Sếp Tổng ủng hộ. Quay lại sau 1 tháng. |
+| **0 - 20** | 🔴 **Chưa sẵn sàng.** | AI không thể cứu một doanh nghiệp còn chạy bằng giấy tờ và Zalo. Hãy số hóa trước đã. |
+
+*Lưu Bài Test này lại. Sau 30 ngày triển khai Antigravity, làm lại lần 2. Nếu điểm tăng >20 điểm, Sếp đi đúng hướng.*
+
+---
+
 ## 2. Antigravity Là Gì? Kỷ Nguyên Của "Agentic AI" (Đại Lý Tự Trị)
 
 Thứ mà giới Doanh nghiệp hiện đại (SME) cần không phải là một Vị Cố Vấn chỉ tay năm ngón. Thứ bạn đang khắc khoải đi tìm là **"Một Đội Quân Người Máy Chấp Hành"**.

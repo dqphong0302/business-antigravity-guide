@@ -100,7 +100,31 @@ Những Doanh nghiệp Vĩ đại Của Thế Kỷ 21 là Những Doanh Nghiệp
 
 ---
 
-## 6. Kết Luận
+## 6. Cập Nhật Pháp Lý: Luật Trí Tuệ Nhân Tạo Việt Nam (Có Hiệu Lực 3/2026)
+
+Kể từ tháng 3/2026, Việt Nam chính thức có **Luật Trí tuệ Nhân tạo** — một trong những quốc gia đầu tiên ở Đông Nam Á có khung pháp lý riêng cho AI. Đây là những điểm mà mọi SME phải biết:
+
+### Hệ thống Phân loại Rủi ro AI (Risk Classification)
+
+Luật chia AI thành 4 cấp độ rủi ro. Doanh nghiệp SME cần tự xác định hệ thống AI mình đang dùng nằm ở cấp nào:
+
+| Cấp Độ | Mô Tả | Ví dụ SME Thực Tế | Yêu Cầu Từ Pháp Luật |
+| :--- | :--- | :--- | :--- |
+| **Rủi ro Thấp** | AI hỗ trợ, con người ra quyết định cuối. | AI viết bài Marketing, tóm tắt Email, phân loại CV vòng 1. | Không yêu cầu đặc biệt. |
+| **Rủi ro Trung bình** | AI ảnh hưởng tới tài chính, nhân sự. | AI đối soát hóa đơn, chấm điểm KPI nhân viên. | Phải có Human-in-the-Loop (Chốt chặn con người). |
+| **Rủi ro Cao** | AI ra quyết định ảnh hưởng quyền lợi cá nhân. | AI tự duyệt/từ chối đơn vay, AI tự sa thải nhân viên. | Phải đăng ký với cơ quan chức năng. Bắt buộc kiểm định. |
+| **Cấm** | AI gây hại trực tiếp tới quyền con người. | Social Scoring, giám sát hàng loạt, deepfake lừa đảo. | Vi phạm hình sự. |
+
+### Điều Sếp SME Phải Làm Ngay
+
+1. **Rà soát:** Tất cả Workflows đang chạy trên Antigravity thuộc cấp Rủi ro nào?
+2. **Gắn nhãn:** Mỗi Workflow/Skill phải có dòng chú thích ở đầu file: `# Risk Level: LOW / MEDIUM / HIGH`.
+3. **Lưu log:** Giữ lại lịch sử (Logs) mọi quyết định AI đã ra trong ít nhất 6 tháng để đối chứng khi có kiểm tra.
+4. **PDP + AI Law = Bộ đôi sống còn:** Kết hợp với Nghị định 13 (Chương 11), SME cần có cả 2 lớp phòng thủ: Bảo vệ dữ liệu cá nhân (PDP) VÀ tuân thủ phân loại rủi ro AI.
+
+---
+
+## 7. Kết Luận
 
 Đạo đức AI không phải là sự kìm hãm công nghệ. Nó là Dây Đai An Toàn giúp doanh nghiệp vững tay lái khi phóng chiếc siêu xe Antigravity ở tốc độ 300km/h trên đường cao tốc.
 
@@ -112,5 +136,6 @@ Những Doanh nghiệp Vĩ đại Của Thế Kỷ 21 là Những Doanh Nghiệp
 
 - [Google AI Principles](https://ai.google/responsibility/principles/)
 - [Anthropic's Constitutional AI](https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback)
-- [Chương 11 — Bảo mật dữ liệu](11-bao-mat.md)
+- [Chương 11 — Bảo mật dữ liệu & Nghị định 13 PDP](11-bao-mat.md)
 - [Harvard Business Review — Ethical AI](https://hbr.org/topic/subject/artificial-intelligence)
+- [Luật Trí tuệ Nhân tạo Việt Nam (VnExpress)](https://vnexpress.net/luat-tri-tue-nhan-tao)
