@@ -19,6 +19,8 @@ Dưới đây là Bản vẽ Cấu trúc 6 Phòng Ban cốt lõi của một SME
 
 ## 2. Giải Phẫu Ma Trận Nhân Sự AI Trong 6 Phòng Ban Cốt Lõi
 
+![Ma trận Nhân sự Ảo 6 Phòng Ban: Finance, HR, Sales, Marketing, CS, BOD](images/ai_department_matrix.png)
+
 ### 🏦 2.1. Phòng Kế Toán & Tài Chính (Finance) - "Người Gác Cổng Dữ Liệu Lạnh Lùng"
 
 **Ý nghĩa chiến lược:**
@@ -30,6 +32,17 @@ Kế toán là chốt chặn cuối cùng của dòng tiền, nhưng cũng là n
 - **Thanh Tra Đối Soát Cước:** So khớp chéo chằng chịt hàng chục ngàn dòng giữa File Hãng Giao Hàng (J&T/GHN/Viettel) với Sao kê Ngân hàng (Bank Statement). File nào lỗi, dòng Data nào thiếu 5,000đ, lệnh cho AI tự động bôi nển Excel màu Đỏ Quạch và gửi thẳng về cho Kế toán trưởng duyệt cắt. *(Đọc chi tiết tại **Chương 6 - Data Pipeline**).*
 - **Đốc Công Nhắc Nợ Tự Động:** Quét toàn bộ Công nợ Đáo hạn Lãi Ngân hàng / Nhà cung cấp và Lập trình Email bắn thẳng thông báo báo động cho Sếp trước 7 Ngày.
 
+> 💻 **SUDO PROMPT BỎ TÚI CHO PHÒNG KẾ TOÁN**
+> Đừng bắt Kế toán gõ lệnh dài dòng. Hãy cho họ lưu mẫu lệnh này thành file Workflow `/doi-soat-cong-no` để dùng hàng tháng:
+>
+> ```yaml
+> "Nhập vai Kế toán trưởng 10 năm kinh nghiệm. Đọc file Sao_ke_Thang_10.csv và file Giao_hang_T10.xlsx. 
+> 1. Tìm ngẫu nhiên tất cả các Mã Vận Đơn bị Lệch Tiền. 
+> 2. Tính lại Giá cước (Trừ đi 5% phí trả kho). 
+> 3. Xuất kết quả ra 1 bảng Markdown gồm các cột: [Mã Vận Đơn] | [Tiền Chênh Lệch] | [Lý Do Nghi Vấn Lệch]. 
+> Nếu phát hiện dòng nào thiếu đúng 12.000đ, hãy flag ĐỎ (Bôi đậm) dòng đó vì 90% là sót phí Đóng Gói."
+> ```
+
 ### 👥 2.2. Phòng Nhân Sự & Hành Chính (HR/Admin) - "Đối Tác Chiến Lược Không Cần Ngủ"
 
 **Ý nghĩa chiến lược:**
@@ -38,6 +51,9 @@ Giải phóng bộ phận HR (Nhân sự) khỏi cảnh "Đầu tắt mặt tố
 **Nhiệm vụ gán cho AI (Job Description & Lệnh thực thi):**
 
 - **Hệ Thống Lọc Khí Cấp Độ Hạt (Auto-ATS Lọc CV):** Khi HR đăng tin Tuyển dụng lên Facebook, hốt về 500 CV rác (Ứng viên Rải bừa). Mắt người đọc mất 4 ngày. AI Tự Trị đọc mất 4 Phút. Lệnh AI bám theo Barem Điểm (Rubric) do chính Giám Đốc ban hành để vứt bỏ 450 CV ảo, xén giữ lại 50 CV "vàng", trút vào thư mục `/Moi_Phong_Van/`.
+  
+  ![Agent HR đang phân tích và chấm điểm hàng trăm CV thủ công từ Facebook](images/hr_auto_ats_ui.png)
+
 - **Giáo Viên Đào Tạo Mới (Onboarding):** Thiệt lập Workflow gõ lệnh `//onboard`. Khi nhân sự mới vào nhận việc, AI tự động vứt Email Hợp đồng, nội quy văn hóa, Tự động liên đới quyền cấp Drive/Slack và vứt bài Test cho nhân sự sau 3 ngày Thử việc rèn giũa. *(Đọc chi tiết tại **Chương 8 - Kho Workflows**).*
 - **Thầy Cãi Soạn Văn Bản Form mẫu:** Nuốt các Bản Draft, tự sửa placeholder (Biến số như Tên, Tuổi, Lương, Mã Số CMND) trên File Docx và nhét thẳng mộc Công ty In Ấn ra thành Hợp Đồng.
 
@@ -51,6 +67,17 @@ Bộ phận Sales là mũi nhọn của công ty (Sự sống còn của SME). N
 - **Binh Đoàn Cào Data Xuyên Đêm:** Ban lệnh dùng Sub-Agent Browser vác cuốc xẻng âm thầm rảo quanh Website Danh bạ Doanh nghiệp, LinkedIn, Yellow Pages. Nhặt nhạnh hàng loạt Tên Giám Đốc, Quy mô vốn, SĐT, Email của các Doanh nghiệp Mục tiêu trên thị trường Đổ thành File Excel Giao Cho Salesman "Bào Số". *(Đọc chi tiết tại **Chương 5 - Mega Projects**).*
 - **Kho Pháo Cold Email Trích Lọc Đích Danh:** Tự động phát động chiến dịch "Email Lạnh" Bủa Vây Hàng nghìn đối tác mới. Mỗi email viết ra đều chèn tinh vi Tên Riêng, Tên Công Ty và Ngành Nghề của Đối Tác (AI Tự Build Context). Súng liên thanh nhưng Đạn là Của Riêng Từng Người Nhận.
 - **Robot Gen Báo Giá Tức Thời:** Khách hàng quăng File Excel hàng hóa Nhập Khẩu phức tạp. AI quét, Lookup Giá Nội bộ Công ty Cấp Chiết Khấu Định Danh và Nhả File Báo Giá PDF Tuyệt Vời chưa đầy 60 giây. Thắng thầu bằng Tốc độ Phản Hồi Điện Xẹt.
+
+> 💻 **SUDO PROMPT BỎ TÚI CHO KHỐI SALE B2B**
+> Hãy cắm lệnh này vào Browser Agent trước khi tan làm, sáng hôm sau Sales đã có khách để gọi:
+>
+> ```yaml
+> "Vào google.com.vn, tìm cụm từ 'Công ty may mặc xuất khẩu tại bình dương'. 
+> Mở 20 kết quả đầu tiên. Đọc trang Liên hệ/About Us của từng công ty. 
+> Trích xuất [Tên Công Ty], [Email người đại diện], [Số Điện Thoại]. 
+> Bỏ qua các trang vàng (Trang Vàng VN). 
+> Dùng module Mail của bạn, tự động gửi 1 Cold Email mẫu số 1 chào bán Dịch Vụ Vận Tải Logistics cho các Email quét được. Chèn chính xác Tên Công Ty của họ vào Tiêu đề Email."
+> ```
 
 ### 📢 2.4. Phòng Marketing & Truyền Thông (Growth) - "Tổng Biên Tập Kiêm Điệp Viên Cài Cắm"
 
