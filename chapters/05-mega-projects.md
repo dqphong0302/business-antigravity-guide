@@ -1,8 +1,10 @@
-# Chương 4: Mega Projects — Kiến Tạo Vũ Khí Thượng Tầng Dành Cho Giám Đốc Kinh Doanh B2B
+# Chương 5: Mega Projects — Kiến Tạo Vũ Khí Thượng Tầng Dành Cho Giám Đốc Kinh Doanh B2B
 
 *(Cuộc đua giành giật phễu khách hàng bằng Kiến trúc Đa Đặc vụ)*
 
 ---
+
+> 🚀 **Chưa có Antigravity?** Truy cập [antigravity.google](https://antigravity.google) để tải và cài đặt miễn phí. Chương này yêu cầu bạn **mở Antigravity và chạy thử** các SUDO PROMPT bên dưới với dữ liệu thật.
 
 ## 1. Lời Mở Đầu: Tạm Biệt Kỷ Nguyên "Rải Tờ Rơi Kỹ Thuật Số" Bằng Sức Cơm
 
@@ -85,7 +87,35 @@ Giám đốc Tuấn mở giao diện Antigravity, tạo folder `/ChienDich_CaoDa
 > 🚨 **[CẢNH BÁO AN TOÀN - SAFETY LIMIT LIMIT]**
 > Cấm spam nhấp chuột (Wait 5 Giây Giữa Chừng). Lưu Log (Báo Cáo) ra Terminal màn hình mỗi khi Cào Xong 50 Công ty để tôi ngắm chiến quả. Chạy hệ thống đi!
 
+**Truy Bắt "5 Why" Cho Cỗ Máy Sát Thủ B2B Này:**
+
+1. **Làm gì?** Cào sống 2.000 Khách Hàng Doanh Nghiệp trong sự êm ái mà không Code Tool Xung Đột Hệ Thống Mạng.
+2. **Tại sao phải dùng Sub-Agent Browser?** Nếu dùng code Python tĩnh dội bom Request, hệ thống Web sẽ Ban IP Công Ty bạn ngay lập tức. Browser Agent giả vờ cuộn chuột y hệt con người.
+3. **Dữ liệu được khai khoáng như nào?** Agent 2 xé toang thẻ Heading, mò tận sâu Regex Email, phân tích NLP để tìm Quy mô Nhân Sự chứ không dùng Tool Copy Mù.
+4. **Xử lý rủi ro đứt gãy?** "Lưu Log ra Terminal 50 công ty 1 lần" – Lệnh bắt AI vừa làm vừa Cáo Chui chứ không để nó Ngâm Data 2 tiếng mới Nhả File Lỡ Lỗi Máy Mất Trắng.
+5. **Dòng Tiền đến từ đâu?** Thay vì đốt quỹ 150 Triệu Dev Tool + 5 Nhân Sự cày Cơm. Hệ Thống 0 Đồng này chắt lọc ra 2.000 Email Giám Đốc. Tạo ra Nguồn Tín Hiệu Outbound Lạnh Đều Đặn Bất Tử.
+
 *(Khi dòng báo số 2.000 hiện lên sau một giấc ngủ trưa, những công ty thủ công ngoài kia đã vĩnh viễn mất đi miếng bánh thị trường).*
+
+### 🖥️ Hình Hài Trận Chiến Dưới Khung Terminal (Log Kỹ Thuật)
+
+Khác với ChatGPT chỉ chat bằng chữ chữ văn xuôi, Antigravity là một cỗ máy **Thực thi Code (Code Execution)**. Quá trình Binh đoàn Nhện đi cào dữ liệu sẽ hiển thị sống động thành những đoạn Log kỹ thuật trên màn hình của bạn:
+
+```bash
+> Kích hoạt Browser Subagent...
+> Đã mở Chrome. Điều hướng tới vietnamworks.com.
+> Đang tìm kiếm từ khóa: "IT Network / System Admin"
+> [Agent 2] Đọc tin 1/50: Công ty Cổ phần Công nghệ T... HR_T@congty.com
+> [Agent 3] Lưu CSV File... Thành công dòng 1.
+> Đợi 5 giây chống Captcha...
+> [Agent 2] Đọc tin 2/50: Công ty Dược phẩm V... Không tìm thấy Email. Báo: N/A.
+...
+> [BÁO CÁO_TỔNG]: Đã cào xong 50 công ty Trang 1. Đang click Sang Trang 2.
+```
+
+Nhìn hàng dòng chữ xanh lá này cuồn cuộn trôi đi, người Lãnh đạo sẽ cảm nhận được quyền lực tuyệt đối của việc Sở hữu một Đội quân Robot không biết trưa hè, không cần nghỉ lễ.
+
+> 💡 **Thực hành ngay:** Mở [Antigravity](https://antigravity.google), copy SUDO PROMPT ở trên, thay tên trang web tuyển dụng bạn muốn cào (VD: `vietnamworks.com`, `topcv.vn`). Bắt đầu với mục tiêu nhỏ: **cào 20 công ty** trước để kiểm chứng luồng hoạt động. Khi thành công, tăng dần lên 200 → 2.000.
 
 ---
 
@@ -127,9 +157,30 @@ Thay vì chi mua những gói CRM đắt đỏ bóp nghẹt tính năng. Sếp l
 >
 > Thực thi đi Đặc Vụ! Báo tôi Output Code chạy mượt nhép ở cổng Localhost Test!
 
-**Trải Nghiệm Không Gian Mới:**
-10h00 Sáng, khách hàng đang lướt Zalo, vô tình gõ: *"Anh cần tư vấn mua Máy tính bàn, sdt anh 0987xxx"*.
-Khách hàng vừa đẩy Enter 1 giây. Màn hình của Nhân viên Kinh Doanh nhảy notification ầm í. 10h01 phút, Nhân viên Kinh doanh bốc điện thoại nhấc gọi. Khách hàng sửng sốt với tốc độ Thần Tốc Thượng Đỉnh của tổ chức doanh nghiệp đó. Bạn vừa ăn trọn Doanh số trong sự bất lực của Đối thủ cạnh tranh.
+**Trải Nghiệm Không Gian Mới Trực Tiếp Trên Antigravity Terminal:**
+
+Sếp không cần thuê máy chủ (Hosting / VPS) hay cấu hình Domain lằng nhằng. Hãy ném lệnh trên cho Antigravity và nhìn màn hình Log kỹ thuật số ở góc phải chớp nháy:
+
+```bash
+[INFO] Bắt đầu khởi tạo dự án Node.js trong /Zalo_Hot_Leads/
+[INFO] Đã cài đặt thư viện 'express' và 'body-parser'.
+[INFO] Server running on http://localhost:8080.
+[INFO] Webhook endpoint: POST /webhook-zalo-inbox đã mở cửa trực.
+```
+
+- **10h00 Sáng**, khách hàng đang lướt Zalo điện thoại, vô tình gõ: *"Anh cần tư vấn mua Máy tính bàn, sdt anh 0987123456"*.
+- Khách chưa kịp thoát ứng dụng Zalo, Giao diện Live Logs của bạn ngay lập tức nảy lên chuỗi Code màu xanh lá cây chói lóa:
+
+```bash
+> [10:00:01] [POST] /webhook-zalo-inbox Nhận Tín Hiệu (ID: WZ9830)
+> [10:00:01] [regex_sniper] Đã bóp cò Text. Extracted Phone: 0987123456
+> [10:00:02] [ALARM TRIGGER] Pushing Data tới Google Sheets API... Xong.
+> [10:00:02] [ALARM TRIGGER] Gửi Telegram Chat_ID -893xcz2... Xong.
+```
+
+![Quản lý Tín hiệu Máy chủ Zalo Webhook bằng Giao diện Log thời gian thực của Antigravity](images/zalo_webhook_log_ui.png)
+
+**10h01 phút**, Điện thoại của Nhân viên Kinh Doanh dưới tầng 1 nhảy Thông Báo Telegram ầm í. 10h02 phút, Sales bốc điện thoại gọi lại cho Khách hàng. Khách hàng sửng sốt với tốc độ Thần Tốc Thượng Đỉnh của tổ chức doanh nghiệp. Bạn vừa ăn trọn Doanh số trong sự bất lực của Đối thủ cạnh tranh (những người vẫn đang đợi Khách hàng gọi hotline).
 
 ### ✅ Kết Quả Kỳ Vọng Chi Tiết (Expected Output Cho 2 Mega Project)
 
@@ -174,9 +225,10 @@ Nhưng, 5.000 Khách hàng Lạnh (Cold Lead) đổ về sẽ tạo ra một Nú
 
 ## 📚 Tài Liệu Tham Khảo
 
+- [🚀 Antigravity — Tải và Cài đặt công cụ](https://antigravity.google)
 - [Workflow Cào Data B2B](../workflows/cao-data-b2b.md)
 - [Workflow Tạo Proposal](../workflows/tao-proposal.md)
 - [Skill Email Marketing](../skills/email_marketing/SKILL.md)
-- [Chương 8 — Data Pipeline](06-data-pipeline.md)
-- [Chương 9 — MCP kết nối hệ thống](09-mcp-ket-noi-he-thong.md)
+- [Chương 06 — Data Pipeline](06-data-pipeline.md)
+- [Chương 09 — MCP kết nối hệ thống](09-mcp-ket-noi-he-thong.md)
 - [Zalo OA API Documentation](https://developers.zalo.me/docs/)

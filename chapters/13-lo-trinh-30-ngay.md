@@ -1,4 +1,4 @@
-# Chương 9: Lộ Trình 30 Ngày Khép Kín — Từ "Người Dùng Đơn Độc" Đến "Đế Chế AI-Driven"
+# Chương 13: Lộ Trình 30 Ngày Khép Kín — Từ "Người Dùng Đơn Độc" Đến "Đế Chế AI-Driven"
 
 *(Chống lại căn bệnh Cả thèm chóng chán khi Áp dụng AI tại Doanh Nghiệp Việt)*
 
@@ -25,9 +25,9 @@ Chương cuối cùng này cung cấp cho Sếp một **Lộ Trình Trồng Cây
 
 ## 2. Bản Đồ Tác Chiến 30 Ngày (The 30-Day SME Onboarding Roadmap)
 
-![Lộ trình 30 ngày áp dụng AI cho SME — từ Sếp dẫn đầu đến Hệ thống hóa toàn công ty](images/roadmap_30_days.png)
+![Lộ trình 30 ngày áp dụng AI cho SME — từ Sếp dẫn đầu đến Hệ thống hóa toàn công ty](images/kpi_30_day_railway.png)
 
-Đừng ném Antigravity cho nhân viên và bảo *"Dùng đi"*. Hãy áp đặt lộ trình Mưa Dầm Thấm Lâu dưới đây, với KPIs đo lường rõ ràng.
+Đừng ném Antigravity cho nhân viên và bảo *"Dùng đi"*. Hãy áp đặt lộ trình Mưa Dầm Thấm Lâu dưới đây bằng **Bàn Tay Sắt**, với các Điểm Chạm (Milestones) đo lường bằng KPI.
 
 ### 🛡️ Tuần 1: Cú Sốc Tri Nhận Điểm Tối Vĩ Mô (Days 1-7)
 
@@ -42,7 +42,7 @@ Chương cuối cùng này cung cấp cho Sếp một **Lộ Trình Trồng Cây
 **💡 Prompt Gợi Ý Tuần 1 (Copy-Paste Dùng Ngay):**
 > *"Hỡi Antigravity, tôi có 15 file Excel doanh số 15 chi nhánh nằm tại `/BaoCao_ChiNhanh/`. Hãy đọc tất cả, gộp thành 1 bảng tổng, vẽ biểu đồ Bar Chart so sánh doanh thu giữa các chi nhánh. Lưu biểu đồ và file tổng hợp tại cùng thư mục."*
 
-*(Tham khảo: [Chương 8 — Data Pipeline](06-data-pipeline.md), [Skill Báo Cáo Doanh Thu](../skills/bao_cao_doanh_thu/SKILL.md))*
+*(Tham khảo: [Chương 6 — Data Pipeline](06-data-pipeline.md), [Skill Báo Cáo Doanh Thu](../skills/bao_cao_doanh_thu/SKILL.md))*
 
 ### 🛡️ Tuần 2: Xâm Nhập Khối Back-Office (Days 8-14)
 
@@ -76,9 +76,9 @@ Chương cuối cùng này cung cấp cho Sếp một **Lộ Trình Trồng Cây
 
 **Mục Tiêu:** Chữa Dứt Điểm Căn bệnh "Mất Trí Nhớ Nhân Sự" Bằng Kho Báu Tổ Chức. Cấu Hình Cột Chống Rò Rỉ Data.
 
-- **Ngày 22-25 (Kiến Tạo Kho Kỹ Năng /skills):** Mọi "Mánh Khóe" Báo Cáo Của Mỗi Trưởng Phòng Phải Được Ghi Chép Lại Sang 1 File `SKILL.md` ([Chương 7](08-skills-va-workflows.md)). Đóng gói chất xám Cầm Tay chỉ Việc Lại Rõ Ràng Cho Máy Nó Đọc Thuộc Năm Nay Qua Năm Khác.
+- **Ngày 22-25 (Kiến Tạo Kho Kỹ Năng /skills):** Mọi "Mánh Khóe" Báo Cáo Của Mỗi Trưởng Phòng Phải Được Ghi Chép Lại Sang 1 File `SKILL.md` ([Chương 8](08-skills-va-workflows.md)). Đóng gói chất xám Cầm Tay chỉ Việc Lại Rõ Ràng Cho Máy Nó Đọc Thuộc Năm Nay Qua Năm Khác.
 - **Ngày 26-27 (Nút Bấm Cửu Âm Chân Kinh /workflows):** IT Dev Lead và Trưởng Marketing Viết Slash Commands (`// turbo-all`). Tham khảo [Danh sách Workflow mẫu](08-skills-va-workflows.md) hoặc thư mục [`/workflows/`](../workflows/).
-- **Ngày 28-29 (Khấn Vái Lệnh Bài Bảo Mật Hệ Thống AI Governance):** Kích Hoạt Prompt Định Nghĩa ([Chương 10](10-bao-mat.md)). Bắt Masking Data Khách Hàng. Loại Trừ Prompt Lậu Phá Hại Giết Hệ Máy Nguồn Lực.
+- **Ngày 28-29 (Khấn Vái Lệnh Bài Bảo Mật Hệ Thống AI Governance):** Kích Hoạt Prompt Định Nghĩa ([Chương 11](11-bao-mat.md)). Bắt Masking Data Khách Hàng. Loại Trừ Prompt Lậu Phá Hại Giết Hệ Máy Nguồn Lực.
 - **Ngày 30 (Lễ Trưởng Thành Doanh Nghiệp Cấp Độ Số):** Cấm Dùng Cụm Từ "Chatbot". Chúng ta gọi Công Ty Chúng ta là Công Ty "AI-Driven". Tổ chức cuộc thi Vinh Danh Người Có Sudo Prompt Đỉnh Nhất Tháng, Thưởng To Bằng Thóc!
 
 **💡 Prompt Gợi Ý Tuần 4:**

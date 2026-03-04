@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="chapters/images/antigravity_workflow.png" alt="Antigravity Workflow" width="600">
-
 # 🚀 30 Ngày Làm Chủ Antigravity
 
 ### Cẩm Nang AI Thực Chiến Cho Doanh Nghiệp SME Việt Nam
@@ -9,9 +7,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Language](https://img.shields.io/badge/Ngôn_ngữ-Tiếng_Việt-blue.svg)](#)
 [![AI](https://img.shields.io/badge/Công_nghệ-Agentic_AI-purple.svg)](https://antigravity.google)
-[![Chapters](https://img.shields.io/badge/Chương-12-orange.svg)](#-mục-lục)
-[![Skills](https://img.shields.io/badge/Skills-16-red.svg)](#-kho-skills-mẫu)
-[![Workflows](https://img.shields.io/badge/Workflows-17-yellow.svg)](#-kho-workflows)
+[![Chapters](https://img.shields.io/badge/Chương-14-orange.svg)](#-mục-lục)
+[![Skills](https://img.shields.io/badge/Skills-18-red.svg)](#-kho-skills-mẫu)
+[![Workflows](https://img.shields.io/badge/Workflows-20-yellow.svg)](#-kho-workflows)
 
 **Từ CEO đến Kế toán, từ Marketing đến HR — Ai cũng có thể biến AI thành "Nhân viên Tự trị" làm việc 24/7.**
 
@@ -20,6 +18,13 @@
 [**🔥 Bắt Đầu Ngay**](chapters/00-gioi-thieu-antigravity.md) · [**📥 Tải Antigravity**](https://antigravity.google) · [**📋 Prompt Mẫu**](chapters/phu-luc-prompt-multi-agent.md)
 
 </div>
+
+---
+
+## 🤖 Antigravity & Agentic AI Là Gì?
+
+- **Agentic AI (AI Tự Trị):** Khác với Chatbot truyền thống (như ChatGPT bản Web) vốn chỉ phục vụ "Hỏi - Đáp" thụ động, Agentic AI là những "Đặc vụ AI" tự quản. Chúng được trang bị não bộ tự suy luận, tự phân rã kế hoạch thành nhiều bước, và có "Tay Chân" (Tools) để chủ động thực thi công việc ngay trên hệ thống máy tính của bạn (Ví dụ: Tự động Đọc/Ghi file Excel, Lướt web thu thập thông tin, Gửi Email, kết nối Database).  
+- **Antigravity:** Là một nền tảng Môi trường Agentic AI đột phá, được tích hợp thẳng vào không gian làm việc của Doanh nghiệp. Thay vì bạn phải tự tay code tính năng hay dùng công cụ RPA kéo thả cứng nhắc, Antigravity đem đến cho bạn quyền lực điều phối một **Đội ngũ Kỹ sư & Trợ lý Ảo 0 đồng**. Chúng tuân lệnh Sếp bằng Ngôn ngữ Tự nhiên để tự động hóa mọi Quy trình Số phức tạp nhất.
 
 ---
 
@@ -77,12 +82,14 @@
 
 ### 🛡️ Phần IV — Bảo Mật & Lộ Trình
 
-> *Phòng thủ rủi ro AI và kế hoạch triển khai 30 ngày từng bước.*
+> *Phòng thủ rủi ro AI, nâng cấp Tự động hóa Nhận thức, và lộ trình 30 ngày khép kín.*
 
 | # | Chương | Nội dung chính |
 | :---: | :--- | :--- |
-| 10 | [Bảo Mật & AI Governance](chapters/10-bao-mat.md) | 3 Tấm Khiên: Data Masking, Prompt Injection, Self-Verify. |
-| 11 | [Lộ Trình 30 Ngày Chi Tiết](chapters/11-lo-trinh-30-ngay.md) | Kế hoạch từng tuần, KPI đo lường, milestone kiểm tra. |
+| 10 | [Tự Động Hóa Nhận Thức](chapters/10-tu-dong-hoa-nhan-thuc.md) | Cognitive Automation vs RPA, Khả năng tự chữa lành lỗi của AI. |
+| 11 | [Bảo Mật & AI Governance](chapters/11-bao-mat.md) | 3 Tấm Khiên: Data Masking, Prompt Injection, Self-Verify. |
+| 12 | [Đạo Đức AI Trong Doanh Nghiệp](chapters/12-dao-duc-ai.md) | Quyền lực số, Human-in-the-Loop, Guardrails rủi ro đạo đức. |
+| 13 | [Lộ Trình 30 Ngày Chi Tiết](chapters/13-lo-trinh-30-ngay.md) | Kế hoạch từng tuần, KPI đo lường, milestone kiểm tra. |
 
 ### 📎 Phụ Lục
 
@@ -191,8 +198,8 @@
 ```text
 business-antigravity-guide/
 ├── 📄 README.md
-├── 📂 chapters/               ← 12 chương + 2 phụ lục
-│   ├── 00 → 11 (.md)
+├── 📂 chapters/               ← 13 chương + 2 phụ lục
+│   ├── 00 → 13 (.md)
 │   ├── phu-luc-*.md
 │   └── 📂 images/             ← 15 hình minh họa
 ├── 📂 skills/                 ← 16 Skills mẫu (SKILL.md)

@@ -1,8 +1,10 @@
-# Chương 6: Cố Vấn Định Mệnh — Ứng Dụng AI Trong Việc Ra Quyết Định Kinh Doanh (Decision Support System)
+# Chương 7: Cố Vấn Định Mệnh — Ứng Dụng AI Trong Việc Ra Quyết Định Kinh Doanh (Decision Support System)
 
 *(Từ "Cảm tính đắt đỏ" đến "Trí tuệ Nhân tạo dựa trên Dữ liệu")*
 
 ---
+
+> 🚀 **Chuẩn bị:** Truy cập [antigravity.google](https://antigravity.google) để cài Antigravity. Chuẩn bị **1 file CSV/Excel doanh số** của công ty bạn — chương này sẽ hướng dẫn bạn ép AI mô phỏng rủi ro trước khi ra quyết định.
 
 ## 1. Mở Đầu: Phòng Họp Cuối Năm Và "Thuế Cảm Tính" Của Lãnh Đạo
 
@@ -98,29 +100,39 @@ Thay vì tung đồng xu, Sếp mở Antigravity lên và cắm Quyền Uy Nhậ
 > Dùng Matplotlib Vẽ 2 Đường Cong Xu Hướng Cắt Nhau Hình Chữ X Biểu Diễn "Đường Biến Thiên Định Giá" Và "Đường Thu Nhập Trực Tiếp Giảm". Xuất Tệp Hình Ảnh `Decision_Pricing_Matrix.png`.
 > Dùng Tính Năng Báo Cáo Ephemeral Nã Xuống Notification Terminal Máy Tôi: Khuyến Nghị: **LÀM, CHỜ, HAY HỦY? CHỨNG MINH 1 CÂU! LÀM ĐI ĐẶC VỤ YÊU QUÝ!**
 
-12 Giây Sau. Lịch sử Doanh nghiệp rùng mình. Antigravity nhồi Thư Viện Toán Khủng lướt qua hàng Vạn Dòng Số Liệu Vỡ Vuợn mà Excel con người Không Thể Tính.
-Bức ảnh `Decision_Pricing_Matrix.png` hiện lên Cực Gắt Có Ghi Chú Của AI: *"Đừng dại Khởi động Lệnh Tăng 12%. Hệ Số Elastic_Score của Sếp là -1.8. Cứ Nhích Giá 10%, Lượng Bán Sụt Gần 20%. Tổng Lãi Lỗ cuối tháng Sẽ Giảm Ít Nhất 88 Triệu Nếu Đối Thủ Ở Yên. HỦY KẾ HOẠCH NÀY TRUÓC KHI ĐỐI THỦ ĐÁNH CHẶN!"*
+**Thực Hành Trực Tiếp: Từng Bước Gọi Hồn Toán Học Trên Antigravity**
 
-Dây Thần Kinh Của Sếp Mới Thực Sự Đoạt Quyền Cảm Tính Của Đám Đông Hội Đồng Quản Trị.
+**Bước 1: Ban Bệnh Theo Nghĩa Đen Lên Giao Diện Chat**
+Mở [Antigravity](https://antigravity.google). Bấm vào biểu tượng Đính kèm (📎) tải lên File dữ liệu Bán Hàng 5 năm của bạn.
+Sau đó, thay vì ngồi họp để "Cãi nhau", Sếp dán toàn bộ Sudo Prompt ở trên vào và gửi đi.
 
-### ✅ Kết Quả Mẫu (Expected Output)
+**Bước 2: Màn Trình Diễn Bằng Số Của Trợ Lý Trái Tim Sắt**
+Bạn sẽ thấy 12 Giây nhấp nháy trên giao diện. Antigravity nhồi Thư Viện Toán Khủng lướt qua hàng Vạn Dòng Số Liệu Vỡ Vụn mà Excel Con Người không thể tự chạy hàm (Regression + Monte Carlo).
+Màn hình Chatbot của Antigravity sẽ chuyển ngay sang dạng **Dashboard Báo Cáo Phân Tích Thông Minh**.
 
-Sau khi Antigravity chạy xong Sudo Prompt ở trên, Sếp sẽ nhận được:
+![Báo cáo Trực quan quyết định Tăng/Giảm Giá Cắt Khấu bằng Biểu đồ trên giao diện Antigravity](images/monte_carlo_ui_diagram.png)
 
-**File 1: `Decision_Pricing_Matrix.png`**
+**Kết Quả Mẫu (Decision Artifacts):**
 
-- Biểu đồ 2 đường cong cắt nhau hình chữ X:
-  - Đường Xanh: "Biên lợi nhuận gộp" — tăng khi giá tăng.
-  - Đường Đỏ: "Lượng khách hàng" — giảm khi giá tăng.
-  - Điểm cắt nhau (Break-even) ở mức tăng 6.5% giá.
+**1. Biểu Đồ Ma Trận Hình X (Decision_Pricing_Matrix.png):**
+Ngay trên màn hình trò chuyện của AI xuất hiện Biểu đồ 2 đường cong cắt nhau:
 
-**Phản hồi AI (in đậm trên Terminal):**
-> *"📊 KẾT QUẢ MÔ PHỎNG MONTE CARLO (10.000 lần giả lập):*
+- **Đường Xanh:** "Biên lợi nhuận gộp" tăng kỳ vọng khi nhích giá.
+- **Đường Đỏ:** "Lượng khách hàng quy bỏ" tuột dốc vì Giá đắt.
+- **Điểm Điểm Sáng Lóe (Break-even):** Rót ánh nhìn vào Mức Cắt giới hạn: Tối đa chỉ nên tăng Giá 6.5%.
+
+**2. Ghi Chú Lạnh Lùng Ở Cửa Sổ Báo Động (AI Advisory Board):**
+Antigravity Đinh Đóng Cột Phát Xanh Chữ Đỏ Cho Sếp:
+
+> *"📊 KẾT QUẢ MÔ PHỎNG MONTE CARLO (10.000 LẦN GIẢ LẬP):*
 >
-> - *Hệ số Elasticity Lõi Lọc: **-1.8** (Elastic → Tăng giá sẽ mất nhiều khách).*
-> - *Scenario A (Đối thủ giữ giá): Tăng 12% → Lượng bán sụt ~20% → Lỗ ròng 88 triệu/tháng.*
-> - *Scenario B (Đối thủ cũng tăng): Tăng 12% → Lượng bán sụt ~8% → Lãi thêm 12 triệu.*
-> - *🔴 KHUYẾN NGHỊ: **HỦY kế hoạch tăng 12%**. Nếu muốn tăng, mức an toàn tối đa là **6%** (break-even point)."*
+> - *Hệ số Elasticity Hàng Hóa Của Sếp: **-1.8** (Đồ thiết yếu dễ bị thay thế → Tăng giá sẽ đứt khách).*
+> - *Kịch Bản Thảm Họa (Đối thủ ngồi im không tăng theo): Tăng 12% → Sụt 20% doanh số → Lỗ hụt 88 triệu/tháng.*
+> - *🔴 KHUYẾN NGHỊ CUỐI CÙNG: **HỦY ngay lệnh tăng 12%**. Đừng để linh cảm giết chết thị phần!"*
+
+Sợi dây Thần kinh cảm tính của Hệ Thống Lãnh Đạo cũ nay đã bị Khóa Trói hoàn toàn bằng Lá Chắn Toán Học. Kẻ Thắng trên thương trường giờ không phải Kẻ Khôn Hơn, mà là Kẻ Có Máy Chạy Simulation Mô Phỏng Quá Khứ Đi Tính Tương Lai Rẻ Hơn.
+
+> 🎯 **Thực hành ngay:** Mở [Antigravity](https://antigravity.google), upload file doanh số của bạn. Copy SUDO PROMPT ở trên, thay tên sản phẩm và % tăng giá bạn đang cân nhắc. Chạy ngay — AI sẽ trả lời bằng con số thay vì cảm tính. **Đây là cách CEO hiện đại ra quyết định.**
 
 *(Xem thêm: [Skill Phân Tích Quyết Định](../skills/phan_tich_quyet_dinh/SKILL.md) — Skill được thiết kế sẵn cho nghiệp vụ Decision Support System.)*
 

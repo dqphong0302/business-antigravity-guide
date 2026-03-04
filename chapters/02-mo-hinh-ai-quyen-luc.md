@@ -8,17 +8,20 @@
 
 Nhiều Giám đốc mua cả chục tài khoản Trí tuệ Nhân tạo xịn nhất về cho nhân viên, rồi hoang mang khi thấy: *"Sao con AI này giải Toán thì nhanh, mà Viết Code lại hay sinh ra lỗi vặt?"*.
 
-Rất nhiều Lãnh đạo chi sai tiền, mua các gói AI vô tội vạ vì không hiểu một nguyên lý cốt lõi: **Không có một Mô hình AI (Foundation Model) nào giỏi toàn diện mọi thứ!**
-Mỗi mô hình AI giống như một "Vị Tướng" đặc nhiệm, có Bộ Não (Cơ chế Huấn luyện) hoàn toàn khác nhau.
+Rất nhiều Lãnh đạo chi sai tiền, mua các gói AI vô tội vạ vì không hiểu hai nguyên lý cốt lõi:
 
-Trong hệ sinh thái **Antigravity**, chúng ta trao quyền thao túng hai Quái Vật Khổng Lồ nhất thế giới: **Google Gemini 3.1 Pro** và **Anthropic Opus 4.6**.
-Làm Lãnh đạo AI-First, Sếp phải biết lúc nào Xua "Binh Gemini" và lúc nào Gọi "Tướng Opus".
+1. **Không có một Mô hình AI (Foundation Model) nào giỏi toàn diện mọi thứ!** Mỗi mô hình AI giống như một "Vị Tướng" đặc nhiệm, có Bộ Não (Cơ chế Huấn luyện) hoàn toàn khác nhau.
+2. **AI có Cảm xúc (Nhiệt độ - Temperature).** Nó có thể làm một người nghệ sĩ bay bổng, hoặc một tay kế toán lạnh lùng nguyên tắc, tùy bạn gạt cần số.
+
+Trong hệ sinh thái **Antigravity**, chúng ta được quyền thao túng hai Quái Vật Khổng Lồ nhất thế giới: **Google Gemini 3.1 Pro** và **Anthropic Opus 4.6**.
+
+Làm Lãnh đạo AI-First, Sếp phải biết lúc nào Xua "Binh Gemini", lúc nào Gọi "Tướng Opus", và khi nào nên gạt thanh Nhiệt độ lên hay xuống.
 
 ---
 
 ## 2. Giải Phẫu Khối Não Kép: Tướng Đa Nhiệm & Thần Đồng Lập Trình
 
-![So sánh Gemini 3.1 Pro vs Opus 4.6 — Tốc độ & chi phí vs Độ chính xác tối đa](images/model_comparison.png)
+![So sánh Gemini 3.1 Pro vs Opus 4.6 — Tốc độ & chi phí vs Độ chính xác tối đa](images/model_comparison_scale.png)
 
 Hãy tưởng tượng bạn đang điều hành một Tập đoàn. Bạn cần 2 nhân sự cấp C-Level.
 
@@ -62,13 +65,21 @@ Google phân mảng Cấu trúc Trí Tuệ theo Tiền Cước như sau:
 
 ## 4. Bảng Chốt Quyền: Ma Trận Chọn Tướng Bắt Tay (Matrix Tooling)
 
-Đừng để Công Việc Vỡ Đứt Giữa Chừng Vì Bóp Sai Não Trí Hệ. Lưu Bảng Này Và In Ra Bếp Hành Trang Trưởng Phòng:
+Đừng để Công Việc Vỡ Đứt Giữa Chừng Vì Chọn Sai Não Bộ. Lưu Bảng Này Và In Ra Đặt Trực Tiếp Trên Bàn Trưởng Phòng:
 
-- **Bộ Phận Kế Toán Lôi Sổ (12 Bảng Execl Lệch Check):** Gọi Lệnh /Cài API Mặc Định Lên Cửa Chớp Là Phá Tung **Gemini 3.1 Pro (1 Triệu Token)**. Phả Cháy Đuôi Trắc Lốc Kênh Data Mới Ra Đáp Số Đối Trừ Sai Nào.
-- **Ban Nhân Sự Xin Cứu CV Đều Đều Trăm Bản File PDF Quét Dữ:** Vẫn Gọi **Gemini**.
-- **Bộ Phận Marketing/Sales Cần Tóm Tắt Khách Hàng - Viết Thư Báo Giá Gấp:** Dùng **Gemini**.
-- **Trái Tim Đạo Code Của IT Dựng Môi Trường Khắc Kỷ:** **Opus 4.6**. Hãy Trao Cho Chuyên Gia Kỹ Thuật Này Trọng Trách Sinh Mã Lập Trình (Coding). Băng thông Viết Python, Phác họa Cấu trúc Microservices, Gỡ Rối Hệ Thống Server của Opus là Số 1 Thế Giới. Đừng Bắt Nó Đọc Data, Hãy Bắt Nó Code!
+- **Bộ Phận Kế Toán Đối Soát (12 Bảng Excel Lệch Check):** Gọi Lệnh /Cài API Mặc Định Lên Cửa Chớp Là **Gemini 3.1 Pro (2 Triệu Token)**. Đọc nghìn dòng số liệu không bao giờ sót.
+- **Ban Nhân Sự Lọc CV Tuyển Dụng (Đọc Hàng Trăm File PDF):** Vẫn Gọi **Gemini**.
+- **Bộ Phận Marketing Cần Tóm Tắt Khách Hàng - Viết Thư Báo Giá Gấp:** Dùng **Gemini**. Đậm chất Sáng tạo.
+- **Trái Tim Kỹ Thuật IT Dựng Môi Trường:** **Opus 4.6**. Hãy Trao Cho Chuyên Gia Kỹ Thuật Này Trọng Trách Sinh Mã Lập Trình (Coding). Băng thông Viết Python, Phác họa Cấu trúc Microservices, Gỡ Rối Hệ Thống Server của Opus là Số 1 Thế Giới. Đừng Bắt Nó Đọc Khối Lượng Data Lớn, Hãy Bắt Nó Code!
 
-Thấu Hiểu Cỗ Máy Bơm Nhiên Liệu Tầng Đáy Này, Sếp Sẽ Không Gặp Cảnh "Chatbot Nó Báo Em Đạt Hạn Mức Giới Hạn Quota Rồi Ngày Mai Mới Check File Được". SME Đi Tới Tương Lai Cổ Tay Sếp Là Tấm Thẻ Tín Dụng Trả API Tách Độc Lập Khỏi Giới Hạn Trần Tầm Cuộc Chơi Consumer Cổ Điển Nhạt Toẹt Ngoài Kia!
+### 🌡️ Bí Thuật Cuối Cùng: Điều Chỉnh Nhiệt Độ Của Máy (Temperature)
 
-*(Hãy Lật Lại Các Chương Skill Từng Hành Trình Đi Tiếp Xem Chúng Ta Dùng Những Model Đó Nhét Vào Action Màn Hình Từng Bước Ở Chặng Click Giao Diện Tiếp Theo Ở Góc Độ Nào Sau Các Chương Step-By-Step Phía Dưới Cuốn Báo Cáo Kiệt Tác Trí Tuệ)*
+Không chỉ chọn đúng Tướng, Sếp phải biết điều chỉnh "Tính Cách" của Tướng đó thông qua tham số `Temperature` (Nhiệt Độ) của API trong các bản Prompt nâng cao.
+
+- **Nhiệt độ = 0 (Tính Xác Định Cực Đoan):** Bắt AI trở thành một Kế toán viên vô cảm. Bắt buộc dùng `Temp=0` khi: Xử lý số liệu Excel, Đối soát đơn hàng, Tính lương, Viết Code chạy Terminal. Cấm AI bịa đặt hay phân tích hoa mỹ.
+- **Nhiệt độ = 0.5 (Tính Cân Bằng):** Dùng khi Phân tích Báo cáo, Đọc hiểu văn bản Hợp đồng Pháp lý.
+- **Nhiệt độ = 1.0 (Tính Bay Bổng Nghệ Sĩ):** Nhờ AI cởi trói sự sáng tạo. Dùng khi: Viết Facebook Content, Lên Ý tưởng Kinh doanh, Suy nghĩ Catchphrase, Đóng vai Khách hàng khó tính để chửi lại bạn.
+
+Thấu Hiểu Cỗ Máy Bơm Nhiên Liệu Tầng Đáy Này, Doanh nghiệp của Sếp sẽ Tối Ưu Từng Cents Tiền API Mỗi Tháng, Vận Hành Bơm Trơn Tru Cho Mọi Bộ Phận 24/7.
+
+*(Hãy lật sang Chương 3 để chúng ta dập tắt Nỗi đau lớn nhất của phòng HR và Kế toán bằng quyền năng của vị Tướng Gemini 3.1 Pro).*

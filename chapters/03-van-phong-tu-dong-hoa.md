@@ -1,4 +1,4 @@
-# Chương 2: Cuộc Cách Mạng Khối Văn Phòng — Zero-Code Automation Cho Phòng HR, Kế Toán & Admin
+# Chương 3: Cuộc Cách Mạng Khối Văn Phòng — Zero-Code Automation Cho Phòng HR, Kế Toán & Admin
 
 *(Giải phóng những "Máy Photocopy Chạy Bằng Cơm")*
 
@@ -67,43 +67,53 @@ Công ty xuất nhập khẩu thủy sản Minh Phú (Giả định), mỗi thá
 - Sai sót trung bình: 15 hóa đơn/tháng bị nhập nhầm dấu phẩy hàng nghìn.
 - Tổn thất vô hình: Kế toán cáu bẳn, không có thời gian phân tích xem giá tôm tháng này tăng giảm ra sao để tham mưu cho Sếp.
 
-**Cuộc Giải Cứu Bằng Framework SUDO MULTI-AGENT:**
+**Thực Hành Trực Tiếp: Từng Bước Làm Việc Với Giao Diện Antigravity:**
 
-Chị Kế toán trưởng không đi gõ nữa. Chị gom 800 file PDF vứt vào thư mục `/Hoa_Don_Thang_8/`. Chị mở Antigravity lên và ban bố Sudo Prompt cực kỳ uy lực:
+Sự khác biệt của Agentic AI là nó có giao diện người dùng (UI) giống như một đoạn Chat, nhưng sức công phá như một Terminal máy chủ. Nếu làm theo 4 bước sau, bạn có thể tự động hóa 800 hóa đơn ngay trong hôm nay:
 
-*(Lưu ý: Mệnh lệnh này là lệnh gọi [Skill Trích Xuất Hóa Đơn](../skills/trich_xuat_hoa_don/SKILL.md) đã được lập trình sẵn chuẩn mực SME).*
+**Bước 1: Nạp Dữ Liệu Vào Não AI**
+Mở giao diện Antigravity. Ở bên trái màn hình là thanh quản lý File (File Explorer). Bạn đính kèm mục `/Hoa_Don_Thang_8/` chứa 800 file PDF vào Chat. AI đã "nhìn" thấy toàn bộ kho tài liệu của bạn.
+
+![Giao diện Antigravity Chatbot giải quyết hàng trăm file hóa đơn PDF](images/ocr_antigravity_ui_demo.png)
+
+**Bước 2: Ban Bố Sudo Prompt (Mệnh Lệnh Đặc Trị)**
+*(Lưu ý: Bạn có thể copy Mệnh lệnh này xài cho data của bạn, hoặc gọi thẳng [Skill Trích Xuất Hóa Đơn](../skills/trich_xuat_hoa_don/SKILL.md) đã được lập trình sẵn chuẩn mực SME).*
 
 > **SUDO PROMPT: CHIẾN DỊCH KHAI THÁC HÓA ĐƠN THUẾ ĐẠI TRÀ**
 >
 > 👑 **[VAI TRÒ VÀ BỐI CẢNH]**
-> Cương vị của bạn: Trợ Lý Kế Toán Thuế Cấp Cao (Senior Tax Acc).
-> Input Huyết mạch: Ổ `/Hoa_Don_Thang_8/` chứa 800 file PDF hóa đơn đỏ các loại. Đừng đọc chay, hãy lập trình.
+> Cương vị của bạn: Trợ Lý Kế Toán Thuế Cấp Cao.
+> Input Huyết mạch: Ổ `/Hoa_Don_Thang_8/` chứa toàn bộ file PDF hóa đơn đỏ. Đừng đọc chay, hãy lập trình.
 >
 > ⚙️ **[MẠNG LƯỚI ĐA ĐẶC VỤ THỰC THI (3 TẦNG)]**
 >
-> 👨‍💻 **[Agent 1 - PDF Parser (Công nhân Trích xuất Text)]**
-> Dùng công cụ Bash. Viết Python gọi thư viện `pdfplumber` hoặc `PyMuPDF`. Duyệt qua đệ quy (Recursive) toàn bộ 800 file đó. Kéo chữ từ PDF ra Text thô, lưu trữ tạm trên Local Memory.
+> 👨‍💻 **[Agent 1 - PDF Parser]**
+> Viết Python gọi thư viện `pdfplumber`. Kéo chữ từ PDF ra Text thô, lưu trữ tạm.
 >
 > 🕵️‍♂️ **[Agent 2 - Regex Filter (Cỗ Máy Rây Lọc Dữ Liệu)]**
-> Khởi tạo 3 Thuật toán Regex (Biểu thức chính quy) cứng rắn:
+> Khởi tạo 3 Thuật toán Regex:
 >
-> 1. Xuyên phá tìm ký hiệu bắt đầu bằng 'Mã số thuế:' hoặc 'MST:' -> Extract đúng 10-13 chữ số liền kề.
-> 2. Tìm chữ 'Cộng tiền hàng' -> Rút ra con số VNĐ (Lưu ý code: Strip dấu phẩy/chấm để ép về dạng Float Number).
-> 3. Tìm chữ 'Tiền thuế Ký hiệu' / 'GTGT' -> Trích xuất % Thuế và Số tiền VAT tương ứng.
+> 1. Xuyên phá tìm 'Mã số thuế:' -> Extract đúng 10-13 chữ số liền kề.
+> 2. Tìm 'Cộng tiền hàng' -> Rút ra con số VNĐ (Strip ép về dạng Float).
+> 3. Tìm 'Tiền thuế Ký hiệu' / 'GTGT' -> Trích xuất % VAT.
 >
-> ✍️ **[Agent 3 - CSV Exporter (Kỷ Lục Gia Soạn Báo Cáo)]**
-> Gom Data của toàn bộ 800 Hóa đơn này trút thẳng cấu trúc Cột vào tập tin `Bang_Ke_Mua_Vao_T8.xlsx`.
+> ✍️ **[Agent 3 - CSV Exporter]**
+> Gom Data của toàn bộ file này trút thẳng cấu trúc Cột vào tập tin `Bang_Ke_Mua_Vao_T8.xlsx`.
 >
 > 🚧 **[RÀNG BUỘC KỶ LUẬT SẮT]**
-> Vấn đề nan giải: Nếu file PDF nào không trích xuất được do ảnh Scan tay hoặc lỗi Font VNI cũ, TUYỆT ĐỐI không được Guess (Đoán mò). Hãy Move thẳng file PDF đó sang thư mục `/Hoa_Don_Loi_Can_Check_Tay/` và ghi đè Tên file đó lên Cột Báo Đỏ của Sheet 2 trong Excel. Tiến hành chạy System Code ngay!
+> Nếu file PDF nào lỗi Font VNI cũ, TUYỆT ĐỐI không đoán đại (Guess). Hãy Move thẳng file PDF đó sang thư mục `/Hoa_Don_Loi/` và ghi Tên file đó lên Cột Báo Đỏ của Sheet 2 trong Excel. Chạy System Code ngay!
+
+**Bước 3: Xem Máy Móc Biểu Diễn Múa Phím (Execution Terminal)**
+Khi bạn bấm Enter, Antigravity không trả lời bằng chữ sáo rỗng. UI sẽ hiện thị một cửa sổ **Chạy Lệnh Kỹ Thuật Số (Terminal)** ngầm. Bạn sẽ thấy dòng Python được sinh ra và chạy với tốc độ ánh sáng. Nó báo Log trực tiếp: *"[File 1/800] Đã xong... [File 455/800] Đang trích xuất..."*.
 
 **Kết Quả Sang Chấn Tâm Lý Đo Lường Bằng ROI:**
 
-- ⏱️ **Thời Gian Thi Hành (Run-time):** **47 Giây** (Thay vì 5 ngày làm việc của 3 người). 800 cái mỏ bài toán hóa đơn bị cày nát bằng tốc độ CPU.
-- ✅ **Tỷ Lệ Chính Xác:** 98.7%. Lưới lọc Agent 3 đã giam giữ thành công 18 file lỗi Font vào đúng thư mục cách ly. Kế toán thủ công chỉ mất 15 phút để dò tay 18 file này.
-- 💰 **Tiết Kiệm Lợi Nhuận Khớp Lệnh:** 3 Kế toán × 5 ngày = 15 ngày công/tháng (Tương đương 22.5 triệu đồng). Khoản tiền này đủ để CÔNG TY ĐĂNG KÝ MUA 1 TÀI KHOẢN CLOUD COMPUTING SIÊU ĐỈNH CHO AI VÀ THƯỞNG NÓNG CHO KẾ TOÁN TRƯỞNG.
+- ⏱️ **Thời Gian Thi Hành (Run-time):** **47 Giây** (Thay vì 5 ngày làm việc của 3 người). 800 cái mỏ hóa đơn bị cày nát bằng tốc độ vòng xoay CPU.
+- ✅ **Tỷ Lệ Chính Xác:** 98.7%. Lưới lọc Agent 3 đã giam giữ thành công 18 file lỗi Font vào đúng thư mục cách ly. Không có "lỗi đánh máy nhầm số 0".
+- 📥 **OutPut File Excel Tức Thời:** Antigravity cung cấp ngay 1 nút Download `Bang_Ke_Mua_Vao_T8.xlsx` màu xanh lấp lánh ngay trên màn hình Chat. Kế toán tải về, nộp tờ khai Thuế, kết thúc ác mộng cuối tháng.
+- 💰 **Tiết Kiệm ROI:** 3 Kế toán × 5 ngày = 15 ngày công/tháng (Tương đương 22.5 triệu đồng). Khoản tiền này đủ để thưởng nóng cho Kế toán trưởng và tái cấu trúc quỹ thời gian để họ làm phân tích chiến lược.
 
-> *"Khi cái File bảng kê 800 dòng hiện lên xanh mướt, hoàn hảo không lệch 1 con số, tôi đã khóc. Tôi nhận ra 10 năm qua tôi đã dùng thanh xuân của mình để làm công việc của một cái Máy cày."* - Lời bộc bạch của Kế toán trưởng Minh Phú.
+> 🚀 **Thử Nghiệm Ngay:** Bạn không cần phải có bằng IT. Hãy truy cập [antigravity.google](https://antigravity.google), nhặt 10 tờ hóa đơn đỏ kéo thả vào, và copy Sudo Prompt trên đưa cho bot. Cảm giác uy quyền sẽ lấn át bạn ngay ở giây thứ 5.
 
 ---
 
@@ -168,7 +178,48 @@ Tư duy này không phải là Dùng Công Cụ (Use Tool). Đây là Trạng th
 
 ---
 
-## 5. Bảng Chuẩn Hóa Skills Tự Động Hành Chính Cho Khối Văn Phòng
+## 5. Cú Cứu Cánh Cuối Cùng: Tự Động Hóa Phòng Chăm Sóc Khách Hàng (CSKH)
+
+Nãy giờ chúng ta nói về Số liệu (Hóa đơn) và Từ khóa (CV xin việc). Nhưng sức mạnh đáng sợ nhất của **Gemini 3.1 Pro** nằm ở việc Đọc Hiểu Cảm Xúc (Nature Language Processing - NLP).
+
+Bạn có một hộp thư `cskh@congty.com` nhận 200 email phàn nàn mỗi ngày.
+Con người đọc email số 1: *"Hàng giao chậm quá, tôi muốn hủy!"* $\rightarrow$ Tâm lý tụt dốc.
+Đọc đến dòng số 50: *"Thái độ shipper lồi lõm, tẩy chay!"* $\rightarrow$ Vỡ mộng, stress, xin nghỉ việc.
+
+### 📋 Case Study Thực Tế: Xoa Dịu 200 Khách Hàng Giận Dữ Trong 5 Phút
+
+Thay vì để nhân viên CSKH mệt mỏi đọc từng mail và copy-paste câu trả lời mẫu, hãy để Antigravity làm "Tấm Khiên Cứng Cỏi":
+
+> **SUDO PROMPT: PHÂN TRUYỀN & CHỮA CHÁY CẢM XÚC MAIL CSKH**
+>
+> 👑 **[VAI TRÒ VÀ BỐI CẢNH]**
+> Bạn là Trưởng Ban Phân Tích Khủng Hoảng Khách Hàng. Bạn hoàn toàn vô cảm trước sự chửi bới. Bối cảnh: Hôm qua kho bị cháy, chúng ta giao trễ 200 đơn hàng. Trong file Excel `Inbox_CSKH.xlsx` chứa Data xuất xuất từ hệ thống mail (Cột A: Email khách | Cột B: Nội dung phản hồi).
+>
+> ⚙️ **[MẠNG LƯỚI ĐA ĐẶC VỤ THỰC THI (3 TẦNG)]**
+>
+> 👨‍💻 **[Agent 1 - Sentiment & Intent Analyzer (Máy đo Cảm xúc)]**
+> Đọc nội dung Cột B. Dùng Năng lực NLP của bạn để phân loại từng dòng thành 3 Thẻ Tag mức độ:
+>
+> - `HUỶ_ĐƠN`: Lời lẽ cực gắt, đe dọa bóc phốt, đòi tiền lại.
+> - `HỐI_HÀNG`: Tức giận nhẹ, phàn nàn nhưng vẫn muốn nhận đồ.
+> - `QUAN_TÂM`: Khách tò mò hỏi thăm xem kho cháy thế nào, có bị sao không.
+>
+> 🕵️‍♂️ **[Agent 2 - Auto-Draft Generator (Cỗ Máy Soạn Thảo)]**
+> Dựa vào Thẻ Tag của Agent 1, hãy Tự động Soạn Sẵn nội dung Nháp (Draft Email) cho từng khách hàng để TÔI (Nhân sự con người) duyệt trước khi bấm gửi.
+>
+> - Nếu `HUỶ_ĐƠN`: Giọng văn Hạ mình sát đất, Đồng ý Hoàn tiền 100% kèm eVoucher 200K đầm thấm.
+> - Nếu `HỐI_HÀNG`: Giọng văn Thành khẩn, tặng Freeship và cam kết giao trong 48h.
+>
+> ✍️ **[Agent 3 - CSV Exporter (Luật Xuất Bảng NGHIÊM NGẶT)]**
+> Ghép tất cả kết quả thành một File `.CSV`. Gồm 4 cột tĩnh: `Email` | `Thẻ_Tag` | `Nội_Dung_Khách_Chửi` | `Email_Nháp_Của_AI`.
+> **[LUẬT THÉP BẮT BUỘC]: Mọi lời nói của Bạn phải câm lặng. Chỉ được xuất ra File CSV. Nghiêm Cấm Vòng Vo kiểu "Vâng sếp, em đã làm xong". Silence is Golden.**
+> Executed!
+
+Sự kỳ diệu của "Luật Thép Bắt Buộc" ở Agent 3 là ép AI bỏ thói quen luyên thuyên của một Chatbot, buộc nó phải hành xử Lạnh Lùng, Chính Xác như một Phần Mềm Máy Tính thực thụ. Sếp mở file CSV ra, chỉ cần lướt dọc cột "Email Nháp", nếu ưng ý thì thả cả file này vào Tool gửi Mail hàng loạt (Mailchimp/Sendgrid) $\rightarrow$ 200 đám cháy được dập tắt chỉ trong đúng 1 ly trà.
+
+---
+
+## 6. Bảng Chuẩn Hóa Skills Tự Động Hành Chính Cho Khối Văn Phòng
 
 Dưới đây là Bản đồ "Vũ Khí Zero-Code" mà Khối Back-Office phải áp dụng vào quy trình Daily/Weekly. Chỉ đạo nhân sự Click vào từng Kỹ năng để lấy Code/Prompt thực hành trực tiếp:
 
