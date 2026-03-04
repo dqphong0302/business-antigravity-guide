@@ -99,8 +99,6 @@
 | PL2 | [Kho Prompt Multi-Agent Mẫu](chapters/phu-luc-prompt-multi-agent.md) | 5 SUDO PROMPT nâng cao để ép AI đóng vai trò Đội Trưởng. |
 | PL3 | [Quy Tông Lệnh: 20 Prompt Thực Chiến](chapters/phu-luc-3-tuyen-tap-lenh.md) | Kho mẫu Prompt Copy-Paste Cầm Tay Chỉ Việc cho 6 Phòng Ban. |
 | PL4 | [Khảo Sát Thực Trạng Ứng Dụng AI](chapters/phu-luc-4-khao-sat-thuc-trang-ai.md) | Bảng câu hỏi đánh giá mức độ trưởng thành số dành cho Lãnh Đạo SME. |
-| PL4 | [Khảo Sát Thực Trạng Ứng Dụng AI](chapters/phu-luc-4-khao-sat-thuc-trang-ai.md) | Bảng câu hỏi đánh giá mức độ trưởng thành số dành cho Lãnh Đạo SME. |
-
 ---
 
 ## 🔧 Kho Skills Mẫu
