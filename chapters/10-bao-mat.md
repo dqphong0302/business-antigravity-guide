@@ -51,6 +51,8 @@ Lập trình viên muốn AI sửa đoạn Code Kết nối máy chủ. Anh ta v
 
 ## 3. Khung Phòng Thủ Thép: Học Thuyết "Human-In-The-Loop" (Vòng Khuyên Con Người)
 
+![3 Tấm Khiên bảo vệ doanh nghiệp: Phê Duyệt Thủ Công, Data Masking, Self-Verification](images/security_shields.png)
+
 Tuyệt đối không để AI làm "Nhiệm vụ Một Chiều Không Điểm Dừng". Ở Phương Tây, các hệ thống Quân sự hoặc Ngân hàng dùng AI luôn áp dụng cơ chế **Human-in-the-loop (Con người Nằm trong Chuỗi Thực Thi)**.
 
 ### 🛡️ Tấm Khiên 1: Quyền Tiên Quyết "SafeToAutoRun = False"
@@ -134,4 +136,3 @@ Quản Trị Kỷ Nguyên Trí Tuệ Không Phải Là Thắt Chặt Khiến Dâ
 ---
 
 ## 📚 Tài Liệu Tham Khảo
-

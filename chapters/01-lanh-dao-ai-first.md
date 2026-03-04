@@ -27,6 +27,8 @@ Khi **Antigravity (Agentic AI - AI Đại Lý Tự Trị)** bước vào công t
 
 Chương này dành riêng cho Lãnh Đạo. Nếu Giám Đốc không định hình lại tư duy, thì cấp dưới mãi mãi không bao giờ có độ lùi (Sandbox) để tự động hóa công việc.
 
+> 🚀 **Bắt đầu ngay:** Truy cập [antigravity.google](https://antigravity.google) để tải và cài đặt Antigravity. Nếu bạn chưa cài, hãy quay lại [Chương 0 — Mục 2.2: Cài Đặt 10 Phút](00-gioi-thieu-antigravity.md#22-cài-đặt--khởi-động-antigravity-trong-10-phút) trước khi đọc tiếp.
+
 ---
 
 ## 2. Giải Phẫu Bệnh Lý Doanh Nghiệp: 3 Điểm Nghẽn Mạch Máu (SME Pain-Points)
@@ -58,6 +60,8 @@ Trưởng phòng Marketing lương 40 triệu đồng/tháng. Thay vì thời gi
 
 ## 3. Khung Mô Hình Lãnh Đạo Nhất Thể: "The AI-Leader Matrix"
 
+![Ma Trận Lãnh Đạo AI — Từ Thủ Lĩnh Truyền Thống đến Orchestrator](images/ai_leader_matrix.png)
+
 Nhà lãnh đạo AI-First không phải là người biết code Python. Kế toán trưởng AI-First không phải là người biết dùng Hàm VLOOKUP.
 Họ là **Nhà Thiết Kế Dòng Chảy Hành Vi (Orchestrator)**. Khung Ma trận phân quyền chỉ ra 4 trạng thái của Quản lý:
 
@@ -73,6 +77,8 @@ Họ là **Nhà Thiết Kế Dòng Chảy Hành Vi (Orchestrator)**. Khung Ma tr
 Antigravity đập nát khái niệm "Cắt Kéo Phục Vụ Phần Mềm". Với Antigravity, **nó sẽ viết một phần mềm siêu nhỏ ngay lúc bạn ra lệnh, gộp 3 chức năng đặc thù của công ty bạn lại, chạy bằng Python, trả ra File báo cáo, và sau đó nó tự hủy phần mềm đó đi.**
 
 Sếp không cần Nhân viên Mở file Excel hay Misa. Sếp chỉ định Antigravity: `Đọc file A ở Kế toán -> Join (Gộp) với File B ở Sales theo SĐT -> Lọc ai chưa nhắc nợ -> Bắn Email Tự Động`. Khái niệm phần mềm chục tỷ nguyên khối đã sụp đổ.
+
+> 💡 **Thực hành ngay trên Antigravity:** Mở [antigravity.google](https://antigravity.google), upload 2 file Excel bất kỳ của công ty, và thử gõ: *"Đọc 2 file này, cho tôi biết cấu trúc cột và 5 dòng đầu mỗi file"*. Bạn sẽ thấy ngay sức mạnh của Mã Lệnh Động.
 
 ---
 
@@ -171,14 +177,17 @@ Dành cho Lãnh đạo, in danh sách (Checklist) này ra, đặt lên bàn giao
 
 Bây giờ, hãy đẩy vị thế của chúng ta lên cao hơn. Chúng ta sẽ đem Khung "Orchestrator" này đánh úp khu vực Tối tăm và Mệt nhọc nhất của Khối Back-Office (Hậu cần): Kế toán và HR ở **Chương 2**. Chuẩn bị Chứng kiến Kỷ nguyên **Zero-Code Automation**.
 
+> 🎯 **Trước khi lật trang:** Nếu bạn chưa cài Antigravity, hãy dừng lại 10 phút và truy cập [antigravity.google](https://antigravity.google) ngay bây giờ. Từ Chương 2 trở đi, mỗi Case Study đều có Sudo Prompt mẫu để bạn **copy-paste trực tiếp vào Antigravity và chạy thử** với dữ liệu thật của công ty.
+
 ---
 
 ## 📚 Tài Liệu Tham Khảo
 
+- [🚀 Antigravity — Tải và Cài đặt công cụ](https://antigravity.google)
 - [Skill Đối Soát Ngân Hàng](../skills/doi_soat_ngan_hang/SKILL.md)
 - [Skill Báo Cáo Doanh Thu](../skills/bao_cao_doanh_thu/SKILL.md)
 - [Workflow Đối Soát COD](../workflows/doi-soat-cod.md)
-- [Chương 2 — Văn phòng Tự động hóa](02-van-phong-tu-dong-hoa.md)
-- [Chương 7B — MCP kết nối hệ thống](07b-mcp-ket-noi-he-thong.md)
+- [Chương 8 — Văn phòng Tự động hóa](03-van-phong-tu-dong-hoa.md)
+- [Chương 9 — MCP kết nối hệ thống](09-mcp-ket-noi-he-thong.md)
 - [Harvard Business Review — AI-First Leadership](https://hbr.org/topic/subject/artificial-intelligence)
 - [Gartner — Top Strategic Technology Trends](https://www.gartner.com/en/articles/gartner-top-10-strategic-technology-trends-for-2025)

@@ -195,6 +195,5 @@ Khi Hậu Phương (Back-office) đã yên hàn bởi máy móc làm tay sai, ti
 - [Workflow Lọc CV](../workflows/loc-cv-ung-vien.md)
 - [Workflow Trích Xuất Hóa Đơn](../workflows/trich-xuat-hoa-don.md)
 - [Chương 1 — Lãnh đạo AI-First](01-lanh-dao-ai-first.md)
-- [Chương 3 — Kỹ thuật DevOps](03-ky-thuat-dev-ops.md)
 - [Phụ lục — Cài đặt môi trường](phu-luc-cai-dat-moi-truong.md)
 - [pdfplumber — Python PDF extraction](https://github.com/jsvine/pdfplumber)

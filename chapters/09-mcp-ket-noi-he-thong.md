@@ -1,10 +1,12 @@
-# Chương 7B: MCP — Cánh Cổng Kết Nối Antigravity Với Thế Giới Bên Ngoài
+# Chương 9: MCP — Cánh Cổng Kết Nối Antigravity Với Thế Giới Bên Ngoài
 
 *(Model Context Protocol — Bí Mật Vũ Khí Mở Rộng Siêu Năng Lực AI)*
 
 ---
 
 ## 1. MCP Là Gì? — Giải Mã Bằng Ngôn Ngữ Doanh Nhân
+
+![MCP — Cầu nối Antigravity với Google Sheets, Slack, Database và API nội bộ](images/mcp_protocol.png)
 
 ### 📖 Ẩn Dụ Cửa Hàng Tiện Lợi
 
@@ -243,5 +245,5 @@ AI sẽ trả về danh sách các MCP Server và tài nguyên có sẵn.
 - [Danh sách MCP Servers có sẵn](https://github.com/modelcontextprotocol/servers)
 - [Hướng dẫn tạo MCP Server tùy chỉnh](https://modelcontextprotocol.io/docs/concepts/servers)
 - [Chương 0 — Giới thiệu Antigravity](00-gioi-thieu-antigravity.md)
-- [Chương 7 — Skills & Workflows](07-skills-va-workflows.md)
+- [Chương 8 — Skills & Workflows](08-skills-va-workflows.md)
 - [Phụ lục — Cài đặt môi trường](phu-luc-cai-dat-moi-truong.md)

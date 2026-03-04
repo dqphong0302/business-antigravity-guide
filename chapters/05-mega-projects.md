@@ -48,6 +48,8 @@ Dưới đây là 2 Siêu dự án Mega-Projects Mảng Sales mà Sếp cần é
 
 ## 3. Siêu Dự Án 1: Binh Đoàn Nhện Cào Data Lạnh B2B (Mỏ Vàng Tình Báo Dữ Liệu)
 
+![Hệ thống Multi-Agent cào 2,000 leads B2B — từ 5 người × 30 ngày xuống 1 người × 48 giờ](images/mega_project_b2b.png)
+
 Thay vì để 5 nhân viên kinh doanh lướt Web bằng mắt thường. Sếp sẽ huy động "Binh đoàn Nhện (Spider Subagents)" của Antigravity.
 
 Antigravity sở hữu **Trình Duyệt Vô Hình Hành Vi (Browser Subagent)**. Ở kỷ nguyên Cũ, bọn cào dữ liệu (Hackers) dùng Tool Code tĩnh (như Request/BeautifulSoup) phóng 1.000 cú đâm mỗi giây vào trang Web đối thủ. Tường lửa (Firewall) của đối thủ sẽ chặn sạch (Ban IP).
@@ -175,6 +177,6 @@ Nhưng, 5.000 Khách hàng Lạnh (Cold Lead) đổ về sẽ tạo ra một Nú
 - [Workflow Cào Data B2B](../workflows/cao-data-b2b.md)
 - [Workflow Tạo Proposal](../workflows/tao-proposal.md)
 - [Skill Email Marketing](../skills/email_marketing/SKILL.md)
-- [Chương 5 — Data Pipeline](05-data-pipeline.md)
-- [Chương 7B — MCP kết nối hệ thống](07b-mcp-ket-noi-he-thong.md)
+- [Chương 8 — Data Pipeline](06-data-pipeline.md)
+- [Chương 9 — MCP kết nối hệ thống](09-mcp-ket-noi-he-thong.md)
 - [Zalo OA API Documentation](https://developers.zalo.me/docs/)

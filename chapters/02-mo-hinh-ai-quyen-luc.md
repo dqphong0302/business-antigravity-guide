@@ -1,4 +1,4 @@
-# Chương 1B: Lựa Chọn Vũ Khí — Giải Mã Cặp Bài Trùng "Gemini 3.1 Pro" Và "Opus 4.6"
+# Chương 2: Lựa Chọn Vũ Khí — Giải Mã Cặp Bài Trùng "Gemini 3.1 Pro" Và "Opus 4.6"
 
 *(Nghệ thuật xài đúng Model cho đúng Bài toán Kinh tế)*
 
@@ -17,6 +17,8 @@ Làm Lãnh đạo AI-First, Sếp phải biết lúc nào Xua "Binh Gemini" và 
 ---
 
 ## 2. Giải Phẫu Khối Não Kép: Tướng Đa Nhiệm & Thần Đồng Lập Trình
+
+![So sánh Gemini 3.1 Pro vs Opus 4.6 — Tốc độ & chi phí vs Độ chính xác tối đa](images/model_comparison.png)
 
 Hãy tưởng tượng bạn đang điều hành một Tập đoàn. Bạn cần 2 nhân sự cấp C-Level.
 
