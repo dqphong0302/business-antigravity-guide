@@ -65,6 +65,8 @@ Google phân mảng Cấu trúc Trí Tuệ theo Tiền Cước như sau:
 
 ## 4. Bảng Khái Toán Chi Phí Thực Tế (The True Cost of AI)
 
+![So sánh chi phí: Nhân sự 15 triệu vs SaaS 5 triệu vs API chỉ 120 nghìn VNĐ](images/true_cost_comparison.png)
+
 Nhiều Giám đốc SME ngần ngại áp dụng Antigravity vì sợ "Công nghệ AI chắc đắt tiền lắm". Sự thật là: **Chạy API AI rẻ hơn tiền điện văn phòng của bạn.**
 
 Sự khác biệt lớn nhất của việc dùng API (Vertex AI / Anthropic Console) so với mua phần mềm là mô hình **Pay-As-You-Go (Dùng bao nhiêu trả bấy nhiêu)**, tính tiền theo từng "Token" (Âm tiết/Từ).

@@ -50,6 +50,8 @@ Kết quả là gì? Vị cố vấn nói bằng mồm, còn kẻ phải è lưn
 
 ## 🩺 Bài Test Sẵn Sàng AI: Công Ty Bạn Có Đủ "Sức Khỏe" Để Tiếp Nhận Antigravity Không?
 
+![Bài Test Sẵn Sàng AI — 10 tiêu chí tự chấm điểm sức khỏe số doanh nghiệp](images/ai_readiness_test.png)
+
 *Trước khi lao vào 13 chương tiếp theo, hãy dành ĐÚNG 3 PHÚT làm bài tự chấm điểm này. Vòng tròn đáp án, cộng tổng điểm và đọc kết quả bên dưới. Nếu dưới 40 điểm — hãy dừng lại, chữa bệnh nền đã.*
 
 | # | Câu hỏi tự đánh giá | Có (10đ) | Một phần (5đ) | Không (0đ) |

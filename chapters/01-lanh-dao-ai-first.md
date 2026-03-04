@@ -80,6 +80,8 @@ Sự chênh lệch giữa việc giải quyết 3 Điểm nghẽn trên bằng "
 
 ## 3. Tâm Lý Học Tổ Chức: Nghệ Thuật Quản Trị Sự Chống Đối (Change Management)
 
+![Kịch bản truyền thông nội bộ — CEO tuyên bố AI không cướp việc, mà thăng cấp nhân sự](images/change_management_script.png)
+
 *Đây là MẢNH GHÉP ĐEN TỐI NHẤT mà 80% SME thất bại khi áp dụng AI thường né tránh nhắc đến: **Nhân viên của bạn sẽ SỢ MẤT VIỆC và TẨY CHAY NGẦM Antigravity.***
 
 Khi Sếp đem một con AI có khả năng xử lý 1.000 hóa đơn trong 8 giây về phòng Kế toán, Chị Kế toán trưởng lập tức nhảy số trong đầu: *"Tuần sau mình sẽ bị sa thải"*.

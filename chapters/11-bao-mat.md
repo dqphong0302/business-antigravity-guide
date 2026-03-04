@@ -29,6 +29,8 @@ Dưới đây là 3 Lỗ hổng Trí Mạng và 3 Tấm Khiên Chắn (Shields) 
 
 ## 2. Án Phạt Phía Sau Cánh Cửa: Nghị Định 13/2023/NĐ-CP (PDP)
 
+![Nghị Định 13 — Lá Chắn Pháp Lý bảo vệ doanh nghiệp khỏi rò rỉ dữ liệu cá nhân](images/pdp_law_shield.png)
+
 Trước khi bàn về chuyện AI bóp méo dữ liệu, Lãnh đạo SME Việt Nam phải đối mặt với một lưỡi gươm pháp lý có sức sát thương thực thể: **Nghị định 13/2023/NĐ-CP về Bảo vệ Dữ liệu Cá nhân (PDP)**.
 
 Khi bạn dùng Antigravity kết nối với API của Google (Gemini) hay Anthropic (Claude), bản chất là bạn đang bơm dữ liệu công ty qua đường truyền Internet thẳng tới các **Máy chủ Đám mây (Cloud Servers) tại Bắc Mỹ hoặc Châu Âu**.
