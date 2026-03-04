@@ -35,6 +35,8 @@ Nhưng Sếp hay xua tay: *"Thôi em ơi, SME Data lằng nhằng rác rưới t
 
 ## 2. Tháp Trí Tuệ Quyết Định: 3 Tầng Giao Phó Cho Đại Lý AI (Agentic DSS)
 
+![Tháp 3 tầng Hệ thống Hỗ trợ Ra quyết định bằng AI — từ thu thập đến tự động hóa hoàn toàn](images/decision_support_tiers.png)
+
 Giới Kinh tế học Phương Tây (như Gartner) đã khuyên: Đừng bao giờ giao cho AI Quyền bấm nút Bắn tên lửa (Full Autonomy). Thay vào đó, hãy phân loại cấp độ Tương tác Giữa Não Sếp và Máy tính.
 
 ### 🛡️ Tầng 1: Lọc Phễu Và Bơm Thông Tin (Decision Delegation)
@@ -101,6 +103,36 @@ Bức ảnh `Decision_Pricing_Matrix.png` hiện lên Cực Gắt Có Ghi Chú C
 
 Dây Thần Kinh Của Sếp Mới Thực Sự Đoạt Quyền Cảm Tính Của Đám Đông Hội Đồng Quản Trị.
 
+### ✅ Kết Quả Mẫu (Expected Output)
+
+Sau khi Antigravity chạy xong Sudo Prompt ở trên, Sếp sẽ nhận được:
+
+**File 1: `Decision_Pricing_Matrix.png`**
+
+- Biểu đồ 2 đường cong cắt nhau hình chữ X:
+  - Đường Xanh: "Biên lợi nhuận gộp" — tăng khi giá tăng.
+  - Đường Đỏ: "Lượng khách hàng" — giảm khi giá tăng.
+  - Điểm cắt nhau (Break-even) ở mức tăng 6.5% giá.
+
+**Phản hồi AI (in đậm trên Terminal):**
+> *"📊 KẾT QUẢ MÔ PHỎNG MONTE CARLO (10.000 lần giả lập):*
+>
+> - *Hệ số Elasticity Lõi Lọc: **-1.8** (Elastic → Tăng giá sẽ mất nhiều khách).*
+> - *Scenario A (Đối thủ giữ giá): Tăng 12% → Lượng bán sụt ~20% → Lỗ ròng 88 triệu/tháng.*
+> - *Scenario B (Đối thủ cũng tăng): Tăng 12% → Lượng bán sụt ~8% → Lãi thêm 12 triệu.*
+> - *🔴 KHUYẾN NGHỊ: **HỦY kế hoạch tăng 12%**. Nếu muốn tăng, mức an toàn tối đa là **6%** (break-even point)."*
+
+*(Xem thêm: [Skill Phân Tích Quyết Định](../skills/phan_tich_quyet_dinh/SKILL.md) — Skill được thiết kế sẵn cho nghiệp vụ Decision Support System.)*
+
+### 🔧 Troubleshooting Ra Quyết Định Bằng AI
+
+| Sự Cố | Nguyên Nhân | Giải Pháp |
+| :--- | :--- | :--- |
+| Hệ số Elasticity ra kết quả vô lý (VD: +5.0) | Dữ liệu lịch sử quá ít (<100 giao dịch) hoặc có outlier | Thêm: *"Trước khi chạy Regression, hãy loại bỏ outlier (giá trị nằm ngoài 3 σ). Nếu data < 200 dòng, cảnh báo: 'Dữ liệu chưa đủ tin cậy'."* |
+| Monte Carlo cho kết quả khác nhau mỗi lần chạy | Bản chất của simulation ngẫu nhiên (stochastic) | Thêm: *"Set random seed `np.random.seed(42)` để kết quả reproducible. Chạy ít nhất 10.000 iterations."* |
+| Biểu đồ không hiện được trên Terminal | Matplotlib cần display backend | Thêm: *"Dùng `plt.savefig()` lưu file PNG thay vì `plt.show()`. AI sẽ lưu file và thông báo đường dẫn."* |
+| AI đưa ra khuyến nghị quá tự tin ("Chắc chắn lãi") | Thiếu ràng buộc về độ tin cậy (confidence interval) | Thêm Hàng rào: *"Luôn in kèm Confidence Interval 95%. Nếu khoảng CI quá rộng, ghi rõ: 'Kết quả không đủ tin cậy để ra quyết định'."* |
+
 ---
 
 ## 4. Checklist Quyền Lực Dành Cho Board Of Directors (BOD)
@@ -109,10 +141,14 @@ Sếp à, Đôi khi thứ Giữ Sự Ổn Đinh Phát Triển Bền Vững (Sust
 
 **Khi Tranh Cãi Xảy Ra Trong Cuộc Họp Giám Đốc Trưa Nay (Nên Mở Đại Lý Hoặc Chạy Ads 500tr?):**
 
-* **[ ] Dừng Tranh Cãi Bằng Mồm Cảm Tính.** Ai cũng cho mình đúng bằng "Trực giác Mười Năm Kinh Nghiệm". Yêu cầu Nhân sự Xuất File Raw (Tiến trình File Thô) Lịch Sử Quá Khứ của Công Ty Ra Ngay Bàn.
-* **[ ] Chạy Mô Hình Khảo Cứu Rủi Ro Ngược Giao Cho AI (Reverse Risk Validation).** Thay vì hỏi AI "Làm cách này lãi thế nào?". HÃY HỎI NÓ: *"Cùng File số liệu này. Giả sử tao mở Quán Tiền Gốc này, Mày tìm cho tao Góc Thê Thảm Nhất Có Thể Sai Là Gì? Biến X Nào Mày Tính Ra Tao Chưa Chú Ý? Nghĩ Kiểu Kẻ Thu Của Tao Coi Mày!"*.
-* **[ ] Tách Ranh Giới Việc Của Não (Não Tướng) VS Việc Của Cơ Bắp Toán Rập Khuôn (Tay Máy AI).** Sếp quyết định bằng Tầm nhìn Trái tim của Ngành Hàng, Nhưng Không Thể Tính Bất Chấp Định Luật Con Số. "Đưa AI Vẽ Dashboard Đường Cắt BI Đỏ Cảnh Báo" là cách Cố Vấn Rắn Và Sang Lì Lợm Nhất Mà Cổ đông Bạn Trả Tiền Cho Nó Mua Giải Pháp Này Cho Công Ty Sếp.
+- **[ ] Dừng Tranh Cãi Bằng Mồm Cảm Tính.** Ai cũng cho mình đúng bằng "Trực giác Mười Năm Kinh Nghiệm". Yêu cầu Nhân sự Xuất File Raw (Tiến trình File Thô) Lịch Sử Quá Khứ của Công Ty Ra Ngay Bàn.
+- **[ ] Chạy Mô Hình Khảo Cứu Rủi Ro Ngược Giao Cho AI (Reverse Risk Validation).** Thay vì hỏi AI "Làm cách này lãi thế nào?". HÃY HỎI NÓ: *"Cùng File số liệu này. Giả sử tao mở Quán Tiền Gốc này, Mày tìm cho tao Góc Thê Thảm Nhất Có Thể Sai Là Gì? Biến X Nào Mày Tính Ra Tao Chưa Chú Ý? Nghĩ Kiểu Kẻ Thu Của Tao Coi Mày!"*.
+- **[ ] Tách Ranh Giới Việc Của Não (Não Tướng) VS Việc Của Cơ Bắp Toán Rập Khuôn (Tay Máy AI).** Sếp quyết định bằng Tầm nhìn Trái tim của Ngành Hàng, Nhưng Không Thể Tính Bất Chấp Định Luật Con Số. "Đưa AI Vẽ Dashboard Đường Cắt BI Đỏ Cảnh Báo" là cách Cố Vấn Rắn Và Sang Lì Lợm Nhất Mà Cổ đông Bạn Trả Tiền Cho Nó Mua Giải Pháp Này Cho Công Ty Sếp.
 
 Đừng làm Tướng Gặp Thời. Hãy làm Khổng Minh Đo Quẻ Đo Trận Bằng Toán Có Căn Cứ Antigravity Hệ Số Chắc Ăn 80%. Nhờ Bộ Bọc Nhớ Kiến Thức Trăm Năm (Knowledge Bases - RAG).
 
 ⏭ *(Chúng ta Sẽ Tổ chức Hệ Sinh Thái "Công Cụ Có Sẵn - Nhấn Là Ăn Xổi" - Siêu Thư Viện **Workflows & Skills Module** Ở Chương 7 Kế Bên. Nơi Không Có Sudo Mệt Não Mọi Lúc, Ở Đây Kho Chứa Đóng Gói Nhập Viện Chỉ Chờ Bạn Pick Nhạc Khởi Động Trại Cày Số Đỏ Của Doanh Nghiệp Của Bạn).*
+
+---
+
+## 📚 Tài Liệu Tham Khảo

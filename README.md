@@ -7,8 +7,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Language](https://img.shields.io/badge/Ngôn_ngữ-Tiếng_Việt-blue.svg)](#)
 [![AI](https://img.shields.io/badge/Công_nghệ-Agentic_AI-purple.svg)](#)
-[![Chapters](https://img.shields.io/badge/Số_chương-10-orange.svg)](#-mục-lục)
-[![Skills](https://img.shields.io/badge/Skills_mẫu-11-red.svg)](#-kho-skills-mẫu-cho-doanh-nghiệp)
+[![Chapters](https://img.shields.io/badge/Số_chương-13-orange.svg)](#-mục-lục)
+[![Skills](https://img.shields.io/badge/Skills_mẫu-16-red.svg)](#-kho-skills-mẫu-cho-doanh-nghiệp)
+[![Workflows](https://img.shields.io/badge/Workflows-17-yellow.svg)](#-kho-workflows)
 
 ---
 
@@ -63,6 +64,7 @@
 | 05 | [Data Pipeline — Đọc, Đối Chiếu & Báo Cáo](chapters/05-data-pipeline.md) | Xử lý file, so sánh 2 nguồn data, xuất Excel tô đỏ. |
 | 06 | [AI Trong Ra Quyết Định Kinh Doanh](chapters/06-business-decision-making.md) | Decision Augmentation, Automation, hệ thống DSS. |
 | 07 | [Skills & Workflows — Kho Vũ Khí Bí Mật](chapters/07-skills-va-workflows.md) | Cách tạo Skills, Slash Commands, `// turbo-all`. |
+| 07B | [MCP — Kết Nối Hệ Thống](chapters/07b-mcp-ket-noi-he-thong.md) | Model Context Protocol, kết nối Google Sheets/DB/Slack. |
 
 ### 🛡️ Phần IV — Bảo Mật & Lộ Trình
 
@@ -75,7 +77,7 @@
 
 ## 🔧 Kho Skills Mẫu Cho Doanh Nghiệp
 
-> 📂 Thư mục [`skills/`](skills/) chứa **11 Skills sẵn sàng sử dụng**. Mỗi skill có file `SKILL.md` hướng dẫn AI thực hiện quy trình nghiệp vụ từ A-Z.
+> 📂 Thư mục [`skills/`](skills/) chứa **16 Skills sẵn sàng sử dụng**. Mỗi skill có file `SKILL.md` hướng dẫn AI thực hiện quy trình nghiệp vụ từ A-Z.
 >
 > 📋 Xem danh mục đầy đủ tại → [`skills/CATALOG.md`](skills/CATALOG.md)
 
@@ -92,8 +94,17 @@
 | Skill | Mô tả |
 | :--- | :--- |
 | [`loc_cv_ung_vien`](skills/loc_cv_ung_vien/) | Quét 300 CV → Chấm điểm theo JD → Xếp hạng & phân loại |
+| [`quan_ly_hop_dong`](skills/quan_ly_hop_dong/) | Soạn hợp đồng lao động → Thay placeholder → Xuất DOCX |
 
-### 📢 Marketing & Kinh Doanh
+### � Ban Giám Đốc
+
+| Skill | Mô tả |
+| :--- | :--- |
+| [`phan_tich_lai_lo`](skills/phan_tich_lai_lo/) | Phân tích lãi lỗ chiến dịch → Biểu đồ BI → PDF báo cáo |
+| [`lap_ke_hoach_ngan_sach`](skills/lap_ke_hoach_ngan_sach/) | Lập kế hoạch ngân sách → Phân bổ theo phòng ban → Dự báo |
+| [`cham_soc_khach_hang`](skills/cham_soc_khach_hang/) | Phân loại ticket CSKH → Tự động phản hồi → Thống kê |
+
+### �📢 Marketing & Kinh Doanh
 
 | Skill | Mô tả |
 | :--- | :--- |
@@ -125,31 +136,64 @@ business-antigravity-guide/
 ├── 📄 README.md                              ← Trang chủ (bạn đang đọc)
 ├── 📄 .gitignore
 │
-├── 📂 chapters/                              ← Nội dung Ebook
+├── 📂 chapters/                              ← Nội dung Ebook (13 chương)
 │   ├── 00-gioi-thieu-antigravity.md
 │   ├── 01-lanh-dao-ai-first.md
+│   ├── 01b-mo-hinh-ai-quyen-luc.md           ← So sánh Gemini vs Opus
 │   ├── 02-van-phong-tu-dong-hoa.md
 │   ├── 03-ky-thuat-dev-ops.md
 │   ├── 04-mega-projects.md
 │   ├── 05-data-pipeline.md
 │   ├── 06-business-decision-making.md
 │   ├── 07-skills-va-workflows.md
-│   ├── 08-bao-mat-ai-governance.md
-│   └── 09-lo-trinh-30-ngay.md
+│   ├── 07b-mcp-ket-noi-he-thong.md           ← MỚI: MCP Protocol
+│   ├── 08-bao-mat.md
+│   ├── 09-lo-trinh-30-ngay.md
+│   └── phu-luc-cai-dat-moi-truong.md
 │
-└── 📂 skills/                                ← Kho Skills mẫu
-    ├── 📋 CATALOG.md
-    ├── 📁 doi_soat_ngan_hang/
-    ├── 📁 loc_cv_ung_vien/
-    ├── 📁 bao_cao_doanh_thu/
-    ├── 📁 crawl_gia_doi_thu/
-    ├── 📁 phan_tich_quyet_dinh/
-    ├── 📁 trich_xuat_hoa_don/
-    ├── 📁 tao_bao_gia/
-    ├── 📁 email_marketing/
-    ├── 📁 canh_bao_ton_kho/
-    ├── 📁 dich_thuat_tai_lieu/
-    └── 📁 phan_tich_review/
+├── 📂 skills/                                ← 16 Skills mẫu
+│   ├──  doi_soat_ngan_hang/
+│   ├── 📁 loc_cv_ung_vien/
+│   ├── 📁 bao_cao_doanh_thu/
+│   ├── 📁 crawl_gia_doi_thu/
+│   ├── 📁 phan_tich_quyet_dinh/
+│   ├── 📁 trich_xuat_hoa_don/
+│   ├── 📁 tao_bao_gia/
+│   ├── 📁 email_marketing/
+│   ├── 📁 canh_bao_ton_kho/
+│   ├── 📁 dich_thuat_tai_lieu/
+│   ├── 📁 phan_tich_review/
+│   ├── 📁 phan_tich_lai_lo/
+│   ├── 📁 quan_ly_hop_dong/
+│   ├── 📁 lap_ke_hoach_ngan_sach/
+│   ├── 📁 cham_soc_khach_hang/
+│   └── 📁 tao_slide_bao_cao/
+│
+├── 📂 workflows/                             ← 17 Workflows tự động
+│   ├── cao-data-b2b.md
+│   ├── cao-gia-doi-thu.md
+│   ├── canh-bao-ton-kho.md
+│   ├── dang-bai-social.md
+│   ├── data-masking.md
+│   ├── deploy-server.md
+│   ├── dich-thuat-tai-lieu.md
+│   ├── doi-soat-cod.md
+│   ├── kiem-tra-suc-khoe-web.md
+│   ├── loc-cv-ung-vien.md
+│   ├── onboard-nhan-vien.md
+│   ├── phan-tich-doanh-thu.md
+│   ├── phan-tich-quyet-dinh.md
+│   ├── phan-tich-review.md
+│   ├── soan-hop-dong.md
+│   ├── tao-proposal.md
+│   └── trich-xuat-hoa-don.md
+│
+└── 📂 demo-project/                          ← MỚI: Dự án mẫu chạy được
+    ├── README.md
+    ├── case-study.md
+    ├── data/noi_bo.csv
+    ├── data/doi_tac.csv
+    └── skills/doi_soat_ngan_hang/SKILL.md
 ```
 
 ---

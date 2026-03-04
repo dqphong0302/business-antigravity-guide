@@ -129,6 +129,30 @@ Thay vì chi mua những gói CRM đắt đỏ bóp nghẹt tính năng. Sếp l
 10h00 Sáng, khách hàng đang lướt Zalo, vô tình gõ: *"Anh cần tư vấn mua Máy tính bàn, sdt anh 0987xxx"*.
 Khách hàng vừa đẩy Enter 1 giây. Màn hình của Nhân viên Kinh Doanh nhảy notification ầm í. 10h01 phút, Nhân viên Kinh doanh bốc điện thoại nhấc gọi. Khách hàng sửng sốt với tốc độ Thần Tốc Thượng Đỉnh của tổ chức doanh nghiệp đó. Bạn vừa ăn trọn Doanh số trong sự bất lực của Đối thủ cạnh tranh.
 
+### ✅ Kết Quả Kỳ Vọng Chi Tiết (Expected Output Cho 2 Mega Project)
+
+**Mega Project 1 — Cào Data B2B:**
+
+1. File `DanhSach_CongTy_IT_B2B.csv` gồm 2.000 dòng, mỗi dòng: Tên Công Ty | Quy Mô | Email HR | Nguồn (URL gốc).
+2. Terminal log hiện tiến trình mỗi 50 công ty: *"[50/2000] ✅ Đã cào... [100/2000] ✅ Đã cào..."*
+3. AI báo cáo cuối cùng: *"Hoàn tất. 2.000 công ty đã được thu thập. 1.847 có email hợp lệ. 153 không tìm thấy email → đã ghi chú cột 'Thiếu Email'."*
+
+**Mega Project 2 — Zalo Lead Catcher:**
+
+1. Thư mục `/Zalo_Hot_Leads/` chứa project Node.js hoàn chỉnh (server.js + package.json).
+2. Terminal hiện: *"🚀 Server đang chạy tại <http://localhost:8080>. Webhook endpoint: POST /webhook-zalo-inbox"*
+3. Khi test thử gửi tin nhắn chứa SĐT → Google Sheets tự động thêm 1 dòng mới + Telegram Bot bắn thông báo: *"🚨 BẢO ĐỘNG LEAD: 0987654321 — 10:01 AM"*
+
+### 🔧 Troubleshooting Mega Projects
+
+| Sự Cố | Nguyên Nhân | Giải Pháp |
+| :--- | :--- | :--- |
+| Browser Agent bị chặn (CAPTCHA/403) | Website phát hiện bot do click quá nhanh | Thêm vào Prompt: *"Wait 5-10 giây giữa mỗi lần click. Scroll chậm như người thực."* |
+| Cào được ít data hơn kỳ vọng | Website phân trang (pagination) khác cấu trúc | Thêm: *"Kiểm tra cấu trúc nút 'Trang tiếp' trước. Nếu dùng JavaScript load, hãy scroll xuống cuối trang để trigger."* |
+| Webhook Zalo không nhận tin | Chưa cấu hình URL callback trên Zalo OA | Vào Zalo OA Admin → Cài đặt → Webhook URL → Dán `https://domain:8080/webhook-zalo-inbox`. Cần domain HTTPS. |
+| Telegram Bot không gửi được | Token Bot sai hoặc chưa tạo nhóm | Kiểm tra: *"Tạo Bot qua @BotFather. Lấy token. Thêm bot vào nhóm Sales. Lấy chat_id bằng API getUpdates."* |
+| Google Sheets API lỗi 403 | Chưa cấp quyền Service Account | Thêm: *"Share Google Sheet cho email Service Account (dạng <xxx@yyy.iam.gserviceaccount.com>) với quyền Editor."* |
+
 ---
 
 ## 5. Checklist Tối Thượng Để Làm Mega-Projects Không Đứt Gánh
@@ -136,10 +160,21 @@ Khách hàng vừa đẩy Enter 1 giây. Màn hình của Nhân viên Kinh Doanh
 Sếp không tự code, Sếp vẽ Mô hình Tư Duy. Khi làm Siêu dự án, đừng để AI nghĩ lan man. Hãy in bộ nguyên tắc dưới đây cắm lên bàn:
 
 - **[ ] Chặt Khúc Dự Án Dưới Dạng Input/Output Lõi:** Tư duy như một Giám đốc Nhà máy Dây Chuyền Lắp Ráp. Robot 1 phụ trách Vặn Ốc Cổ (Nhận Tin Zalo). Đầu ra (Output) của nó là Cái Cổ Đã Vặn Chặt. Nhanh chóng cầm Cái Cổ Đó làm Đầu Vào (Input) cho Robot 2 Lắp Cánh Tay.
-- **[ ] Cấm Đoán (Strict Limitations):** Khung Sudo phải có vòng Kim Cô. Không được phép để Agent 2 chạy lấn sân sang luồng Gửi Thư của Agent 3. Lỗi đâu, Khoanh vùng và Chửi Sửa ở chỗ đó (Prompt Optimization).
-- **[ ] Lắp Đặt Báo Động Đỏ:** Các Mega-Projects thường chạy ngầm định kỳ hàng tuần hàng tháng vĩnh viễn. Phải nhắc nhở Đặc Vụ viết luồng gửi Báo lỗi Ngược lại Zalo Cá nhân Sếp mỗi khi Code có Vấn Đề (Lỗi Cookie do đổi Mật khẩu).
+- **[ ] Cấm Đoán (Strict Limitations):** Khung Sudo phải có vòng Kim Cô. Không được phép để Agent 2 chạy lấn sân sang luồng Gửi Thư của Agent 3. Lỗi đâu, Khoanh vùng và Chửi Sửa ở chỗ đó.
+- **[ ] Lắp Đặt Báo Động Đỏ:** Các Mega-Projects thường chạy ngầm định kỳ. Phải nhắc nhở Đặc Vụ viết luồng gửi Báo lỗi Ngược lại Zalo Cá nhân Sếp mỗi khi Code có Vấn Đề.
 
 Khi Vị Tướng Quân (Sếp) cầm 5.000 Lead Cào được bằng Kỹ thuật Spider, đổ vào Màng lọc Zalo để lọc rác, Hệ sinh thái khép kín này sẽ nghiền nát mọi Phương pháp Tuyển Sale Chạy bộ ngoài đường cũ kỹ.
 
 Nhưng, 5.000 Khách hàng Lạnh (Cold Lead) đổ về sẽ tạo ra một Núi Dữ Liệu Bừa bộn, hỗn mang và Dị Biên.
 ⏭ *(Ở Chương 5 tiếp theo, chúng ta khai phá Kỳ Nghệ **Data Pipeline — Khai Khoáng Vàng Công Nghệ Lõi**, Biến mỏ hỗn mang đó thành "Báo Cáo Biểu Đồ BI" tự động đằng sau Bàn Di Chuột).*
+
+---
+
+## 📚 Tài Liệu Tham Khảo
+
+- [Workflow Cào Data B2B](../workflows/cao-data-b2b.md)
+- [Workflow Tạo Proposal](../workflows/tao-proposal.md)
+- [Skill Email Marketing](../skills/email_marketing/SKILL.md)
+- [Chương 5 — Data Pipeline](05-data-pipeline.md)
+- [Chương 7B — MCP kết nối hệ thống](07b-mcp-ket-noi-he-thong.md)
+- [Zalo OA API Documentation](https://developers.zalo.me/docs/)

@@ -39,6 +39,8 @@ SME không có tiền thuê Kỹ sư Dữ liệu. Antigravity lập tức lấp 
 
 Đừng bao giờ vứt 2 file Excel cho AI và ảo tưởng bắt nó tự đoán. Hãy áp dụng **Khung Khởi Tạo Dây Chuyền 3 Thợ (Pipeline Multi-Agents)**:
 
+![Quy trình Data Pipeline đối soát dòng tiền — từ 2 file gốc đến báo cáo phân loại tô đỏ tự động](images/data_pipeline_flow.png)
+
 ### ⚙️ Thợ Dọn Dẹp (Data Cleaner Agent)
 
 Nhiệm vụ đầu nguồn: Dữ liệu gốc luôn luôn "bẩn rác". Thợ này có nhiệm vụ gọi Thư viện Pandas đọc file, Cắt râu ria, Cạo vảy cá. Biến cột `098 123 4567` thành `0981234567`. Biến chuỗi `Mã-123` thành `MA-123` (In hoa chuẩn). Nếu Không có Dọn Dẹp, bước sau chắc chắn Sập.
@@ -89,6 +91,27 @@ Sau đó, chị bọc mình vào áo giáp của một "Tướng quân Data", ba
 
 Sáng hôm sau lúc 8h sáng, chị Mai đập cái File này lên bàn Thư ký làm việc của Giao Hàng Tiết Kiệm: *"Giải trình cho chị 89 Đơn Khống và Thất thoát này"* trong sự Ngỡ Ngàng sững sờ của đối thủ. Tiền tỷ của Công ty đã được cứu rỗi từ Máy Tính Python.
 
+### ✅ Kết Quả Mẫu (Expected Output)
+
+**File output: `Ban_An_Hinh_Su_Doi_Soat_T10.xlsx`**
+
+- **Sheet 1 — Bao_Dong_Mat_Cap:** 47 đơn hàng có ở KiotViet nhưng không có trong file GHTK. Tổng tiền: 128.5 triệu VNĐ.
+- **Sheet 2 — Don_Ao_Chen_Vao:** 12 đơn hàng chỉ có ở file GHTK, không tồn tại trong hệ thống nội bộ. Tổng: 34.2 triệu VNĐ.
+- **Sheet 3 — Chenh_Lech_Tien:** 30 đơn hàng có ở cả 2 bên nhưng số tiền lệch. Các ô tiền lệch được tô nền xanh chữ đỏ tự động.
+
+**Phản hồi AI:**
+> *"Hoàn tất đối soát 10.000 dòng trong 0.25 giây. Phát hiện 89 bất thường: 47 đơn thất thoát (128.5 triệu), 12 đơn ảo (34.2 triệu), 30 đơn chênh lệch tiền. File đã lưu tại `/Kiem_Toan_COD_Thang_10/`."*
+
+### 🔧 Troubleshooting Data Pipeline
+
+| Sự Cố | Nguyên Nhân | Giải Pháp |
+| :--- | :--- | :--- |
+| Merge ra toàn bộ dòng NULL | Cột chìa khóa (Mã Vận Đơn) bị đặt tên khác nhau giữa 2 file | Thêm bước: *"Agent 1: In ra tên cột Header của cả 2 file. Chờ tôi xác nhận cột nào là chìa khóa trước khi merge."* |
+| File Excel bị merge cell (gộp ô) → Pandas đọc sai | File export từ KiotViet có merge cell ở header | Thêm: *"Khi đọc Excel, dùng `header=1` hoặc `skiprows=1` nếu dòng đầu bị merge."* |
+| Số tiền so sánh sai do định dạng (125,000 vs 125000) | Cột tiền chứa dấu phẩy hoặc ký tự "VNĐ" | Đã có trong Prompt (Agent 1 Cleaner). Nếu vẫn lỗi, thêm: *"Strip tất cả ký tự không phải số trước khi ép kiểu Float."* |
+| `openpyxl` lỗi khi format cell | Phiên bản thư viện quá cũ | Thêm: *"Cài `pip install openpyxl --upgrade` trước khi chạy."* |
+| AI báo "File quá lớn, không đọc được" | File Excel > 50MB vượt context window | Chia file thành chunks: *"Đọc file bằng `pd.read_excel(chunksize=5000)` và xử lý từng chunk."* Hoặc chuyển sang dùng Gemini Pro. |
+
 ---
 
 ## 4. WorkFlow Ứng Dụng Đa Cấp: Máy Đo Lường Của Giám Đốc (BI Dashboard)
@@ -102,27 +125,37 @@ Với Lão Lãnh Đạo Đỉnh Cao (AI Orchestrator): Sếp mở Telegram gửi
 
 > "Hỡi Siêu Máy Tính của ta. Đã cuối tuần rồi. Lôi 2 file Excel Bán Hàng Tuần này ra. Sắp xếp lại Cột Doanh Thu Theo Sản Phẩm Nước Tẩy Trang tại Cột Vị Trí là Hà Nội, Hải Phòng. Gộp tổng Tiền Lại, Quét chi phí Ads mảng FB tương ứng. Vẽ cho tao 1 cái Biểu đồ Cột (Bar Chart) Lợi Nhuận Gộp của chiến dịch đó rực rỡ lên, đóng PDF gửi thẳng vào Tin Nhắn Chat Cá Nhân của tao đi".
 
-Phía sau cánh Màn Hình Đen. Bộ nhớ Não AI của [Skill Phân Tích Lãi Lỗ](../skills/phan_tich_lai_lo/SKILL.md) được khởi động: Tập Quán Quản Trị `Codebase`. Nó rẽ thư mục, Đùng Thư Viện Toán Khung Xương (Numpy), Gọi Hàm Tính Lập (Aggregations), Khởi Tạo Động Cơ Đồ Họa (Matplotlib). Bùm. Một chiếc Biểu đồ Đẹp Lộng Lẫy Hạ Cánh vào Điện Thoại Của Sếp trong lúc Sếp Vừa Kết Thúc Cú Đánh Lỗ Chạy Sân Golf.
-
-Điều này không phải Lấy Đề Mô Từ Phim Khoa Học Viễn Tưởng. Phép Tịnh Tiến Toán Học Dữ Liệu Này Đã Đang Xác Lập Luật Chơi SME: Sếp nào Nhanh Có Nguồn Tin Thông Đốc Sớm Nhất -> Ra Quyết Định Máu Máu Nhất.
+Phía sau cánh Màn Hình Đen. Bộ nhớ Não AI của [Skill Phân Tích Lãi Lỗ](../skills/phan_tich_lai_lo/SKILL.md) được khởi động. Nó rẽ thư mục, Dùng Thư Viện Toán (Numpy), Gọi Hàm Tính Lập (Aggregations), Khởi Tạo Động Cơ Đồ Họa (Matplotlib). Bùm. Một chiếc Biểu đồ Đẹp Lộng Lẫy Hạ Cánh vào Điện Thoại Của Sếp trong lúc Sếp Vừa Kết Thúc Cú Đánh Golf.
 
 ---
 
-## 5. Bảng Nhận Diện Cơ Hội Khai Thác Đáy: Triển Khai Xương Sống Dữ Liệu
+## 5. Bảng Nhận Diện Cơ Hội Khai Thác: Triển Khai Xương Sống Dữ Liệu
 
-Mang Checklist này xuống mọi phòng ban, phát tín hiệu tìm "Cơ hội Khai phá Sự Ngu Sy":
+Mang Checklist này xuống mọi phòng ban, phát tín hiệu tìm "Cơ hội Khai phá":
 
-- **[ ] Dò tìm "Cuốn sổ rách" của Bộ phận Kho:** Cấm tuyệt đối Kho đếm tay. Đưa AI Tích Hợp Đọc Phiếu Xuất Kho (Dạng Text) Và Phiếu Thu Bán (Dạng Form). So Soi Hệ Thống Lệch.
-- **[ ] Biến Tạp Vụ Lập Báo Cáo:** Trưởng phòng Marketing muốn Báo cáo Xu Hướng Tuần/Tháng. Đừng bắt File Động Nào Cả. Setup 1 Script Python hẹn Giờ Cố Định (Cronjob). Lấy Skill [`tao_slide_bao_cao`](../skills/tao_slide_bao_cao/SKILL.md), Cứ 8h Tối T6 Nó Tự Ra 10 Trang Slide Thuyết Trình gửi Vòng Tròn.
-- **[ ] Tích Hợp Luật Python Đoạn Tuyệt Lỗi Đánh Máy:** (Anti-Human Error). Luôn luôn Nhắc Nhở các Điểm Giao Thoa Nhận/Nhập Thô có 1 Cái Bộ Lọc Đĩa Của AI đứng chặn. Chặn sạch những SĐT có chữ X Y. Bạn Phải Bảo Mật Sự Sạch Của Đầu Vào Thượng Nguồn, Đáy Vực sẽ Báo Quả Ngon.
+- **[ ] Dò tìm "Cuốn sổ rách" của Bộ phận Kho:** Cấm tuyệt đối Kho đếm tay. Đưa AI Tích Hợp Đọc Phiếu Xuất Kho Và Phiếu Thu Bán. So Soi Hệ Thống Lệch.
+- **[ ] Biến Tạp Vụ Lập Báo Cáo:** Trưởng phòng Marketing muốn Báo cáo Xu Hướng Tuần/Tháng. Setup 1 Script Python hẹn Giờ Cố Định (Cronjob). Lấy Skill [`tao_slide_bao_cao`](../skills/tao_slide_bao_cao/SKILL.md), Cứ 8h Tối T6 Nó Tự Ra 10 Trang Slide Thuyết Trình.
+- **[ ] Tích Hợp Luật Python Chống Lỗi Đánh Máy:** (Anti-Human Error). Luôn Nhắc Nhở các Điểm Nhập Thô có Bộ Lọc AI đứng chặn. Chặn sạch SĐT sai định dạng.
 
-| Cuộc Thánh Chiến Dữ Liệu | Đội Quân Copy Của Hôm Qua | Liên Minh AI Của Ngày Nay | Sức Công Phá Ngân Lượng |
+| Cuộc Thánh Chiến Dữ Liệu | Đội Quân Thủ Công | Liên Minh AI | Sức Công Phá |
 | :--- | :--- | :--- | :--- |
-| **Bản Giao Hưởng Báo Cáo** | Giám Đốc Phải Đợi 10 Ngày Mới Có Căn Bản Thông Tin Nhận Xét. | Hỏi Là Có File Pivot Chart Chặn Ngay Sân Phôi Trong 1 Giây. | Ra Đòn Marketing Đúng Nhịp Xu Hướng Đang Hot. Tỷ Lệ Đòn Bẩy Tài Chỉnh Chớp Nhoáng. |
-| **SoS Đói Hệ Thống Lỗi Số** | Mất Đơn Khách Kiện, Khoang Ngơ Ngơ Giấu Tội Lỗi Về File Excel Không Hỗ Trợ Đầy Đủ Số Lượng. | Con Số Lệch +1 Hoặc -1 Khác Nhau Nó Nã Màu Cờ Cảnh Báo Sập Mạng Cứu Hoả Tức Thì | Giảm Nạn Tham Nhũng Thất Lạc Tiền Thối Thu Của Đội Lái Xe/Đối Tác. |
+| **Bản Giao Hưởng Báo Cáo** | Giám Đốc Đợi 10 Ngày Mới Có Thông Tin. | Hỏi Là Có Pivot Chart Trong 1 Giây. | Ra Đòn Marketing Đúng Nhịp Xu Hướng Hot. |
+| **SoS Lỗi Số** | Mất Đơn Khách Kiện, Giấu Lỗi File Excel. | Con Số Lệch ±1 → Cờ Cảnh Báo Đỏ Tức Thì. | Giảm Thất Lạc Tiền Thu Từ Đối Tác. |
 
 ---
 
 Bạn Có Hiểu Sự Thấu Suốt Của Câu Chữ Không?
 Tất Cả Sức Sáng Chói Này Đến Được Lại Bởi Cái "Bộ Óc Trí Tuệ" Kia. Vậy "AI Suy Luận Thực Tế Khác Gì Trực Giác Của Doanh Nhân"?
-⏭ *(Lật Qua Cửa Ải Lịch Sử Kích Nổ Doanh Nhân Tại **Chương 6: Ra Quyết Định Kinh Doanh Và Trọng Tâm Của Augmentation (Khuếch Đoạt Não Lãnh Đạo)**).*
+⏭ *(Lật Qua **Chương 6: Ra Quyết Định Kinh Doanh Và Trọng Tâm Của Augmentation (Khuếch Đại Não Lãnh Đạo)**).*
+
+---
+
+## 📚 Tài Liệu Tham Khảo
+
+- [Skill Đối Soát Ngân Hàng](../skills/doi_soat_ngan_hang/SKILL.md)
+- [Skill Phân Tích Lãi Lỗ](../skills/phan_tich_lai_lo/SKILL.md)
+- [Workflow Đối Soát COD](../workflows/doi-soat-cod.md)
+- [Workflow Phân Tích Doanh Thu](../workflows/phan-tich-doanh-thu.md)
+- [Dự án mẫu — Demo đối soát COD](../demo-project/README.md)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [openpyxl — Python Excel](https://openpyxl.readthedocs.io/)

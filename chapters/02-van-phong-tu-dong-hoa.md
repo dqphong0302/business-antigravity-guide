@@ -58,6 +58,8 @@ Nhược điểm cốt lõi của OCR truyền thống (Các phần mềm scan c
 
 ### 📋 Case Study Thực Tế: Thủy Sản Minh Phú — Giải Cứu Kế Toán Khỏi "Địa Ngục" Hóa Đơn
 
+![Quy trình trích xuất 800 hóa đơn PDF tự động bằng Antigravity — từ 5 ngày thủ công xuống 47 giây](images/ocr_extraction_pipeline.png)
+
 **Bối Cảnh Khủng Hoảng:**
 Công ty xuất nhập khẩu thủy sản Minh Phú (Giả định), mỗi tháng nhận đặn 800 hóa đơn PDF từ 120 nhà cung cấp rải rác khắp miền Tây. Hóa đơn của NCC A định dạng khác NCC B.
 
@@ -121,6 +123,7 @@ HR đăng Job. Gió đông thổi lại 450 CV. Team HR (2 người) tính nhẩ
 **Cuộc Xâm Lăng Bằng Auto-Grading AI Của Antigravity:**
 
 HR gom 450 CV tống vào thư mục `/Tuyen_Backend/CV_Tho/`. Sau đó, HR ngồi suy nghĩ bằng **Tư duy Kiến Trúc Sư Tuyển Dụng (Talent Architect)**, viết ra một file Rubric Chấm Điểm Tuyệt Đới `Yeu_Cau_Backend_JD.txt`:
+
 - Tiêu chí Chết: Kinh nghiệm < 3 năm -> Loại thẳng (0 điểm).
 - Ngôn ngữ Python (4 điểm).
 - Biết dùng Docker & PostgreSQL (2 điểm).
@@ -136,6 +139,30 @@ Tiếp theo, HR áp dụng [Skill Lọc CV Ứng Viên](../skills/loc_cv_ung_vie
 - ⏱️ **Thời Gian Xử Lý Data:** **3 Phút 45 Giây** quét + chấm điểm + bốc dời (file move) 450 CV.
 - 📊 **Kết Quả Tinh Khôi:** 38 CV đạt Pass Rate. Cột "Lý do" của AI ghi chú siêu gắt: *(Ứng viên này 9 điểm vì đã làm hệ thống tương tự Fintech có tải trọng 10,000 requests/s ghi trong CV mục Dự Án).*
 - 🎯 **Hiệu Ứng Bươm Bướm:** 3 giờ chiều hôm đó, CEO đã nhận được báo cáo Top 20 để review. Bí quyết không nằm ở sự Chăm Chỉ Đọc, Bí quyết nằm ở Cách Đặt Rubric Của Kẻ Gom Lưới.
+
+### ✅ Kết Quả Kỳ Vọng Chi Tiết (Expected Output Cho 2 Case Study)
+
+**Case Study Kế Toán Minh Phú — AI trả về:**
+
+1. File `Bang_Ke_Mua_Vao_T8.xlsx` gồm 800 dòng, mỗi dòng 1 hóa đơn đã trích xuất: Mã Số Thuế | Tên Nhà Cung Cấp | Tiền Hàng (VNĐ) | Thuế VAT (%) | Số Tiền VAT.
+2. Thư mục `/Hoa_Don_Loi_Can_Check_Tay/` chứa 18 file PDF bị lỗi font không đọc được.
+3. Sheet 2 trong Excel ghi rõ danh sách 18 file lỗi + lý do (VD: *"File `HD_NCC_042.pdf`: Scan tay, không có text layer"*).
+
+**Case Study HR PayGo — AI trả về:**
+
+1. Thư mục `/Moi_Phong_Van_Ngay/` chứa 38 file PDF ứng viên đạt Pass Rate.
+2. Thư mục `/Tu_Choi/` chứa 412 file PDF ứng viên không đạt.
+3. File `BangXepHang_Top20.xlsx` gồm 20 dòng, mỗi dòng: Tên | Điểm Tổng (/10) | Điểm Python | Điểm Docker | Tóm tắt 1 câu lý do ("Ứng viên X: 9 điểm — 5 năm kinh nghiệm Python, từng xây hệ thống xử lý 10K req/s").
+
+### 🔧 Bảng Xử Lý Sự Cố Thường Gặp Cho Khối Back-Office
+
+| Sự Cố | Phòng Ban | Giải Pháp |
+| :--- | :--- | :--- |
+| PDF scan tay (ảnh chụp) → AI không đọc được chữ | Kế toán | Thêm vào Prompt: *"Nếu file PDF không có text layer, hãy dùng thư viện OCR `pytesseract` để nhận dạng ký tự."* Hoặc chấp nhận: *"Move file lỗi vào thư mục riêng để kiểm tra tay."* |
+| Font VNI cũ (VNI-Times) bị vỡ chữ tiếng Việt | Kế toán | Thêm: *"Encode lại text bằng bảng chuyển đổi VNI → Unicode trước khi xử lý."* |
+| CV dạng ảnh JPG/PNG (không phải PDF) | HR | Thêm: *"Agent 1: Kiểm tra extension file. Nếu là `.jpg` hoặc `.png`, dùng OCR để convert sang text trước."* |
+| AI chấm điểm thiên vị từ khóa (keyword stuffing) | HR | Thêm Ràng buộc: *"Không chỉ đếm từ khóa. Hãy đọc hiểu ngữ cảnh (Semantic matching). Nếu CV ghi 'Python' nhưng mô tả dự án chỉ là copy script, chấm tối đa 2/4 điểm."* |
+| Thư viện `pdfplumber` cài không được | Tất cả | Gõ vào Antigravity: *"Hãy cài thư viện bằng lệnh `pip install pdfplumber`."* Hoặc xem [Phụ lục Cài đặt](phu-luc-cai-dat-moi-truong.md). |
 
 Tư duy này không phải là Dùng Công Cụ (Use Tool). Đây là Trạng thái Niết Bàn của một **Automation Workflow Designer (Nhà Tái thiết Dòng Chảy Tự Động)**. Khi nhân viên hành chính nắm được cốt tủy của "Thuật Giao Task Đa Đặc Vụ" này, giá trị thặng dư của họ trên bàn đàm phán lương và sự tôn trọng của Hội đồng quản trị dành cho họ đã tăng cường gấp 1,000 lần.
 
@@ -158,3 +185,16 @@ Dưới đây là Bản đồ "Vũ Khí Zero-Code" mà Khối Back-Office phải
 Khi Hậu Phương (Back-office) đã yên hàn bởi máy móc làm tay sai, tiền tuyến Marketing đã có súng đạn xịn để bắn. Nhưng còn Trái Tim Kỹ Thuật (Phòng IT Developer) của doanh nghiệp thì sao? Họ nổi tiếng là những con người kiêu ngạo, lập dị, "Tưởng như không bao giờ cần AI dạy gõ Phím". Nhưng Nghịch lý thay, Khối Dev lại chứa "Cục Nợ Kỹ Thuật" rủi ro và chết chóc kinh hoàng nhất.
 
 ⏭ *(Nghỉ tay pha cốc Cà phê, và bước sang **Chương 3** — Nơi Đạo đao Của AI sẽ mổ xẻ và Review lại sinh mệnh Legacy Code của doanh nghiệp bạn)*.
+
+---
+
+## 📚 Tài Liệu Tham Khảo
+
+- [Skill Lọc CV Ứng Viên](../skills/loc_cv_ung_vien/SKILL.md)
+- [Skill Trích Xuất Hóa Đơn](../skills/trich_xuat_hoa_don/SKILL.md)
+- [Workflow Lọc CV](../workflows/loc-cv-ung-vien.md)
+- [Workflow Trích Xuất Hóa Đơn](../workflows/trich-xuat-hoa-don.md)
+- [Chương 1 — Lãnh đạo AI-First](01-lanh-dao-ai-first.md)
+- [Chương 3 — Kỹ thuật DevOps](03-ky-thuat-dev-ops.md)
+- [Phụ lục — Cài đặt môi trường](phu-luc-cai-dat-moi-truong.md)
+- [pdfplumber — Python PDF extraction](https://github.com/jsvine/pdfplumber)
