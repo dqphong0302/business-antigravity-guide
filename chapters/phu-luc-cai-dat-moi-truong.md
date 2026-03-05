@@ -4,19 +4,52 @@
 
 ---
 
-## 1. Mở Đầu: Tại Sao Máy Tính Của Bạn Từ Chối "Robot"?
+## 1. Mở Đầu: Quyền Năng Tự Trị Nằm Ở Đâu?
 
-Trong các chương trước, bạn đã thấy Antigravity làm đủ trò ma thuật: Đọc file Excel, vẽ biểu đồ, cào dữ liệu từ Website.
-Nhưng để Antigravity làm được những điều đó, MÁY TÍNH CỦA BẠN (Windows hoặc MacOS) cần phải có "Đất diễn". Máy tính bình thường chỉ biết mở Word, Excel, Chrome. Nó không hiểu các dòng lệnh "Sudo Code" hoặc "Script" mà Antigravity đẻ ra.
+> [!IMPORTANT]
+> **Antigravity không phải là một ChatGPT thứ hai.** ChatGPT chỉ biết "nói chuyện", còn Antigravity có "tay chân" (Agents) để trực tiếp thao tác trên máy tính của bạn. Nhưng để "tay chân" đó cử động được, máy tính của bạn cần được cài đặt Hệ thần kinh vận động. Đó chính là **Python** và **Node.js**.
 
-Để AI chạy được Code tự động hóa, bạn cần cài đặt 2 "Vùng Đất" lên máy tính:
+### Tại sao Antigravity bắt buộc phải có Python và Node.js?
 
-1. **Python:** Trái tim của Phân tích Dữ liệu, Excel, Đọc PDF và Khoa học Máy tính.
-2. **Node.js:** Động cơ của Web, Cào dữ liệu Website (Scraping), Webhook và Tự động hóa trình duyệt.
+Khác với các phần mềm truyền thống (như Word hay Excel) đã được lập trình sẵn mọi nút bấm, **Agentic AI (Antigravity) hoạt động bằng cách TỰ SINH RA MÃ LỆNH (Code) tại thời gian thực** để giải quyết mọi yêu cầu đột ngột của bạn.
 
-Đừng hoảng sợ! Việc cài đặt này chỉ diễn ra **1 LẦN DUY NHẤT** trong đời cái máy tính đó. Và thao tác của nó giống hệt như việc bạn tải và bấm "Next -> Next -> Finish" cài Zalo thôi.
+Khi bạn ra lệnh: *"Hãy đọc 100 file Excel này và gộp lại"*, AI sẽ lập tức viết ra một thuật toán xử lý dữ liệu. Nhưng hệ điều hành Windows hoặc MacOS nguyên bản **bị mù** và không thể hiểu được đoạn mã mà AI vừa viết. Chúng cần các "Thông dịch viên" chuyên nghiệp:
 
-Dưới đây là Hướng dẫn Cầm tay chỉ việc 100%.
+1. **🐍 Python (Kẻ Hủy Diệt Số Liệu):**
+   - **Nó là gì?** Ngôn ngữ lập trình mạnh nhất thế giới về Xử lý dữ liệu (Data) và Trí tuệ nhân tạo (AI).
+   - **Nhiệm vụ:** Khi Antigravity cần nhào nặn hàng triệu dòng Excel, chạy đối soát kế toán, chỉnh sửa ảnh cục bộ, hay thao tác File PDF... Python chính là "cỗ máy cày" nhận lệnh từ AI và nghiền nát dữ liệu trên ổ cứng của bạn (Local processing).
+
+2. **🟢 Node.js (Siêu Nhện Kết Nối):**
+   - **Nó là gì?** Môi trường thực thi (Runtime) Javascript diệu kì, giúp ngôn ngữ web chạy trực tiếp trên Máy tính cá nhân.
+   - **Nhiệm vụ:** Khi Antigravity cần Mở trình duyệt ẩn tự động (Cào data Shopee), kết nối Máy chủ, gọi API ngoại vi, hay thiết lập Cầu nối Hệ thống MCP (Model Context Protocol)... Node.js chính là "xúc tu" giúp AI vươn ra ngoài Internet và giao tiếp với Server thế giới.
+
+### ⚙️ Sơ Đồ Kiến Trúc Hệ Thống (System Design Flow)
+
+```mermaid
+graph TD
+    A[Sếp Ra Lệnh: 'Tổng hợp File Đơn Hàng']:::user --> B(Bộ Não Định Tuyến Antigravity):::ai
+    B -->|Sinh mã lệnh tự động theo Ngữ cảnh| C{Lõi Thực Thi Nội Bộ Máy Tính}:::core
+    
+    C -->|Thao tác File, Tính toán Offline tỷ dòng| D[Môi Trường PYTHON]:::python
+    C -->|Thao tác Web, Khởi chạy MCP API| E[Môi Trường NODE.JS]:::node
+    
+    D -->|Chạy Script Nhào Nặn Dữ Liệu| F[Tạo Báo Cáo.xlsx Mới]:::output
+    E -->|Browser Bypass & Quét Lưới| G[Data Lead Thu Thập Được]:::output
+    
+    F --> H[Nhiệm Vụ Hoàn Thành Tự Nghiệm Thu]:::success
+    G --> H
+
+    classDef user fill:#e1bee7,stroke:#4a148c,stroke-width:2px;
+    classDef ai fill:#bbdefb,stroke:#0d47a1,stroke-width:2px;
+    classDef core fill:#ffe0b2,stroke:#e65100,stroke-width:2px;
+    classDef python fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px;
+    classDef node fill:#b2dfdb,stroke:#004d40,stroke-width:2px;
+    classDef output fill:#f5f5f5,stroke:#212121,stroke-width:1px;
+    classDef success fill:#ffecb3,stroke:#ff6f00,stroke-width:2px,color:#d84315,font-weight:bold;
+```
+
+> [!NOTE]
+> Đừng hoảng sợ! Việc cài đặt này chỉ diễn ra **1 LẦN DUY NHẤT** trong đời cái máy tính đó. Thao tác cài đặt giống hệt như việc bạn tải và bấm "Next" để cài Zalo. Sếp không cần học viết Code Python hay Node, Sếp chỉ cần cài Nền Móng để AI dùng nó làm nô bộc cho Sếp.
 
 ---
 
