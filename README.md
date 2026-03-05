@@ -91,6 +91,17 @@
 | 12 | [Đạo Đức AI Trong Doanh Nghiệp](chapters/12-dao-duc-ai.md) | Quyền lực số, Human-in-the-Loop, Guardrails rủi ro đạo đức. |
 | 13 | [Lộ Trình 30 Ngày Chi Tiết](chapters/13-lo-trinh-30-ngay.md) | Kế hoạch từng tuần, KPI đo lường, milestone kiểm tra. |
 
+### 💥 Phần V — Masterclass Tiêu Chuẩn Ngoại Hạng
+
+> *Vá lấp các khoảng trống theo chuẩn giáo trình C-Level Quốc tế.*
+
+| # | Chương | Nội dung chính |
+| :---: | :--- | :--- |
+| 14 | [Kỹ Thuật Viết Lệnh (Prompt Engineering)](chapters/14-ky-thuat-viet-lenh.md) | Khung tư duy R-T-F, C-R-E-A-T-E. Xử lý "Ảo giác LLM" bằng Chuỗi Suy Luận. |
+| 15 | [AI Đa Phương Thức (Multimodal)](chapters/15-ai-da-phuong-thuc.md) | Sinh HÌNH ẢNH (Midjourney), GIỌNG NÓI (ElevenLabs), VIDEO ẢO (HeyGen). |
+| 16 | [Local LLMs & Tự Tạo Chatbot](chapters/16-local-llm-va-chatbot.md) | Cài LM Studio chạy ngập mạng LLaMA 3. Giải pháp nội bộ Tuyệt Mật. |
+| 17 | [Đo Lường Biên Lợi Nhuận ROAI](chapters/17-do-luong-roai.md) | Hệ thống đo lường Return on AI. Định giá Giờ Công vs Phí Cày API. |
+
 ### 📎 Phụ Lục
 
 | | Tài liệu | Mô tả |
