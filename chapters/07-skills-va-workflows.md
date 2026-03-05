@@ -1,8 +1,15 @@
-# Chương 8: Cảnh Giới Của Sự Bất Tử — Đóng Gói "Trí Nhớ Tổ Chức" Bằng Hệ Thống Skills & Workflows
+# Chương 7: Cảnh Giới Của Sự Bất Tử — Đóng Gói "Trí Nhớ Tổ Chức" Bằng Skills & Workflows
+
+> [!IMPORTANT]
+> Chương này là cốt lõi của việc xây dựng "Di sản số": Biến chất xám của nhân viên thành tài sản vĩnh cửu của công ty.
+
+- **🎯 [Mục Tiêu Chương] (Objective):** Đập tan khái niệm "Công ty phụ thuộc vào người giỏi". Định hình cách biến chất xám của nhân viên thành File Tài Sản Kỹ Thuật Số vĩnh cửu (`.md`) chạy tự động bằng 1 nút bấm.
+- **📥 [Đầu Vào] (Input):** Một bản quy trình làm việc (SOP) do nhân viên viết ra bằng lời.
+- **🚀 [Đầu Raw] (Output):** AI tự động hóa SOP biến nó thành 1 Slash Command (Lệnh Gạch Chéo) sẵn sàng chạy mọi lúc.
 
 ---
 
-## 1. Lời Mở Đầu: Tội Ác Của Việc "Mất Trí Nhớ Cục Bộ" Môi Trường Làm Việc
+## 7.2. Mở Đầu: Tội Ác Của Việc "Mất Trí Nhớ Cục Bộ" Môi Trường Làm Việc
 
 ### 📖 Câu Chuyện Thực Tế: Di Sản Của Anh Trưởng Phòng Nghỉ Việc
 
@@ -21,6 +28,9 @@ Hầu hết mọi người khi dùng ChatGPT/Claude đều mắc một sai lầm
 Thứ Hai, bạn gõ 1 cái Prompt dài 1 trang A4: *"AI ơi, tôi có tệp Data này. Hãy làm sạch nó theo 5 Bước sau... Bước 1: Rút ruột Cột A... Bước 2: Dọn dẹp Cột B..."*. AI làm rất tốt.
 Đến Thứ Hai tuần sau, bạn có một tệp Data mới. Bạn lại lóc cóc Copy Paste lại nguyên cái Prompt 1 trang A4 đó để dạy AI thêm một lần nữa.
 
+> [!NOTE]
+> **McKinsey 2025:** Trung bình một quản lý SME mất 6 tiếng/tuần chỉ để "chỉ việc lại". Việc lưu trữ tri thức thành các mã Slash Command tự động sẽ kéo chi phí đào tạo xuống tiệm cận 0.
+
 Đó giống như bạn có một nhà máy hiện đại, nhưng mỗi buổi sáng sếp phải xuống xưởng dạy lại cho Robot cách vặn từng con ốc. Hệ thống AI của bạn không hề học được gì sau mỗi lần thực thi.
 
 Với **Antigravity**, chúng tôi từ chối sự Ngu dốt đó. Chúng tôi mang đến cho bạn quyền năng lưu trữ "Chất Tủy" của doanh nghiệp vĩnh viễn thông qua 2 Cấu trúc Tối Toàn: **SKILLS (Kỹ năng Dạy AI Suy Nghĩ)** và **WORKFLOWS (Quy trình Dạy AI Bấm Nút).**
@@ -29,13 +39,13 @@ Với **Antigravity**, chúng tôi từ chối sự Ngu dốt đó. Chúng tôi 
 
 Thay vì miêu tả AI chung chung, hãy nhìn cách hệ thống Agent được "cắm" chốt chặn vào đúng từng vị trí thiết yếu trong công ty, để giải quyết một chuỗi hành động xuyên suốt (Workflow Chaining):
 
-* **Bộ phận Sales/Kinh doanh (Người chốt đơn):** AI không chỉ trả lời câu hỏi vu vơ mà biết đi đọc trực tiếp các bảng giá (`san_pham.xlsx`, `chiet_khau.xlsx`), tự động ráp công thức biên độ VAT, chiết khấu theo hạng khách hàng, và lập tức tạo ra file PDF/Excel chuẩn Form công ty. Sales con người thoát cảnh bấm máy tính nhầm giá. Khách chốt deal $\rightarrow$ **Agent 1** (Tạo Báo Giá) nhả file.
-* **Bộ phận Marketing/CSKH (Người giữ chân khách):** Kế thừa kết quả từ Sales, **Agent 2** (Email Marketing) nhận file báo giá kèm chân dung khách hàng $\rightarrow$ tự động lên nháp Email đính kèm file, cá nhân hóa lời chào gọi đúng tên khách. Cùng lúc đó, **Agent 3** (Phân tích Review) cào dữ liệu Shopee/Google vẽ ra Word Cloud để theo dõi xem tệp khách này đang Khen gì/Chê gì. Khách chê $\rightarrow$ Agent Auto gửi Mail đính kèm Voucher xoa dịu.
-* **Ban Giám Đốc/CFO (Người cầm lái):** Số liệu được đổ dồn về Dashboard. Sếp không cần đọc số lắt nhắt, chỉ cần ném ra 1 giả thuyết: *"Nếu tháng sau tăng giá bán lên 10% thì sao?"*. **Agent 4** (Hỗ trợ ra quyết định) sẽ không đoán mò, nó sẽ kéo Data 6 tháng qua đi qua mô hình Monte Carlo, hồi quy tuyến tính (Regression) để trả về 3 phân cảnh rõ ràng: Kịch bản Lạc Quan, Trung Bình, và Rủi Ro Xấu Nhất. Tất cả được chạy hoàn toàn tự động bằng Python trong vài chục giây.
+- **Bộ phận Sales/Kinh doanh (Người chốt đơn):** AI không chỉ trả lời câu hỏi vu vơ mà biết đi đọc trực tiếp các bảng giá (`san_pham.xlsx`, `chiet_khau.xlsx`), tự động ráp công thức biên độ VAT, chiết khấu theo hạng khách hàng, và lập tức tạo ra file PDF/Excel chuẩn Form công ty. Sales con người thoát cảnh bấm máy tính nhầm giá. Khách chốt deal $\rightarrow$ **Agent 1** (Tạo Báo Giá) nhả file.
+- **Bộ phận Marketing/CSKH (Người giữ chân khách):** Kế thừa kết quả từ Sales, **Agent 2** (Email Marketing) nhận file báo giá kèm chân dung khách hàng $\rightarrow$ tự động lên nháp Email đính kèm file, cá nhân hóa lời chào gọi đúng tên khách. Cùng lúc đó, **Agent 3** (Phân tích Review) cào dữ liệu Shopee/Google vẽ ra Word Cloud để theo dõi xem tệp khách này đang Khen gì/Chê gì. Khách chê $\rightarrow$ Agent Auto gửi Mail đính kèm Voucher xoa dịu.
+- **Ban Giám Đốc/CFO (Người cầm lái):** Số liệu được đổ dồn về Dashboard. Sếp không cần đọc số lắt nhắt, chỉ cần ném ra 1 giả thuyết: *"Nếu tháng sau tăng giá bán lên 10% thì sao?"*. **Agent 4** (Hỗ trợ ra quyết định) sẽ không đoán mò, nó sẽ kéo Data 6 tháng qua đi qua mô hình Monte Carlo, hồi quy tuyến tính (Regression) để trả về 3 phân cảnh rõ ràng: Kịch bản Lạc Quan, Trung Bình, và Rủi Ro Xấu Nhất. Tất cả được chạy hoàn toàn tự động bằng Python trong vài chục giây.
 
 ---
 
-## 2. SKILLS (Thư Viện Kỹ Năng): Đúc Khuôn "Nhân Tài Dữ Liệu"
+## 7.3. [Phương Pháp Cốt Lõi] SKILLS (Thư Viện Kỹ Năng): Đúc Khuôn "Nhân Tài Dữ Liệu"
 
 ![Kiến trúc Skills & Workflows — Skills là sách hướng dẫn AI suy nghĩ, Workflows là nút bấm AI chạy tự động](images/skills_workflows_arch.png)
 
@@ -58,13 +68,10 @@ Skills là Các Thư Mục (Folder) Cẩm nang chứa các Tệp Báo Cáo Markd
 Cái Đỉnh Cao của Hệ thống này: Sếp chỉ cần thuê 1 Cố vấn thiết kế 4 cái Tệp tin Skill này MỘT LẦN DUY NHẤT. Sau đó lưu vào Kho Mạng (Folder `/skills/`).
 Từ đó về sau chục năm, cô Kế toán chỉ cần nói 1 câu cụt lủn với Antigravity: *"Em ơi, chạy Skill Đối Soát Ngân Hàng cho chị nhé!"*. Cỗ máy tính tự mở Sổ Tay ra đọc, và viết Python phay nát đống Số liệu. Dù cô Kế Toán 5 năm kinh nghiệm có nghỉ việc, cô Kế Toán 1 tháng rưỡi Vào Làm Cũng Kích Hoạt Được Cỗ Máy Xử Lý Thuế Thần Tốc Này. **Đó mới là Quản Trị Tri Thức (Knowledge Management).**
 
-💡 **Sự Cẩn Trọng Chết Mệnh Của Skill**:
-Điều làm cho những hệ thống Skill này có lợi thế tuyệt đối ở doanh nghiệp thực tế là **Nguyên Tắc "Human-in-the-loop" (Luôn Đi Kèm Sự Cho Phép Chốt Điểm Của Con Người)**.
+> [!CAUTION]
+> **Human-in-the-loop:** Máy móc chạy hoàn toàn trong hành lang An sinh Pháp Lý Gắt Gao Của Con Người. AI chỉ đưa ra khuyến nghị, quyền chốt quyết định cuối cùng vẫn thuộc về lãnh đạo.
 
-* Agent Phân Tích Quyết Định chỉ chạy giả lập số liệu và in ra Cảnh Báo Lạc Quan - Bi Quan, quy định sinh tử là: *"Chỉ Đưa Ra Khuyến Nghị, Quyền Chốt Quyết Định Xuống Tiền Hoàn Toàn Do Lãnh Đạo Con Người Khớp Phiên"*.
-* Agent Email Marketing được chốt cấu trúc Code phải tự động nhét *"Nút Hủy Đăng Ký (Unsubscribe)"* theo Đạo Luật Chống Spam để bảo vệ an toàn danh tiếng miền Doanh Nghiệp. Agent Làm Báo Giá bị gán điều khoản Bất Khả Thể Xóa: *"Luôn Phải Append Dòng Chữ (Giá Chào Hàng Này Chỉ Có Hiệu Lực Tính Tạm Ra 15 Ngày)"*. Máy móc chạy hoàn toàn trong hành lang An sinh Pháp Lý Gắt Gao Của Con Người!
-
-### ✍️ Sudo Prompt Điển Điển: Sai Việc AI Tự Viết "Sổ Tay Skill" Cho Mình
+### 8.3.1. [Cách Làm Chi Tiết & Hướng Dẫn Kỹ Thuật] Sudo Prompt Điển Điển: Sai Việc AI Tự Viết "Sổ Tay Skill" Cho Mình
 
 Cái hay nhất: Sếp không phải tự xắn tay Viết File Cẩm Nang. Sếp Gọi AI tự định nghĩa Lại Nó.
 
@@ -87,17 +94,15 @@ Cái hay nhất: Sếp không phải tự xắn tay Viết File Cẩm Nang. Sế
 
 Máy chủ báo Ping. File `SKILL.md` ra đời. Năng Lực Trí Não của Giám Đốc Sales Vừa Được Bất Tử Hóa Thành Mã Lệnh Truyền Đời Của Công Ty SME.
 
-**Vạch Trần "5 Whys" Của Cấu Trúc Khai Lập Trí Nhớ Này:**
+### 👣 Quy trình 3 bước đúc khuôn trí tuệ doanh nghiệp (Skill)
 
-1. **Làm gì?** Biến Trí tuệ của 1 Cá nhân Xuất sắc thành Tài sản Vĩnh cửu của Công ty định dạng `.md`.
-2. **Tại sao AI lại tự đẻ ra AI?** Con người viết Prompt thường lan man thiếu logic hệ thống cấu trúc mảng. Gọi Agent Sinh Code chuyên nghiệp tự đúc Cẩm Nang Markdown sẽ tạo ra Hệ Sinh Thái Tự Hành chuẩn xác nhất.
-3. **Tại sao có Ranh Giới?** Ngăn chặn Ảo Giác Máy: RFM tính sai đi 1 điểm sẽ hủy diệt tài khoản Khách VIP. Sổ tay SKILL phải là Sắt Đá Không Cảm Xúc.
-4. **Trường hợp lỗi?** Nhân viên gọi nhầm File SKILL. Máy sẽ từ chối chạy nếu Data Input không khớp với chuẩn đầu vào trong Cẩm Nang.
-5. **Dòng Tiền đến từ đâu?** Kế thừa Nguyên Chóp Kỹ Năng Nhân Viên Cũ Mất Việc Bỏ Lại. Nhân sự Mới vào làm chỉ Cần Nhấn Chạy SKILL mà Không cần Phải Mọc Não. Giảm 100% Phí Đào Tạo (Training Cost).
+1. **Khởi tạo:** Gọi Antigravity tạo thư mục `/skills/ten_ky_nang/`.
+2. **Dạy việc:** AI tự động viết file `SKILL.md` dựa trên SOP sếp cung cấp, chuyển ngữ từ ngôn ngữ người sang "ngôn ngữ máy".
+3. **Thanh tra:** Sếp đọc lại file `.md`, chỉnh sửa các ranh giới (Constraints) và Lưu hành nội bộ.
 
 ---
 
-## 3. WORKFLOWS (Đường Ray Tự Động): Phép Lưỡi Dao "Slash Command" Một Chạm
+## 7.4. [Ví Dụ Mẫu & Case Study] WORKFLOWS (Đường Ray Tự Động): Phép Lưỡi Dao "Slash Command" Một Chạm
 
 Nếu SKILLS là Bách khoa Toàn Thư (Bắt AI Phân tích Nghĩ suy), thì **WORKFLOWS là Công Tắc Điện (Bắt AI Bấm Nút Không Quan Não).**
 
@@ -134,7 +139,7 @@ Chào Tướng Quân Thực Thi AI Của Tôi. Khi tôi Đụng Lệnh Gọi Tri
    Hãy Hướng Hệ Thống Bàn Giao Terminal Đẩy Cửa Sổ Ephemeral Alert Xuống Màn Hình Antigravity: "BÁO CÁO CỤNG LY: SERVER STAGING ĐÃ ĐƯỢC MỜI CHÀO UPDATE 100%!".
 ```
 
-**Thực Hành Trực Tiếp Mệnh Lệnh Phím Tắt (Slash Command) Bằng Giao Diện Chat**
+### 8.4.1. [Ví Dụ Mẫu & Case Study] Thực Hành Trực Tiếp Mệnh Lệnh Phím Tắt (Slash Command) Bằng Giao Diện Chat
 
 **Bước 1: Gọi Hồn Workflow Bằng Dấu Gạch Chéo**
 Bạn vào khung Chat của [Antigravity](https://antigravity.google). Gõ dấu `/` (Slash). Ngay lập tức, một Menu Menu xổ lên (Autocomplete) gợi ý mọi Workflow đang có trong tổ chức của bạn.
@@ -147,15 +152,15 @@ Nhấn Enter.
 Bởi vì file Workflow ở trên có Bùa chú Khai ấn `// turbo-all`, Chatbot không hề hỏi lại: *"Sếp có chắc chắn muốn Tắt Server Cũ Không?"*.
 Nó Im lặng, và Live Terminal nhả ra 4 dòng Log xanh mượt:
 
-* `cd /applications/commerce_v2`
-* `git pull origin master... DONE`
-* `docker-compose up -d... DONE`
+- `cd /applications/commerce_v2`
+- `git pull origin master... DONE`
+- `docker-compose up -d... DONE`
 Hệ thống bắn về một khung Nhắn Tin (Alert): *"BÁO CÁO CỤNG LY: SERVER STAGING ĐÃ ĐƯỢC MỜI CHÀO UPDATE 100%!"*
 
-**Kết Quả Chuyển Hóa Cán Cân Tổ Chức:**
+## 7.5. [Kết Quả Đầu Ra & Processing] Kết Quả Chuyển Hóa Cán Cân Tổ Chức Vĩnh Cửu
 
-* **Trước đây:** Máy chủ Lỗi Khẩn Cấp. Sếp Bốc điện thoại réo gọi Dev đang đi team-building ở Sapa lúc 2h sáng bắt mở Laptop dò Code hằng giờ.
-* **Bây Giờ:** Sếp tự mở điện thoại, truy cập Antigravity, gõ đúng chữ `/deploy_hotfix`. AI Sửa xong Lỗi Server Trong Vòng 8 Giây Đêm Tối. Quyền năng khôi phục hệ thống giờ nằm Tối cao trong tay Nhà Lãnh Đạo Kỹ Thuật Số. Sự phụ thuộc con người kết thúc!
+- **Trước đây:** Máy chủ Lỗi Khẩn Cấp. Sếp Bốc điện thoại réo gọi Dev đang đi team-building ở Sapa lúc 2h sáng bắt mở Laptop dò Code hằng giờ.
+- **Bây Giờ:** Sếp tự mở điện thoại, truy cập Antigravity, gõ đúng chữ `/deploy_hotfix`. AI Sửa xong Lỗi Server Trong Vòng 8 Giây Đêm Tối. Quyền năng khôi phục hệ thống giờ nằm Tối cao trong tay Nhà Lãnh Đạo Kỹ Thuật Số. Sự phụ thuộc con người kết thúc!
 
 ### Sư Phân Cực: KHI NÀO SẾP XÀI "SKILLS" - KHI NÀO DÙNG "WORKFLOWS"?
 
@@ -179,9 +184,9 @@ Hệ thống bắn về một khung Nhắn Tin (Alert): *"BÁO CÁO CỤNG LY: S
 
 **💡 Mẹo Pro (Quyền Lực Turbo):**
 
-* Khi Agent chạy một lệnh Terminal (Bash command) can thiệp vào hệ thống, nó thường rụt rè dừng lại và hỏi bạn: *"Sếp có cho chạy lệnh này không?"*.
-* Để phá bỏ rào cản này, hãy thêm dòng chữ `// turbo` ngay phía trên bước chứa lệnh Terminal mà bạn muốn tự động chạy.
-* Nếu muốn **Toàn quyền Tự động (Auto-run All)** mọi lệnh trong xuyên suốt toàn bộ Workflow mà chẳng muốn bị làm phiền phút nào, hãy chép bùa chú `// turbo-all` vào bất kỳ đâu trong file (thường đặt ở đầu file).
+- Khi Agent chạy một lệnh Terminal (Bash command) can thiệp vào hệ thống, nó thường rụt rè dừng lại và hỏi bạn: *"Sếp có cho chạy lệnh này không?"*.
+- Để phá bỏ rào cản này, hãy thêm dòng chữ `// turbo` ngay phía trên bước chứa lệnh Terminal mà bạn muốn tự động chạy.
+- Nếu muốn **Toàn quyền Tự động (Auto-run All)** mọi lệnh trong xuyên suốt toàn bộ Workflow mà chẳng muốn bị làm phiền phút nào, hãy chép bùa chú `// turbo-all` vào bất kỳ đâu trong file (thường đặt ở đầu file).
 
 ---
 
@@ -191,8 +196,8 @@ Dưới đây là một số ý tưởng Workflow "ăn tiền" mà các Giám đ
 
 **1. Workflow: `/onboard-nhan-vien` — Mời AI Làm Giám Đốc Đào Tạo (Trainer)**
 
-* **Mục đích:** Khởi tạo không gian làm việc và Đào tạo chuyên môn cho nhân sự mới trong 3 ngày đầu mà Sếp không cần tốn một phút mở lời.
-* **Tiến trình AI thực thi:**
+- **Mục đích:** Khởi tạo không gian làm việc và Đào tạo chuyên môn cho nhân sự mới trong 3 ngày đầu mà Sếp không cần tốn một phút mở lời.
+- **Tiến trình AI thực thi:**
   1. Chạy Script Bash khởi tạo tài khoản Email nội bộ công ty $\rightarrow$ Cấp quyền truy cập 3 thư mục dự án trên Google Drive.
   2. Auto-gửi Email chào mừng đính kèm *Sổ tay Văn hóa* và *Bộ Quy chuẩn KPI*.
   3. **Đỉnh cao của AI Onboarding:** AI tự đóng vai trò là "Người hướng dẫn". Nó gửi tin nhắn cho nhân viên mới: *"Chào em, anh là Bot Quản lý Khối Sales. Kế hoạch tuần 1 của em là đọc File A, File B. Em hãy đọc xong và trả lời 3 câu hỏi Test sau cho anh..."*.
@@ -201,28 +206,28 @@ Dưới đây là một số ý tưởng Workflow "ăn tiền" mà các Giám đ
 
 **2. Workflow: `/phan-tich-doanh-thu` (Dành cho Kế Toán/CFO)**
 
-* **Mục đích:** Chốt số liệu và vẽ biểu đồ kinh doanh cuối tháng nhanh gọn nhẹ.
-* **Tiến trình AI thực thi:** Quét sạch thư mục chứa các file Data (CSV/Excel) trút từ máy POS $\rightarrow$ Gom nhóm doanh thu theo khu vực, đại lý $\rightarrow$ Chạy Python (Matplotlib) để vẽ 3 biểu đồ (Tròn, Cột, Line Chart xu hướng) $\rightarrow$ Trích xuất báo cáo Markdown đưa ra Cảnh báo các mã hàng Tồn Kho/Lỗ ròng.
+- **Mục đích:** Chốt số liệu và vẽ biểu đồ kinh doanh cuối tháng nhanh gọn nhẹ.
+- **Tiến trình AI thực thi:** Quét sạch thư mục chứa các file Data (CSV/Excel) trút từ máy POS $\rightarrow$ Gom nhóm doanh thu theo khu vực, đại lý $\rightarrow$ Chạy Python (Matplotlib) để vẽ 3 biểu đồ (Tròn, Cột, Line Chart xu hướng) $\rightarrow$ Trích xuất báo cáo Markdown đưa ra Cảnh báo các mã hàng Tồn Kho/Lỗ ròng.
 
 **3. Workflow: `/tao-proposal` (Dành cho Sales B2B)**
 
-* **Mục đích:** Tự động sinh Hồ sơ Năng lực (Pitch Deck) Tùy chỉnh theo Từng Khách hàng.
-* **Tiến trình AI thực thi:** Nhận tên Khách hàng mục tiêu từ bạn $\rightarrow$ Bật Browser Subagent đi dò la Website khách hàng $\rightarrow$ Kéo thông tin Ngành nghề, Vấn đề của khách trộn với File Template Proposal sẵn có $\rightarrow$ Thay Logo, Sửa chữ $\rightarrow$ Xuất ngay File PDF hoặc Docs sạch sẽ tinh tươm để Sale gửi đi chốt deal.
+- **Mục đích:** Tự động sinh Hồ sơ Năng lực (Pitch Deck) Tùy chỉnh theo Từng Khách hàng.
+- **Tiến trình AI thực thi:** Nhận tên Khách hàng mục tiêu từ bạn $\rightarrow$ Bật Browser Subagent đi dò la Website khách hàng $\rightarrow$ Kéo thông tin Ngành nghề, Vấn đề của khách trộn với File Template Proposal sẵn có $\rightarrow$ Thay Logo, Sửa chữ $\rightarrow$ Xuất ngay File PDF hoặc Docs sạch sẽ tinh tươm để Sale gửi đi chốt deal.
 
 **4. Workflow: `/kiem-tra-suc-khoe-web` (Dành cho IT/Marketing)**
 
-* **Mục đích:** Giám sát Website công ty xem có bị "chết" (downtime) hay vỡ giao diện không.
-* **Tiến trình AI thực thi:** Ping đến URL website trang chủ $\rightarrow$ Dùng Browser Agent truy cập và chụp ảnh màn hình Landing Page $\rightarrow$ Kiểm tra các thẻ SEO, quét tốc độ load trang cơ bản $\rightarrow$ Báo cáo tổng thể xem có lỗi 404 (Không tìm thấy) hay đứt gãy kết nối không.
+- **Mục đích:** Giám sát Website công ty xem có bị "chết" (downtime) hay vỡ giao diện không.
+- **Tiến trình AI thực thi:** Ping đến URL website trang chủ $\rightarrow$ Dùng Browser Agent truy cập và chụp ảnh màn hình Landing Page $\rightarrow$ Kiểm tra các thẻ SEO, quét tốc độ load trang cơ bản $\rightarrow$ Báo cáo tổng thể xem có lỗi 404 (Không tìm thấy) hay đứt gãy kết nối không.
 
 **5. Workflow: `/dang-bai-social` (Dành cho Content/Media)**
 
-* **Mục đích:** Tự động "Xào nấu" nội dung và Phân phối Đa nền tảng.
-* **Tiến trình AI thực thi:** Đọc tệp Bài viết Dài (Long-form) từ file Draft $\rightarrow$ Triệu hồi Mô hình AI nhằm Convert bài gốc thành 3 phiên bản: *Version Facebook* (ngắn, chèn Emoji icon), *Version LinkedIn* (cấu trúc nghiêm túc, chuyên môn), *Version TikTok* (Kịch bản Video ngắn) $\rightarrow$ Lưu ra 3 file Markdown riêng biệt.
+- **Mục đích:** Tự động "Xào nấu" nội dung và Phân phối Đa nền tảng.
+- **Tiến trình AI thực thi:** Đọc tệp Bài viết Dài (Long-form) từ file Draft $\rightarrow$ Triệu hồi Mô hình AI nhằm Convert bài gốc thành 3 phiên bản: *Version Facebook* (ngắn, chèn Emoji icon), *Version LinkedIn* (cấu trúc nghiêm túc, chuyên môn), *Version TikTok* (Kịch bản Video ngắn) $\rightarrow$ Lưu ra 3 file Markdown riêng biệt.
 
 **6. Workflow: `/phan-tich-doi-thu` (Dành cho Trưởng phòng Marketing)**
 
-* **Mục đích:** Bắt AI làm Điệp viên Tình báo, mổ xẻ chiến lược mồi nhử của Đối thủ cạnh tranh trực tiếp.
-* **Tiến trình AI thực thi:**
+- **Mục đích:** Bắt AI làm Điệp viên Tình báo, mổ xẻ chiến lược mồi nhử của Đối thủ cạnh tranh trực tiếp.
+- **Tiến trình AI thực thi:**
   1. Yêu cầu bạn nhập URL Landing Page của Đối thủ.
   2. Kích hoạt *Browser Agent* truy cập vào Landing Page đó. Đọc trọn vẹn Nội dung Sales Page, Bảng Giá, và Lời hứa (USPs - Unique Selling Propositions).
   3. Mở file `san_pham_cong_ty_minh.md` để đối chiếu chéo.
@@ -230,20 +235,20 @@ Dưới đây là một số ý tưởng Workflow "ăn tiền" mà các Giám đ
 
 **7. Workflow: `/chien-dich-cold-email` (Dành cho Marketing B2B / Growth Hacker)**
 
-* **Mục đích:** Lục lọi Data Khách hàng rác để đào vàng, tự sinh chuỗi Email mồi câu không người can thiệp.
-* **Tiến trình AI thực thi:**
+- **Mục đích:** Lục lọi Data Khách hàng rác để đào vàng, tự sinh chuỗi Email mồi câu không người can thiệp.
+- **Tiến trình AI thực thi:**
   1. Trích xuất file `danh-sach-khach-hang-fail-thang-truoc.csv`.
   2. AI tự động chia nhóm (Segment): Nhóm Rớt vì Giá, Nhóm Rớt vì Tính Năng.
   3. Dùng Skill NLP (Xử lý Ngôn ngữ Tự nhiên) lập tức soạn ra 1 Chuỗi **3 Email Nuôi dưỡng (Drip Campaign) được cá nhân hóa** cho từng tập Khách:
-     * *Email 1 (Tri ân)*: Thay vì chèo kéo, gửi tặng họ một Ebook/Báo cáo ngành nghề miễn phí.
-     * *Email 2 (Gãi đúng chỗ ngứa)*: Đề cập khéo léo đến nỗi đau Giá/Tính năng của đợt trước và đưa ra giải pháp mới.
-     * *Email 3 (Kích Giật Thần Kinh Call-To-Action)*: Hối thúc Book lịch họp Demo 15 phút với Voucher Trợ Giá 20% chỉ có giá trị 24h.
+     - *Email 1 (Tri ân)*: Thay vì chèo kéo, gửi tặng họ một Ebook/Báo cáo ngành nghề miễn phí.
+     - *Email 2 (Gãi đúng chỗ ngứa)*: Đề cập khéo léo đến nỗi đau Giá/Tính năng của đợt trước và đưa ra giải pháp mới.
+     - *Email 3 (Kích Giật Thần Kinh Call-To-Action)*: Hối thúc Book lịch họp Demo 15 phút với Voucher Trợ Giá 20% chỉ có giá trị 24h.
   4. Quăng 3 File Email này chuẩn bị sẵn sàng lên Folder Outbox. Sales gật đầu là tự động vút bay đi bằng cổng SendGrid.
 
 **8. Workflow: `/seo-masterclass` (Dành cho SEOers / Content Marketing)**
 
-* **Mục đích:** Đẻ ra một Bài viết Bách khoa Toàn thư Top 1 Google từ một Từ Khóa Tiếng Việt Cộc Lốc.
-* **Tiến trình AI thực thi:**
+- **Mục đích:** Đẻ ra một Bài viết Bách khoa Toàn thư Top 1 Google từ một Từ Khóa Tiếng Việt Cộc Lốc.
+- **Tiến trình AI thực thi:**
   1. Bạn nhập lệnh `/seo-masterclass "Máy Xúc Lật"`.
   2. AI gọi MCP Cào Dữ Liệu lấy Top 10 bài viết đang rank cao nhất Google Việt Nam về cụm từ này. Phân tích Dàn Ý (Heading Structure) của đối thủ.
   3. AI gom nhóm (Clustering) Dàn ý, tự nhận diện "Khoảng trống Nội dung" mà đối thủ thiếu (Ví dụ: Đối thủ quên phân tích chi phí tiêu hao nhiên liệu).
@@ -267,11 +272,11 @@ Sự sáng tạo là Vô Hạn. Chỉ cần **Bạn đúc kết được một Q
 
 ---
 
-## 4. Tổng Kết Cửa Giao Mùa
+## 7.6. [Kết Luận & Action Items] Tổng Kết Cửa Giao Mùa
 
 "Antigravity Không Sở Hữu Trí Nhớ Giới Hạn Của Ram Máy Tính. Nó Cấp Phép Cho Con Người Chúng Ta Mọc Thêm Một Não Bộ Bất Bại Trữ Của Công Ty".
 Khi Thư mục `workflows/` và `/skills/` của Sếp Chứa Được Hàng Trăm Tệp Lập Lệnh Kỹ Trì Chuyện Ngành - Thì Dù Công ty Có Nghỉ Việc Một Nửa Nhân Sự Hỗ Trợ, Đội Giám Đốc Của Bạn Vẫn Hoạt Động Cỗ Máy Đều Như Vắt Chanh Bằng Sức Hoạt Động Không Giờ Nghỉ Của Nhân Sự 0 Đồng Của Siêu Thể.
 
 Nhưng Với Kho Chứa Dữ Liệu Khủng Lồ (Từ Bản Khai Thuế, Hệ Thống Khách VIP... Cho Đến Source Code). Sếp Chắc Quỵ Lụyt Tâm Hồn Trăn Trở: *"Lẽ nào Con Trí Tuệ AI Này Nó Gửi Hết Data Mật Mất Lương Phạt Khách Hàng Mình Lên Máy Chủ Đám Mây Mạng Gốc (Cloud/OpenAI) À? Liệu Nó Bị Chọc Rỗng Ruột Bởi Prompt Injection Hacker Trộm File Thì Tôi Tiêu Tán Sự Nghiệp Thành Số 0"*?
 
-⏭ *(Lật Cánh Cửa Bí Mật Sang **Chương 8: Luật Lệ Lõi - Bảo Mật Tuyệt Tôn Không Thể Sang Nhượng Bức Tường Lửa (AI Governance)** — Bài Mổ Phanh Rò Rỉ Data Giữ Kín Cửa Hầm Kim Cương Của Sếp Của Năm Sự Nghiệp Đời Trọng).*
+⏭ *(Lật cánh cửa bí mật sang **Chương 16: Bảo Mật & Quyền Riêng Tư** — Nơi chúng ta xây dựng bức tường lửa bảo vệ hầm kim cương dữ liệu của sếp).*

@@ -1,12 +1,17 @@
-# Chương 7: Cố Vấn Định Mệnh — Ứng Dụng AI Trong Việc Ra Quyết Định Kinh Doanh (Decision Support System)
+# Chương 12: Cố Vấn Định Mệnh — Ra Quyết Định Kinh Doanh Bằng Dữ Liệu
 
-*(Từ "Cảm tính đắt đỏ" đến "Trí tuệ Nhân tạo dựa trên Dữ liệu")*
+> [!IMPORTANT]
+> **Quyết định sai lầm là loại thuế đắt nhất của sếp.** Chương này giúp bạn thay thế trực giác bằng toán học mô phỏng để giảm thiểu rủi ro sinh tử.
+
+- **🎯 [Mục Tiêu Chương] (Objective):** Loại bỏ "Thuế Cảm Tính" trong các quyết định sinh tử. Hướng dẫn dùng AI giả lập rủi ro (Monte Carlo) để thẩm định việc tăng/giảm giá, cắt giảm ngân sách.
+- **📥 [Đầu Vào] (Input):** Một ý định quyết định (Vd: Tăng 12% giá) và dữ liệu giao dịch lịch sử.
+- **🚀 [Đầu Ra] (Output):** AI vẽ biểu đồ rủi ro Monte Carlo kèm Khuyến nghị thẳng thừng "LÀM" hay "HỦY".
 
 ---
 
 > 🚀 **Chuẩn bị:** Truy cập [antigravity.google](https://antigravity.google) để cài Antigravity. Chuẩn bị **1 file CSV/Excel doanh số** của công ty bạn — chương này sẽ hướng dẫn bạn ép AI mô phỏng rủi ro trước khi ra quyết định.
 
-## 1. Mở Đầu: Phòng Họp Cuối Năm Và "Thuế Cảm Tính" Của Lãnh Đạo
+## 12.2. Mở Đầu: Phòng Họp Cuối Năm Và "Thuế Cảm Tính" Của Lãnh Đạo
 
 ### 📖 Câu Chuyện Thực Trạng: "Ông Vua Đệm" Và Quyết Định Cắt Giảm 1 Tỷ Đồng
 
@@ -29,13 +34,16 @@ Sự thật khốc liệt là: **Hơn 70% quyết định của Giám Đốc SME
 
 Doanh nghiệp đóng đô trên "Thuế Cảm Tính". Mỗi một quyết định sai lầm, Lãnh đạo lại trả thuế bằng xương máu của hàng ngàn nhân sự. Giải pháp duy nhất là phải chuyển dịch từ **"Trực Giác"** sang **"Lá Chắn Dữ Liệu" (Data-Driven Decision Making - DDDM)**.
 
+> [!NOTE]
+> **Forbes 2025:** Doanh nghiệp dùng AI giả lập rủi ro trước khi ra mắt sản phẩm mới có tỷ lệ sống sót cao gấp 4.5 lần. Lãnh đạo hiện đại không cần "liều", họ cần ném đúng thông số vào máy tính.
+
 Nhưng Sếp hay xua tay: *"Thôi em ơi, SME Data lằng nhằng rác rưới thế này, lấy đâu ra phòng Data Scientist lương 40 triệu mà phân với chả tích?"*
 
 Đây chính là mảnh đất Dụng Võ Huyền Thoại nhất của **Antigravity**. Agentic AI không chỉ là Công nhân Gõ chữ. Ở Chương này, bạn sẽ học cách biến nó thành một **Luật Sư Ác Quỷ (Devil's Advocate)** — Một Cỗ máy Phản biện Quyết định Lạnh Lùng, Cầm Cân Nảy Mực Dựa Trên Số Liệu Tuyệt Vực.
 
 ---
 
-## 2. Tháp Trí Tuệ Quyết Định: 3 Tầng Giao Phó Cho Đại Lý AI (Agentic DSS)
+## 12.3. [Phương Pháp Cốt Lõi] Tháp Trí Tuệ Quyết Định: 3 Tầng Giao Phó Cho Đại Lý AI (Agentic DSS)
 
 ![Tháp 3 tầng Hệ thống Hỗ trợ Ra quyết định bằng AI — từ thu thập đến tự động hóa hoàn toàn](images/decision_support_tiers.png)
 
@@ -73,7 +81,7 @@ Cài đặt cho Bộ Mắt Xích KiotViet + API Antigravity: Cứ Hàng chạm n
 
 ---
 
-## 3. Guideline Giao Việc Đỉnh Cao: Sudo Prompt Ép AI Vẽ Kịch Bản Tăng Giá Sự Cố (Pricing Dilemma)
+## 12.4. [Cách Làm Chi Tiết & Hướng Dẫn Kỹ Thuật] Guideline Giao Việc Đỉnh Cao: Sudo Prompt Ép AI Vẽ Kịch Bản Tăng Giá Sự Cố (Pricing Dilemma)
 
 Bức Cung AI là nghệ thuật để nó nhả ra Căn Cứ Trí Tuệ. Trở lại Vị Sếp Bán Máy Lọc Nước. Mùa Lạnh đang đến, Sếp kẹt trong Bế Tắc: *"Tính Toán Tăng Giá Lõi Lọc Thêm 12% Bù Trượt Giá Lạm Phát, Nhưng Rất Sợ Khách Đi Mua Chỗ Lõi Khá Khác Rẻ Hơn."*
 
@@ -100,9 +108,16 @@ Thay vì tung đồng xu, Sếp mở Antigravity lên và cắm Quyền Uy Nhậ
 > Dùng Matplotlib Vẽ 2 Đường Cong Xu Hướng Cắt Nhau Hình Chữ X Biểu Diễn "Đường Biến Thiên Định Giá" Và "Đường Thu Nhập Trực Tiếp Giảm". Xuất Tệp Hình Ảnh `Decision_Pricing_Matrix.png`.
 > Dùng Tính Năng Báo Cáo Ephemeral Nã Xuống Notification Terminal Máy Tôi: Khuyến Nghị: **LÀM, CHỜ, HAY HỦY? CHỨNG MINH 1 CÂU! LÀM ĐI ĐẶC VỤ YÊU QUÝ!**
 
-**Thực Hành Trực Tiếp: Từng Bước Gọi Hồn Toán Học Trên Antigravity**
+### 👣 Quy trình 3 bước "Bói toán" bằng toán học
 
-**Bước 1: Ban Bệnh Theo Nghĩa Đen Lên Giao Diện Chat**
+1. **Nạp liệu:** Upload file doanh số lịch sử vào Antigravity.
+2. **Kích hoạt:** Paste Sudo Prompt "Chiến dịch kiểm toán chính sách nhảy giá" (mẫu bên trên).
+3. **Thanh tra:** Đọc biểu đồ ma trận (X-matrix) và nhận khuyến nghị "LÀM" hoặc "HỦY" từ AI dựa trên 10.000 lượt giả lập.
+
+---
+
+## 12.5. [Kết Quả Đầu Ra & Processing] Báo Cáo Quyết Định Đẫm Máu (Decision Artifacts)
+
 Mở [Antigravity](https://antigravity.google). Bấm vào biểu tượng Đính kèm (📎) tải lên File dữ liệu Bán Hàng 5 năm của bạn.
 Sau đó, thay vì ngồi họp để "Cãi nhau", Sếp dán toàn bộ Sudo Prompt ở trên vào và gửi đi.
 
@@ -111,6 +126,8 @@ Bạn sẽ thấy 12 Giây nhấp nháy trên giao diện. Antigravity nhồi Th
 Màn hình Chatbot của Antigravity sẽ chuyển ngay sang dạng **Dashboard Báo Cáo Phân Tích Thông Minh**.
 
 ![Báo cáo Trực quan quyết định Tăng/Giảm Giá Cắt Khấu bằng Biểu đồ trên giao diện Antigravity](images/monte_carlo_ui_diagram.png)
+
+## 12.5. [Kết Quả Đầu Ra & Processing] Báo Cáo Quyết Định Đẫm Máu (Decision Artifacts)
 
 **Kết Quả Mẫu (Decision Artifacts):**
 
@@ -147,7 +164,7 @@ Sợi dây Thần kinh cảm tính của Hệ Thống Lãnh Đạo cũ nay đã 
 
 ---
 
-## 4. Checklist Quyền Lực Dành Cho Board Of Directors (BOD)
+## 12.6. [Kết Luận & Action Items] Checklist Quyền Lực Dành Cho Board Of Directors (BOD)
 
 Sếp à, Đôi khi thứ Giữ Sự Ổn Đinh Phát Triển Bền Vững (Sustainalibity) Lại Đến Từ Việc Không Ra Quyết Định Chẳng Đi Về Đâu Nào.
 
@@ -159,7 +176,7 @@ Sếp à, Đôi khi thứ Giữ Sự Ổn Đinh Phát Triển Bền Vững (Sust
 
 Đừng làm Tướng Gặp Thời. Hãy làm Khổng Minh Đo Quẻ Đo Trận Bằng Toán Có Căn Cứ Antigravity Hệ Số Chắc Ăn 80%. Nhờ Bộ Bọc Nhớ Kiến Thức Trăm Năm (Knowledge Bases - RAG).
 
-⏭ *(Chúng ta Sẽ Tổ chức Hệ Sinh Thái "Công Cụ Có Sẵn - Nhấn Là Ăn Xổi" - Siêu Thư Viện **Workflows & Skills Module** Ở Chương 7 Kế Bên. Nơi Không Có Sudo Mệt Não Mọi Lúc, Ở Đây Kho Chứa Đóng Gói Nhập Viện Chỉ Chờ Bạn Pick Nhạc Khởi Động Trại Cày Số Đỏ Của Doanh Nghiệp Của Bạn).*
+⏭ *(Lật cánh cửa tiếp theo sang **Chương 13: Local LLM — Xây Dựng Chatbot Nội Bộ** — Nơi chúng ta đưa trí tuệ AI về "nằm vùng" ngay trên máy tính của sếp).*
 
 ---
 

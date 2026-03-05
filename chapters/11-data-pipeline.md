@@ -1,12 +1,17 @@
-# Chương 6: Quyền Năng Thượng Tầng — Khai Khoáng "Mỏ Vàng" Dữ Liệu Bằng Hệ Thống Data Pipeline Tự Động
+# Chương 11: Quyền Năng Thượng Tầng — Khai Khoáng "Mỏ Vàng" Dữ Liệu Bằng Data Pipeline
 
-*(Nghệ thuật Luyện Kim Dữ Liệu không cần Data Scientist)*
+> [!IMPORTANT]
+> **Data Pipeline** là "động cơ vĩnh cửu" của doanh nghiệp số. Nó biến mớ hỗn độn dữ liệu thành những quyết định kinh doanh sắt bén.
+
+- **🎯 [Mục Tiêu Chương] (Objective):** Đập bỏ quy trình đối soát Excel thủ công. Xây dựng đường ống dữ liệu (Data Pipeline) tự động nạp, làm sạch và hợp nhất hàng vạn dòng dữ liệu từ nhiều nguồn.
+- **📥 [Đầu Vào] (Input):** 2 File Excel/CSV thô từ hai hệ thống độc lập (Vd: KiotViet và GHTK).
+- **🚀 [Đầu Ra] (Output):** File báo cáo tự động tô đỏ các dòng lệch tiền, kèm Dashboard BI trực quan.
 
 ---
 
 > 🚀 **Yêu cầu:** Bạn cần [Antigravity](https://antigravity.google) đã cài đặt và **2 file Excel/CSV bất kỳ** của công ty để thực hành đối soát ngay trong chương này.
 
-## 1. Lời Mở Đầu: Tội Ác Của Việc "Dò File Bằng Mắt" Tại Các Chuỗi Bán Lẻ
+## 11.2. Mở Đầu: Tội Ác Của Việc "Dò File Bằng Mắt" Tại Các Chuỗi Bán Lẻ
 
 ### 📖 Câu Chuyện Đau Đớn: Thảm Án Tiền Thu Hộ (C.O.D) Tại Thời Trang "NevaB"
 
@@ -28,12 +33,15 @@ Mai và 2 chị kế toán viên phải căng mắt ra so sánh 2 bảng tính n
 Nếu làm bằng hàm Excel `VLOOKUP`, chỉ cần số điện thoại bên GHTK gõ thừa 1 dấu cách (khoảng trắng), hoặc tên khách hàng "Nguyễn Văn A" bị viết thành "Nguyen Van A", hàm Excel sẽ báo lỗi `#N/A` toàn tập. Hàng ngàn ô báo lỗi.
 Chị Mai và 2 nhân viên phải hì hục dò bằng mắt, bấm `Ctrl + F` từng dòng một suốt 4 ngày 4 đêm. Mắt mờ, tay run, đến ngày thứ 5 báo cáo lên Sếp: *"Sếp ơi, tụi em tìm không ra, tháng này công ty Tạm Lỗ Chênh Lệch Khoảng 35 triệu đồng chưa rõ nguyên nhân"*.
 
+> [!NOTE]
+> **PwC 2025:** 75% SME mất từ 1.5% đến 3% doanh thu ròng mỗi tháng cho vòng xoáy "Thất lạc dòng tiền COD". Data Pipeline giúp giảm 99% thời gian đối soát và bịt kín các "lỗ rò rỉ" doanh thu tức khắc.
+
 **Bạn có thấy Nỗi Đau Này Quen Thuộc Không?**
 Tội ác lớn nhất của Chuyển đổi số nửa vời là bắt Con người biến thành Máy Đọc Dữ Liệu. SME Việt Nam chết chìm trong rác dữ liệu: Dữ liệu Facebook một kiểu, Dữ liệu Shopee một kiểu, Dữ liệu CRM một kiểu. Hàng núi Dữ liệu (Big Data) đáng lẽ phải là "Mỏ vàng" báo cáo Kinh doanh, nay lại trở thành "Bãi rác" hành xác nhân sự.
 
 ---
 
-## 2. Mô Hình Tư Duy: Xây Dựng "Data Pipeline" Không Cần Kỹ Sư Dữ Liệu
+## 11.3. [Phương Pháp Cốt Lõi] Mô Hình Tư Duy: Xây Dựng "Data Pipeline" Không Cần Kỹ Sư Dữ Liệu
 
 Ở các Tập đoàn lớn ngàn tỷ, họ có Nguyên một phòng ban gọi là "Phân Tích Dữ Liệu" (Data Analyst) lương mỗi người 40 triệu/tháng. Các Data Analyst này dùng ngôn ngữ lập trình Python, SQL để xây dựng các "Ống dẫn dữ liệu" (Data Pipeline): Hút dữ liệu từ A, rửa sạch, rồi bơm sang B.
 
@@ -57,7 +65,7 @@ Nhiệm vụ ra đồ hộp: Con người không đọc hiểu dòng code Python
 
 ---
 
-## 3. Khởi Chạy Phép Màu: Sudo Prompt Rút Ruột Đối Tác Vận Chuyển
+## 11.4. [Ví Dụ Mẫu & Case Study] Khởi Chạy Phép Màu: Sudo Prompt Rút Ruột Đối Tác Vận Chuyển
 
 Quay lại với bài toán Cứu mạng dòng tiền COD của chị Mai (Kế toán trưởng). Chị Mai không đi đoạt mắt dò Excel nữa. Chị Copy File KiotViet Mới Nhất và File GHTK thả vào một Thư mục `/Kiem_Toan_COD_Thang_10/`.
 Sau đó, chị bọc mình vào áo giáp của một "Tướng quân Data", ban bố Sudo Prompt Tối Thượng này:
@@ -96,34 +104,13 @@ Sau đó, chị bọc mình vào áo giáp của một "Tướng quân Data", ba
 4. **Tại sao Agent 3 phải tô màu?** Sếp không có thời gian tìm. Đập vào mắt Sếp phải là **Các Biến Cố Màu Đỏ** Đã Được Lọc. Mọi thứ bình thường bị che đi.
 5. **Tiền sinh ra thế nào?** 10.000 dòng mất 0.25 giây. Kế toán 4 ngày hì hục nay còn 1 Phút. Tiền thất thoát Lệch COD giảm từ 35 triệu/tháng xuống 0 Đồng.
 
-**Thực Hành Trực Tiếp: Từng Bước Vận Hành Pipeline Trên Antigravity**
+### 👣 Quy trình 3 bước "Luyện kim" dữ liệu
 
-Đừng chỉ đọc, hãy mở máy tính lên và làm theo 3 bước sau để thấy sức mạnh luyện kim của Data Pipeline:
+1. **Nạp liệu:** Upload cùng lúc 2 file (Vd: `Noi_Bo.xlsx` và `Doi_Tac.csv`) vào Antigravity.
+2. **Kích hoạt:** Paste Sudo Prompt "Chiến dịch khai quật dòng tiền" (mẫu bên dưới). Theo dõi Terminal khi AI dọn rác và so khớp.
+3. **Thu hoạch:** Nhận file `Ban_An_Hinh_Su_Doi_Soat.xlsx` với các ô lệch tiền được tô đỏ chót sẵn sàng để đối chất.
 
-**Bước 1: Nạp 2 Thể Dữ Liệu Khác Nhau Dạng Khối**
-Mở giao diện Chat của [Antigravity](https://antigravity.google). Bấm nút đính kèm (🔗) để Upload cùng lúc 2 file tài liệu:
-
-- `Noi_Bo.xlsx` (File xuất từ hệ thống công ty bạn).
-- `Doi_Tac.csv` (File do đối tác hoặc hệ thống thứ 3 xuất ra).
-Gõ hoặc Copy dán nguyên vẹn Sudo Prompt 3 tầng ở trên vào khung Chat và nhấn Enter.
-
-**Bước 2: Cỗ Máy Luyện Kim Hoạt Động (Nhìn Pandas Chạy Ngầm)**
-Bạn không cần quan tâm Pandas là gì, nhưng màn hình Terminal của Antigravity sẽ chứng minh nó đang làm việc cực kỳ nguyên tắc. Đây là những gì xuất hiện:
-
-```bash
-[INFO] Đang khởi tạo Môi trường Python nội bộ...
-[Agent 1] Clean data: df['Ma_Van_Don'] = df['Ma_Van_Don'].str.strip().str.upper()
-[Agent 1] Chuyển đổi Cột Tiền sang dạng Float... OK 10.000 dòng.
-[Agent 2] Đang nối 2 bảng (pd.merge)... 
-[Agent 2] Phát hiện 47 dòng Không Khớp Mã. Ghi vào Bao_Dong_Mat_Cap.
-[Agent 2] Phát hiện 12 dòng Dư thừa từ Đối tác. Ghi vào Don_Ao_Chen_Vao.
-[Agent 3] Đang tô Đỏ 30 dòng lệch chuẩn bằng openpyxl...
-[INFO] Quá trình hoàn tất trong 0.85 giây!
-```
-
-Toàn bộ quá trình quét 10.000 dòng diễn ra xấp xỉ 1 giây — Tốc độ mà Kế toán viên có nhịn ăn ngủ 3 ngày cũng không thể đọ lại.
-
-![Giao diện Antigravity hợp nhất 2 nguồn dữ liệu và xuất báo cáo lệch chuẩn thời gian thực](images/data_pipeline_execution_ui.png)
+## 11.5. [Kết Quả Đầu Ra & Processing] Báo Cáo Lệch Chuẩn Thời Gian Thực
 
 **Kết Quả Mẫu (Mừng Roi Khổng Lồ):**
 
@@ -150,11 +137,7 @@ Antigravity cung cấp ngay file Output cuối cùng `Ban_An_Hinh_Su_Doi_Soat_T1
 
 ---
 
-## 4. WorkFlow Ứng Dụng Đa Cấp: Máy Đo Lường Của Giám Đốc (BI Dashboard)
-
-Nếu đối chiếu Khớp lệch là Nhu cầu Sinh tồn phòng Kế toán. Thì Nhu cầu của Giám đốc Lạnh lùng hơn: **Business Intelligence (Trí Tuệ Kinh Doanh).**
-
-## 4. Xây Dựng "Ngân Hàng Trung Ương" Dữ Liệu (Data Warehouse & BI Dashboard)
+## 11.6. [Ví Dụ Mẫu & Case Study] WorkFlow Ứng Dụng Đa Cấp: Xây Dựng "Ngân Hàng Trung Ương" Dữ Liệu (Data Warehouse & BI Dashboard)
 
 Nếu đối chiếu Khớp lệch là Nhu cầu Sinh tồn của phòng Kế toán. Thì Nhu cầu tối thượng của Giám đốc (CEO) Lạnh lùng hơn: **Business Intelligence (Trí Tuệ Kinh Doanh) Thời Gian Thực.**
 
@@ -181,30 +164,12 @@ Quy trình chuẩn mực (Best Practice) dành cho SME bước vào kỷ nguyên
 - Doanh nghiệp cắm một phần mềm BI (Business Intelligence) trực tiếp vào Data Warehouse ở Chặng 2.
 - *Công cụ Khuyên dùng:* **Metabase** (Miễn phí, Giao diện cực đẹp, Cắm vào PostgreSQL/MySQL trong 1 nốt nhạc), **Google Looker Studio** (Dùng chung với BigQuery), hoặc **Apache Superset**.
 
-### 🛠️ Sudo Prompt Cắm Rễ Data Vào "Nhà Kho" (Data Warehouse)
-
-Hãy xem cách Lãnh đạo ra lệnh cho Antigravity biến File Excel thành Máu Chảy Trong Data Warehouse:
-
-> **SUDO PROMPT: ĐỔ MÓNG NHÀ KHO DỮ LIỆU TẬP TRUNG (ETL PIPELINE)**
->
-> 👑 **[MỤC TIÊU LÕI]**
-> Chào Kỹ sư Dữ liệu Cấp cao. Nhiệm vụ của bạn không phải là tạo file Excel nữa. Sếp muốn toàn bộ Dữ liệu Doanh thu tuần này phải chảy thẳng vào Động Cơ PostgreSQL nội bộ (`host: db.congty.com`, `user: admin`).
->
-> ⚙️ **[TIẾN TRÌNH THỰC THI CHUẨN MỰC]**
->
-> 1. **[E - Extract]:** Quét Thư mục `/Bao_Cao_Tho/`. Đọc toàn bộ 15 file CSV rác của Tuần qua.
-> 2. **[T - Transform]:** Lọc bỏ các dòng khách hàng "Test". Gom chuẩn Form ngày tháng về dạng `YYYY-MM-DD`. Bắt buộc tính ra Cột [Lợi Nhuận Gộp] = Giá Bán - Giá Vốn - Tiền Ads.
-> 3. **[L - Load]:** KHÔNG XUẤT EXCEL. Mở cờ lê thư viện `SQLAlchemy` của Python. Bắn toàn bộ 50.000 dòng sạch sẽ này `INSERT` thẳng vào Bảng `fct_doanh_thu_tong_hop` trên PostgreSQL.
->
-> Nếu đụng dòng nào Trùng Lặp Khóa (Duplicate), tự động Cập nhật Đè lên (Upsert). Báo cáo tôi Khi Xong 100%.
-
-Lúc này, Sáng Chủ Nhật thức dậy, Sếp chỉ cần nhâm nhi ly Cafe, mở Ipad truy cập vào đường link **Metabase Dashboard** của công ty (Ví dụ: `dashboard.congty.com`). Các biểu đồ Doanh thu, Cảnh báo Lỗ/Lãi, Tồn kho... đã tự động cập nhật số liệu mới nhất của đêm qua (Bởi Antigravity đã âm thầm cày cuốc lúc 2h sáng).
-
-**Đó chính là Quyền lực Số Tuyệt Đối. Sự Thảnh thơi của Bậc Quân Vương Tướng Trận.**
+> [!TIP]
+> **Dòng Tiền đến từ đâu?** 10.000 dòng mất 0.25 giây. Kế toán 4 ngày hì hục nay còn 1 phút. Tiền thất thoát lệch COD giảm về 0 đồng. CEO nắm quyền lực số tuyệt đối, thảnh thơi như bậc quân vương.
 
 ---
 
-## 5. Bảng Nhận Diện Cơ Hội Khai Thác: Triển Khai Xương Sống Dữ Liệu
+## 11.7. [Kết Luận & Action Items] Bảng Nhận Diện Cơ Hội Khai Thác: Triển Khai Xương Sống Dữ Liệu
 
 Mang Checklist này xuống mọi phòng ban, phát tín hiệu tìm "Cơ hội Khai phá":
 
@@ -222,7 +187,7 @@ Mang Checklist này xuống mọi phòng ban, phát tín hiệu tìm "Cơ hội 
 Bạn Có Hiểu Sự Thấu Suốt Của Câu Chữ Không?
 Tất Cả Sức Sáng Chói Này Đến Được Lại Bởi Cái "Bộ Óc Trí Tuệ" Phía Sau.
 Nhưng nếu File dữ liệu chưa có thì sao? Nếu chúng ta phải đoán trước tương lai?
-⏭ *(Lật Qua **Chương 7: Ra Quyết Định Kinh Doanh Và Trọng Tâm Của Phân Tích Kịch Bản (Monte Carlo)**).*
+⏭ *(Lật qua **Chương 12: Phân Tích Kịch Bản & Monte Carlo** — Nơi chúng ta dùng toán học để nhìn thấu tương lai dự án).*
 
 ---
 
@@ -232,7 +197,5 @@ Nhưng nếu File dữ liệu chưa có thì sao? Nếu chúng ta phải đoán 
 - [Skill Đối Soát Ngân Hàng](../skills/doi_soat_ngan_hang/SKILL.md)
 - [Skill Phân Tích Lãi Lỗ](../skills/phan_tich_lai_lo/SKILL.md)
 - [Workflow Đối Soát COD](../workflows/doi-soat-cod.md)
-- [Workflow Phân Tích Doanh Thu](../workflows/phan-tich-doanh-thu.md)
-- [Dự án mẫu — Demo đối soát COD](../demo-project/README.md)
-- [Pandas Documentation](https://pandas.pydata.org/docs/)
-- [openpyxl — Python Excel](https://openpyxl.readthedocs.io/)
+- [Chương 12 — Quyết Định Kinh Doanh](12-business-decision-making.md)
+- [Chương 08 — MCP kết nối hệ thống](08-mcp-ket-noi-he-thong.md)

@@ -1,10 +1,15 @@
-# Chương 9: MCP — Cánh Cổng Kết Nối Antigravity Với Thế Giới Bên Ngoài
+# Chương 8: MCP — Cánh Cổng Kết Nối Antigravity Với Thế Giới Bên Ngoài
 
-*(Model Context Protocol — Bí Mật Vũ Khí Mở Rộng Siêu Năng Lực AI)*
+> [!IMPORTANT]
+> **MCP (Model Context Protocol)** là "linh hồn" của Agentic AI. Nó phá vỡ bức tường ngăn cách giữa trí tuệ nhân tạo và dữ liệu thực tế của doanh nghiệp.
+
+- **🎯 [Mục Tiêu Chương] (Objective):** Xóa bỏ ranh giới "AI bị nhốt trong hộp". Hướng dẫn Sếp cách cấp chìa khóa định tuyến cho Antigravity để nó cắm vòi hút Data trực tiếp từ Google Sheets, MySQL và phát loa qua Slack.
+- **📥 [Đầu Vào] (Input):** Một tài khoản Google Workspace hoặc Chuỗi kết nối Database nội bộ (Read-Only).
+- **🚀 [Đầu Ra] (Output):** AI truy vấn được doanh thu Real-time trong 5 giây và vẽ biểu đồ ngay trên khung Chat.
 
 ---
 
-## 1. MCP Là Gì? — Giải Mã Bằng Ngôn Ngữ Doanh Nhân
+## 8.2. Mở Đầu: MCP Là Gì? — Giải Mã Bằng Ngôn Ngữ Doanh Nhân
 
 ![MCP — Cầu nối Antigravity với Google Sheets, Slack, Database và API nội bộ](images/mcp_protocol.png)
 
@@ -22,11 +27,14 @@ Hãy tưởng tượng Antigravity là một **Siêu Đầu Bếp** cực kỳ t
 **Không có MCP:** AI chỉ đọc được file trên máy tính của bạn.
 **Có MCP:** AI có thể chui vào mọi hệ thống doanh nghiệp, đọc dữ liệu sống, ghi kết quả trực tiếp.
 
+> [!NOTE]
+> **Gartner 2025:** 88% lãnh đạo C-level phàn nàn AI hiện tại "quá tĩnh". MCP chính là lời giải giúp AI Agent vận hành với tốc độ mili-giây trên dữ liệu sống.
+
 ### Định Nghĩa Kỹ Thuật (Dành Cho IT)
 
 **MCP (Model Context Protocol)** là giao thức chuẩn mở do Anthropic phát triển, cho phép AI kết nối với các nguồn dữ liệu và dịch vụ bên ngoài thông qua các MCP Server. Mỗi MCP Server là một chương trình nhỏ đóng vai trò "Cầu nối" giữa AI và một hệ thống cụ thể.
 
-```
+```text
 ┌─────────────────┐     MCP Protocol     ┌──────────────────┐
 │   Antigravity   │ ◄──────────────────►  │   MCP Server     │
 │   (AI Agent)    │                       │ (Google Sheets)  │
@@ -41,7 +49,7 @@ Hãy tưởng tượng Antigravity là một **Siêu Đầu Bếp** cực kỳ t
 
 ---
 
-## 2. Cách Cài Đặt MCP Trong Antigravity — Hướng Dẫn Từng Bước
+## 8.3. [Phương Pháp Cốt Lõi] Cách Cài Đặt MCP Trong Antigravity — Hướng Dẫn Từng Bước
 
 ### Bước 1: Tạo File Cấu Hình MCP
 
@@ -75,12 +83,13 @@ Tạo file `.gemini/settings.json` trong thư mục HOME của bạn:
 }
 ```
 
-### Bước 2: Khai Giới Chìa Khóa (OAuth2 & Service Account)
+### 👣 Quy trình 3 bước "Xuyên không" vào Database doanh nghiệp
 
-Phần lớn Giám đốc sẽ hỏi: *"Lấy cái Chuỗi Token ngoằn ngoèo kia ở đâu?"*
-
-- Đối với Google Sheets: Bạn không cần dùng tài khoản Gmail cá nhân. Hãy vào Google Cloud Console, tạo một **Service Account** (Giống như tạo một nhân viên Robot ảo). Tải file `credentials.json` về, hoặc copy `Client_Email` và lấy chìa khóa OAuth2. Sau đó, vào Sheet của Công ty, bấm nút **Share** (Chia sẻ) cho đúng cái `Client_Email` của con Robot đó quyền Editor. Bảo Mật Cấp Độ Ngân Hàng.
-- Đối với MySQL: Yêu cầu IT nội bộ cấp một User riêng (`user:pass`), chỉ có quyền ĐỌC (`ReadOnly`) trên hệ thống Live Database (Tránh việc AI phá bảng dữ liệu).
+1. **Khởi tạo:** Tạo file `.gemini/settings.json` trong thư mục Home để khai báo các Server MCP cần dùng (Google Sheets, MySQL...).
+2. **Cấp quyền (Permission):**
+   - 🛡️ **Google Sheets:** Share quyền Editor cho email Service Account của robot.
+   - 🛡️ **MySQL:** Cấp tài khoản `ReadOnly` để AI chỉ được xem, không được xóa dữ liệu.
+3. **Kích hoạt:** Khởi động lại Antigravity và gõ: *"Hãy liệt kê tất cả MCP resources đang kết nối."*
 
 ### Bước 2: Khởi Động Lại Antigravity
 
@@ -95,7 +104,7 @@ AI sẽ trả về danh sách các MCP Server và tài nguyên có sẵn.
 
 ### ✅ Expected Output
 
-```
+```text
 Đã kết nối 3 MCP Servers:
 1. google-sheets: Đọc/Ghi Google Sheets (5 spreadsheets có sẵn)
 2. database: Truy vấn PostgreSQL (12 bảng trong schema public)
@@ -104,7 +113,7 @@ AI sẽ trả về danh sách các MCP Server và tài nguyên có sẵn.
 
 ---
 
-## 3. Case Study Ứng Dụng MCP Trong Doanh Nghiệp
+## 8.4. [Ví Dụ Mẫu & Case Study] Case Study Ứng Dụng MCP Trong Doanh Nghiệp
 
 ### 💼 Case Study 1: Kế Toán — Đối Soát COD Real-Time Với Google Sheets
 
@@ -229,17 +238,12 @@ Dùng MCP, Antigravity thao túng trực tiếp Metabase API:
 
 **Mọi thứ diễn ra tự động. AI tự sinh Link Dashboard và gửi đi thay vì Human phải bấm trỏ chuột.**
 
-**"5 Whys" Thần Tốc Cho Mạng Lưới MCP Này:**
-
-1. **Làm gì?** Biến Antigravity từ một Chatbot Giam Cầm thành Cỗ Máy Cắm Mạch Máu trực tiếp vào mọi Phần Mềm của Cty.
-2. **Tại sao không xuất Excel rồi Import?** Export/Import là "Bãi rác" của Thời gian trễ (Time-lag). Khi bạn đang Export, ngoài kia khách đã trả thêm 100 đơn. MCP đọc Data Sống từng giây.
-3. **Tại sao API lại an toàn?** Sếp chỉ cấp Quyền "Read-Only" (Chỉ Đọc) cho AI thông qua Token. Nếu AI nổi điên đòi Xóa Database, Máy Chủ MySQL sẽ vả ngược lại nó bằng mã lỗi 403 Forbidden.
-4. **Lỗi đứt mạng xử lý sao?** Tường lửa chặn Bot? Không hề, MCP là thư viện chính quy (Open Standard). Nếu mạng rớt, Agent sẽ báo lỗi Request và chờ lệnh Tiếp Theo, không làm sập Database.
-5. **Dòng Tiền đến từ đâu?** Giải phóng IT khỏi các Việc "Sếp Ơi Kéo Report". IT tập trung bảo mật hệ thống. CEO tự đọc Số Sáng Tinh Mơ không cần chờ đến 9h NV đến văn phòng.
+> [!TIP]
+> **Dòng Tiền đến từ đâu?** Giải phóng IT khỏi các việc "Sếp ơi kéo báo cáo". CEO tự đọc số sáng sớm không cần chờ nhân viên đến văn phòng. Tốc độ ra quyết định (Speed of Decision) tăng gấp 10 lần.
 
 ---
 
-## 4. Danh Sách MCP Server Phổ Biến Cho Doanh Nghiệp Việt
+## 8.6. [Kết Quả Đầu Ra & Processing] Danh Sách MCP Server Phổ Biến Cho Doanh Nghiệp Việt
 
 | MCP Server | Mục đích | Phòng ban |
 | :--- | :--- | :--- |
@@ -254,7 +258,7 @@ Dùng MCP, Antigravity thao túng trực tiếp Metabase API:
 
 ---
 
-## 5. Quy Trình Tích Hợp MCP Cho SME (Step-by-Step)
+## 8.5. [Cách Làm Chi Tiết & Hướng Dẫn Kỹ Thuật] Quy Trình Tích Hợp MCP Cho SME (Step-by-Step)
 
 ### Giai đoạn 1: Khảo sát (Ngày 1-2)
 
@@ -283,7 +287,7 @@ Dùng MCP, Antigravity thao túng trực tiếp Metabase API:
 
 ---
 
-## 6. Troubleshooting MCP
+### Troubleshooting MCP
 
 | Sự Cố | Nguyên Nhân | Giải Pháp |
 | :--- | :--- | :--- |
@@ -295,11 +299,11 @@ Dùng MCP, Antigravity thao túng trực tiếp Metabase API:
 
 ---
 
-## 📚 Tài Liệu Tham Khảo
+## 8.7. [Kết Luận & Action Items] Tổng Kết & Tài Liệu Tham Khảo
 
 - [Model Context Protocol — Tài liệu chính thức](https://modelcontextprotocol.io/)
 - [Danh sách MCP Servers có sẵn](https://github.com/modelcontextprotocol/servers)
 - [Hướng dẫn tạo MCP Server tùy chỉnh](https://modelcontextprotocol.io/docs/concepts/servers)
 - [Chương 0 — Giới thiệu Antigravity](00-gioi-thieu-antigravity.md)
-- [Chương 8 — Skills & Workflows](08-skills-va-workflows.md)
-- [Phụ lục — Cài đặt môi trường](phu-luc-cai-dat-moi-truong.md)
+- [Chương 7 — Skills & Workflows](07-skills-va-workflows.md)
+- [Chương 16 — Bảo Mật & Quyền Riêng Tư](16-bao-mat-phap-ly.md)

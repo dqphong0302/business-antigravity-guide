@@ -201,5 +201,5 @@ Thêm 1 file BaoCao_CEO.md tóm tắt 5 dòng (CEO bận, không đọc dài).
 4. **Thay đổi** đường dẫn file (`/Data/...`) cho khớp với thư mục dữ liệu của bạn.
 5. **Enter** → Ngồi xem AI điều binh.
 
-> 🔗 Xem thêm lý thuyết Multi-Agent tại [Chương 8 — Điều Binh Đa Đặc Vụ](04-multi-agent.md).
-> 🔗 Lưu Prompt hay thành Skill tái sử dụng tại [Chương 8 — Skills & Workflows](08-skills-va-workflows.md).
+> 🔗 Xem thêm lý thuyết Multi-Agent tại [Chương 17 — Điều Binh Đa Đặc Vụ](09-multi-agent.md).
+> 🔗 Lưu Prompt hay thành Skill tái sử dụng tại [Chương 17 — Skills & Workflows](07-skills-va-workflows.md).

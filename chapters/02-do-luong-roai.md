@@ -1,14 +1,11 @@
-<div align="center">
+# Chương 2: Bảng Đo Lường "Return on AI" (ROAI) — Lời Giải Cho Bức Tranh Lợi Nhuận
 
-# Chấp 17: Bảng Đo Lường "Return on AI" (ROAI) — Lời Giải Cho Bức Tranh Lợi Nhuận
+![Bảng điều khiển ROAI Premium - Minh họa lợi nhuận từ AI](images/premium_roi.png)
 
-</div>
+> [!IMPORTANT]
+> Một dự án Tự Động Hóa chỉ là "Đồ chơi công nghệ" cho đến khi bạn chứng minh được trên bảng Excel rằng nó đang in ra tiền.
 
-> *Một dự án Tự Động Hóa chỉ là "Đồ chơi công nghệ" cho đến khi bạn chứng minh được trên bảng Excel rằng nó đang in ra tiền.*
-
-![Bảng Điều Khiển ROAI Thực Tế Tại SME](images/roai_dashboard_metrics.png)
-
-## 17.1. Căn Bệnh "Thử Cho Biết" Và Mồ Chôn Dự Án AI
+## 2.1. Căn Bệnh "Thử Cho Biết" Và Mồ Chôn Dự Án AI
 
 Rất nhiều SME Việt Nam sau khi mua Antigravity hoặc tài khoản ChatGPT ChatGPT Plus về, để nhân viên chơi đùa khoảng 2 tuần rồi... bỏ xó. Lý do cốt lõi: **Ban Giám Đốc không có công cụ đo lường Hoàn Vốn (Return on AI - ROAI).**
 
@@ -18,7 +15,7 @@ Chương cuối cùng này cung cấp cho bạn một Vũ khí sắc bén nhất
 
 ---
 
-## 17.2. Phương Trình Cốt Lõi Tính Toán ROAI
+## 2.2. Phương Trình Cốt Lõi Tính Toán ROAI
 
 Đừng đo lường dự án AI bằng số lượng câu lệnh (Prompt) đã gõ. Hãy đo trên Bảng Hệ Quy Chiếu Lương Cơ Bản của nhân sự.
 
@@ -38,18 +35,12 @@ Chương cuối cùng này cung cấp cho bạn một Vũ khí sắc bén nhất
 - Bạn dùng Lệnh Kế Toán Antigravity (`/lap-to-khai-thue` - Chương 08).
 - AI nuốt 10.000 file PDF trong vòng 15 Phút. Điện năng và Giá API Token thực tế trừ vào tài khoản Google Gemini chỉ tốn 2$ (50.000 VNĐ).
 
-**LẬP BẢNG TÍNH LỢI NHUẬN GỘP (ROAI) 1 THÁNG CỦA 1 TÁC VỤ NHỎ:**
-
-- Chi phí chạy người cũ : `3.400.000 VNĐ`
-- Tiền mua API cho máy  : `- 50.000 VNĐ`
-- **Tiền Lãi Ròng (ROAI) : `+ 3.350.000 VNĐ`**
-- **Sản lượng Kép:** Kế toán được giải phóng 40h/tháng. Đẩy họ sang làm Thu hồi Nợ Khó Đòi (Phát sinh dòng tiền thực).
-
-*Một phép tính quá hiển nhiên để bóp cò quyết định!* Nếu tính Lũy kế 6 Phòng Ban (Nhân sự, Marketing, CSKH) mỗi tháng tiết kiệm được 200 Giờ công, SME bạn đang Lãi Chóp một Nhân Sự Cứng Cựa Miễn Phí.
+> [!TIP]
+> **Phép tính thức tỉnh:** Một phép tính quá hiển nhiên để bóp cò quyết định! Nếu tính Lũy kế 6 Phòng Ban (Nhân sự, Marketing, CSKH) mỗi tháng tiết kiệm được 200 Giờ công, SME bạn đang Lãi Chóp một Nhân Sự Cứng Cựa Miễn Phí.
 
 ---
 
-## 17.3. Khung OKRs Thiết Lập Mục Tiêu Ứng Dụng Agentic AI Cấp Công Ty
+## 2.3. Khung OKRs Thiết Lập Mục Tiêu Ứng Dụng Agentic AI Cấp Công Ty
 
 Cách tốt nhất để ép nhân viên bỏ lối mòn là **Biến Vị Trí Của Họ Thành "Người Duyệt Bot"**.
 
@@ -64,7 +55,7 @@ Thay vì giao KPI: *"Tháng này em phải viết 30 bài SEO"*. Hãy giao OKRs 
 
 ---
 
-## 17.4. Case Study Thực Chiến: Hệ Thống Đo Lường ROI Phòng Nhân Sự (HR)
+## 2.4. Case Study Thực Chiến: Hệ Thống Đo Lường ROI Phòng Nhân Sự (HR)
 
 **Bối cảnh:** Trưởng phòng HR bị Sếp chất vấn: *"Mua AI tốn 100$ API cho phòng mày tháng này, cuối cùng mang lại lợi ích mẹ gì bằng con số?"* Trưởng phòng HR quyết định thiết lập một File CSV Tracking Cứng.
 
@@ -80,35 +71,30 @@ CMD-002,Tran_Thi_B,Chấm KPI 50 User,5 phút, 18 Giờ (18*85k),12,000, 1,518,0
 CMD-003,Nguyen_Van_A,Viết 30 Hợp Đồng,3 phút, 10 Giờ (10*85k),5,000, 845,000
 ```
 
-**Cách Thức Thực Hiện Từng Bước (Step-by-Step Execution):**
+### 👣 Quy trình 4 bước thiết lập hệ thống tự động báo cáo ROAI
 
 **Bước 1: Khởi Tạo Bảng Theo Dõi Trên Google Sheets**
 
-- Mở `docs.google.com/spreadsheets`. Tạo Form tên là "ROAI_Dashboard".
-- Điền các Tiêu đề Cột (ID_Lệnh, Tên_Nghiệp_Vụ, Tiết_Kiệm...).
-- Chọn **Share (Chia sẻ)**, thiết lập quyền đọc cho toàn thể C-Level và quyền Ghi (Editor) cho Email Service Account của Antigravity (Xem lại Chương 09).
+- 📊 Mở `docs.google.com/spreadsheets`. Tạo Form tên là "ROAI_Dashboard".
+- 📋 Điền các Tiêu đề Cột: `ID_Lệnh`, `Tên_Nghiệp_Vụ`, `Số_Lượng`, `Tiết_Kiệm_VND`.
+- 🔑 Thiết lập quyền Ghi (Editor) cho Antigravity qua MCP Google Sheets.
 
 **Bước 2: Gắn Nút Theo Dõi (Tracking Node) Vào Kỹ Năng**
 
-- Mở bất kỳ File Kỹ năng `SKILL.md` nào của phòng ban (Ví dụ: `/loc-cv-ung-vien` của HR).
-- Kéo xuống dưới cùng của file này, thêm dòng Bash Script sau để ép AI tự báo cáo thành tích vào cuối mỗi ca làm việc:
+- 🛠️ Mở bất kỳ File Kỹ năng `SKILL.md` nào (Ví dụ: `/loc-cv-ung-vien`).
+- 📝 Thêm đoạn mã ghi log tự động vào cuối file:
 
   ```bash
-  # Đoạn mã ghi Log ROAI tự động sau khi AI làm xong việc
-  echo "$(date +%Y-%m-%d), Lọc CV, $TOTAL_CV_PROCESSED, $TIME_ELAPSED, $HUMAN_HOURS_SAVED, $API_COST_ESTIMATE, $MONEY_SAVED" >> /exports/roai_report.csv
+  echo "$(date), Lọc CV, $TOTAL, $SAVED" >> /exports/roai_report.csv
   ```
 
 **Bước 3: Lệnh Chuyển Dữ Liệu Lên Đám Mây**
 
-- Bật Terminal của Antigravity, tạo một Lịch trình định kỳ (Cronjob) vào chiều Thứ 6 hàng tuần:
+- 🚀 Bật Terminal, gõ lệnh: *"Đọc file `/exports/roai_report.csv` và đẩy lên Google Sheets ROAI_Dashboard"*.
 
-  ```text
-  @antigravity Đọc file `/exports/roai_report.csv` máy nội bộ và Bắn toàn bộ hàng mới lên Bảng tính `ROAI_Dashboard` qua MCP Google Sheets.
-  ```
+**Bước 4: Trình Bày Thành Quả Trước BOD**
 
-**Bước 4: Trình Bày Thành Quả Trước Vị Sếp Tuyệt Đối**
-
-- Cứ đều đặn chiều Thứ 6 hàng tuần, Trưởng phòng HR mở Link Google Sheet: *"Tuần này AI chạy tiền điện mất 42.000 Đồng, tiết kiệm cho phòng ta 5.738.000 Đồng phí làm thêm giờ cuối tuần (OT)."* Ban Giám đốc nhìn biểu đồ Real-time gật gù, lập tức cấp thêm ngân sách mở rộng rinh AI cho toàn công ty.
+- 📈 Đều đặn chiều Thứ 6 hàng tuần, mở biểu đồ Real-time: *"Tuần này AI giúp ta tiết kiệm 5.7 tr VNĐ phí làm thêm giờ"*.
 
 ---
 
