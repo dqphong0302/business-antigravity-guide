@@ -118,3 +118,77 @@ _Đã Nối Nền Tảng MCP Kết Nối Vào Database SQL KiotViet*
 _File cần chuẩn bị: Ném File Bản Powerpoint Kế Hoạch 5 Tỷ Khởi Nghiệp Sản Phẩm Mới Trình Sếp Của Phòng R&D.*
 > Quăng Lệnh "Kẻ Đóng Vai Ác" Vào Đây. Bạn Đọc Kế Hoạch Trình Diễn Bơm Thổi Trong Bản Đề Án `Đề_Án_Mở_Chi_Nhánh_Trùm.pdf`. Vứt Bỏ Vai Trò Thông Dịch Lên Chóp Đi!. Mày Hiện Thân Làm Quỹ Đầu Tư Chày Cối Gắt Gỏng Nhất Chê Bai Mùi Mẫn Tội Lỗi Vạch Ra Ít Nhất 3 Điểm Đứt Cáp Mà Nếu Tôi Ký Đề Án Này Bọn Trưởng Phòng Này Sẽ Nuốt Cháy Công Ty Tôi Xuống Mực Âm Bán Tài Sản!
 > Tính Rủi Ro Monte-Carlo Đi Đi!
+
+---
+
+## 🏭 7. VŨ KHÍ TỰ ĐỘNG HÓA KHO BÃI & VẬN HÀNH (OPERATIONS)
+
+### Lệnh 13: Trợ Lý Quản Trị Tồn Kho & Cảnh Báo Sớm
+
+_File cần chuẩn bị: Bảng xuất nhập tồn Excel xuất từ hệ thống ERP/KiotViet.*
+> Tôi vừa thả vào đây file `TonKho_T10.xlsx`.
+> Mệnh lệnh: Dùng Python phân tích tốc độ bán (Run-rate) của 30 ngày qua. Nhặt ra 10 mã hàng đang có lượng tồn kho nằm dưới ngưỡng an toàn (sẽ hết sạch trong 7 ngày tới với tốc độ bán này).
+> Lập cho tôi một Bảng Kế Hoạch Đặt Hàng Mới (PO) gửi Nhả Cung Cấp, tính toán sẵn số lượng cần bù đắp để tồn tại qua 30 ngày tiếp theo. Lưu thành file `Don_Dat_Hang_Khan.xlsx`.
+
+### Lệnh 14: Kỹ Sư Logistics Tuyển Chọn Đơn Vị Giao Hàng Ác Liệt Nhất
+
+_File cần chuẩn bị: Danh sách 500 đơn hàng hôm nay (gồm cân nặng, kích thước, địa chỉ).*
+> Ném 500 đơn hàng này vào lò bát quái. Tôi cho bạn Barem cước: GHTK rẻ nhất hàng dưới 2kg nội tỉnh. Viettel Post rẻ nhất hàng cồng kềnh (trên 10kg) đi tỉnh. Nhất Tín rẻ nhất hàng đi miền Trung.
+> Mệnh lệnh: Viết thuật toán Auto-Routing (Chia tuyến tự động). Phân bổ 500 đơn này cho 3 bên giao hàng sao cho TỔNG CHI PHÍ VẬN CHUYỂN CUỐI CÙNG LÀ NHỎ NHẤT. Cập nhật thêm một cột "Giao Cho Đơn Vị Nào" vào bảng gốc.
+
+---
+
+## 🔬 8. VŨ KHÍ R&D VÀ PHÁT TRIỂN SẢN PHẨM
+
+### Lệnh 15: Chuyên Gia Rút Trích Lõi Công Nghệ Đối Thủ (Vision Spec)
+
+_File cần chuẩn bị: Chụp màn hình (Screenshot) 5 bức ảnh giao diện App/Web tính năng mới của đối thủ.*
+> Mở Mắt Thần (Computer Vision) ngắm 5 bức ảnh screenshot màn hình App của đối thủ bự nhất ngành tôi.
+> Bạn hãy Reverse-Engineering (Giải mã ngược): Chuyển đổi 5 bức ảnh này thành một tài liệu Yêu Cầu Tính Năng Kỹ Thuật (PRD - Product Requirement Document) dài 3 trang bằng File Word. Yêu cầu bóc tách rõ: Nút bấm màu gì, luồng đi từ trang A sang trang B như thế nào, và Tính năng Ẩn phía sau có thể là gì. Để tôi quăng cho Team Dev nhà làm theo ngay tháng này!
+
+### Lệnh 16: Máy Cắt Nghĩa Tài Liệu Ngoại Ngữ Chuyên Ngành (RAG Document)
+
+_File cần chuẩn bị: Manual Hướng dẫn sử dụng máy công nghiệp bằng tiếng Đức/Trung dài 200 trang.*
+> Đọc ngay cuốn Catalogue `May_Ep_Khuon_200Pages_DE.pdf` bằng tiếng Đức này.
+> Mệnh lệnh: Không dịch lóng ngóng. Dùng thuật ngữ Kỹ Thuật Cơ Cơ Khí Chính Xác. Dịch trọn bộ 20 trang đầu sang Tiếng Việt. GIỮ NGUYÊN HOÀN TOÀN TẤT CẢ BẢNG BIỂU (Table) định dạng. Trích xuất thêm 1 bảng Cheat-Sheet (Phao cứu sinh) 1 trang tóm tắt 10 bước vệ sinh máy quan trọng nhất để dán lên tường cho công nhân đọc hiểu.
+
+---
+
+## 🔐 9. VŨ KHÍ BẢO MẬT & IT NỘI BỘ
+
+### Lệnh 17: Mặt Nạ Kẽm Che Giấu Dữ Liệu Nhân Sự Nhạy Cảm (Data Masking)
+
+_File cần chuẩn bị: Bảng tính lương tháng 12 full họ tên, CCCD, số tài khoản.*
+> Lệnh Tối Cao Về Quyền Riêng Tư: Tôi tải lên file `BangLuong_Full_Thang12.csv`.
+> Nghiêm Cấm việc để lộ Thông tin Cá nhân. Hãy chạy một luồng Python ẩn ngay trên máy tôi:
+>
+> 1. Che mờ (Mask) toàn bộ Cột "Họ Tên", "CCCD", "Số Tài Khoản" thành chuỗi `***`.
+> 2. Đảo ngẫu nhiên (Anonymize) cột ID Nhân Viên.
+> 3. Xuất file trả lại tôi tên `Bang_Luong_Da_Censored.csv` để tôi có thể yên tâm ném file này lên Cloud cho Data Analyst phân tích quỹ lương mà không sợ rò rỉ. Tuyệt đối xóa file gốc khỏi bộ nhớ sau khi làm xong!
+
+### Lệnh 18: Quân Khuyển Tuần Tra Tránh Hack (Security Audit)
+
+_File cần chuẩn bị: Kết nối MCP vào Local Server Log.*
+> Nối dây MCP vào đuôi `/var/log/auth.log` của Máy Chủ Nội Bộ Công Ty.
+> Rà soát toàn bộ lịch sử xâm nhập trong 30 ngày qua. Tìm ra có bao nhiêu tài khoản Admin nội bộ KHÔNG thay đổi mật khẩu định kỳ 6 tháng. Phát hiện các IP lạ Ping liên tục vào khung giờ 2H Sáng. Xuất cho tôi 1 Báo Cáo Cảnh Báo Đỏ, chỉ với 3 gạch đầu dòng những Lỗ Hổng nguy cấp nhất cần rút cáp hạ gục ngay lập tức.
+
+---
+
+## 🤖 10. VŨ KHÍ ĐỈNH CAO: TỔ HỢP AGENTIC MULTI-SWARM
+
+### Lệnh 19: Bộ Sậu Ban Lãnh Đạo Chém Gió Kinh Mạch (Swarm Debate)
+
+_File cần chuẩn bị: File PDF Báo cáo tài chính quý 3 thê thảm.*
+> Bật Khởi Chạy 3 Agent Tư Vấn Độc Lập cho tôi (Multi-Agent Swarm):
+>
+> - **Agent 1 (CFO Khắc Nghiệt):** Nhiệm vụ tìm cách cắt giảm chi phí tàn nhẫn sau khi đọc báo cáo Tài chính này.
+> - **Agent 2 (CMO Bành Trướng):** Nhiệm vụ bảo vệ ngân sách chạy Ads bằng mọi giá.
+> - **Agent 3 (Trọng Tài CEO):** Ngồi nghe 2 Agent kia cãi nhau.
+>
+> Mệnh lệnh: Hãy để Agent 1 và Agent 2 tự viết một cuộc hội thoại phản biện nhau 3 hiệp liên tiếp (Prompt vs Prompt) dựa trên File số liệu. Cuối cùng, Agent 3 sẽ đưa ra Phán Quyết Dung Hòa, chốt lại đúng 3 Hành Động Cụ Thể (Action Items) tôi cần làm sáng mai. Cuộc họp bắt đầu!
+
+### Lệnh 20: Công Xưởng Tạo App Mini Tự Động Sinh Sôi (Zero-to-App)
+
+_File cần chuẩn bị: Ném 1 tấm hình chụp nét nghuệch ngoạc bằng Bút Lông trên bảng trắng vẽ ý tưởng Giao diện "Phần mềm Lưu Lượng Tồn Kho".*
+> Đọc hình ảnh Tờ Giấy Nháp này. Tôi vẽ 1 cái box là "Ô Nhập Tên Hàng", 1 cái box là "Bấm Lưu", 1 cái lưới là "Danh Sách Hàng Nhập".
+> Mệnh lệnh Phép Thuật: Hãy Viết toàn bộ Code Front-end tạo ra đúng 1 file `index.html` duy nhất chứa cả HTML, CSS tráng men màu xám cực đẹp (Glassmorphism), và Javascript có tính năng Lưu Dữ Liệu Tạm Cục Bộ (LocalStorage). Để tôi chỉ cần Click đúp chuột vào File `.html` đó là Tự Động có ngay 1 Phần mềm App Web dùng vĩnh viễn trên Laptop này mà chẳng cần thuê một xu Lập Trình Viên! Tiễn Khách!
