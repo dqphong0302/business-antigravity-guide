@@ -80,15 +80,35 @@ CMD-002,Tran_Thi_B,Chấm KPI 50 User,5 phút, 18 Giờ (18*85k),12,000, 1,518,0
 CMD-003,Nguyen_Van_A,Viết 30 Hợp Đồng,3 phút, 10 Giờ (10*85k),5,000, 845,000
 ```
 
-**Cách thức thực thi bằng Lệnh Mẫu:**
-Chèn đoạn bash script nhỏ này vào đuôi của bất kỳ file Skill nào (Ví dụ `SKILL.md` của HR), để AI tự báo cáo thành tích của mình vào cuối ngày:
+**Cách Thức Thực Hiện Từng Bước (Step-by-Step Execution):**
 
-```bash
-# Đoạn mã ghi Log ROAI tự động sau khi AI làm xong việc
-echo "$(date +%Y-%m-%d), Lọc CV, $TOTAL_CV_PROCESSED, $TIME_ELAPSED, $HUMAN_HOURS_SAVED, $API_COST_ESTIMATE, $MONEY_SAVED" >> /exports/roai_report.csv
-```
+**Bước 1: Khởi Tạo Bảng Theo Dõi Trên Google Sheets**
 
-**Kết quả:** Cứ đều đặn chiều Thứ 6 hàng tuần, Trưởng phòng HR cầm bảng Báo cáo gõ cửa phòng Giám đốc: *"Tuần này AI chạy tiền điện mất 42.000 Đồng, tiết kiệm cho phòng ta 5.738.000 Đồng phí làm thêm giờ cuối tuần (OT)."* Ban Giám đốc gật gù, cấp thêm ngân sách mở rộng rinh AI cho toàn công ty.
+- Mở `docs.google.com/spreadsheets`. Tạo Form tên là "ROAI_Dashboard".
+- Điền các Tiêu đề Cột (ID_Lệnh, Tên_Nghiệp_Vụ, Tiết_Kiệm...).
+- Chọn **Share (Chia sẻ)**, thiết lập quyền đọc cho toàn thể C-Level và quyền Ghi (Editor) cho Email Service Account của Antigravity (Xem lại Chương 09).
+
+**Bước 2: Gắn Nút Theo Dõi (Tracking Node) Vào Kỹ Năng**
+
+- Mở bất kỳ File Kỹ năng `SKILL.md` nào của phòng ban (Ví dụ: `/loc-cv-ung-vien` của HR).
+- Kéo xuống dưới cùng của file này, thêm dòng Bash Script sau để ép AI tự báo cáo thành tích vào cuối mỗi ca làm việc:
+
+  ```bash
+  # Đoạn mã ghi Log ROAI tự động sau khi AI làm xong việc
+  echo "$(date +%Y-%m-%d), Lọc CV, $TOTAL_CV_PROCESSED, $TIME_ELAPSED, $HUMAN_HOURS_SAVED, $API_COST_ESTIMATE, $MONEY_SAVED" >> /exports/roai_report.csv
+  ```
+
+**Bước 3: Lệnh Chuyển Dữ Liệu Lên Đám Mây**
+
+- Bật Terminal của Antigravity, tạo một Lịch trình định kỳ (Cronjob) vào chiều Thứ 6 hàng tuần:
+
+  ```text
+  @antigravity Đọc file `/exports/roai_report.csv` máy nội bộ và Bắn toàn bộ hàng mới lên Bảng tính `ROAI_Dashboard` qua MCP Google Sheets.
+  ```
+
+**Bước 4: Trình Bày Thành Quả Trước Vị Sếp Tuyệt Đối**
+
+- Cứ đều đặn chiều Thứ 6 hàng tuần, Trưởng phòng HR mở Link Google Sheet: *"Tuần này AI chạy tiền điện mất 42.000 Đồng, tiết kiệm cho phòng ta 5.738.000 Đồng phí làm thêm giờ cuối tuần (OT)."* Ban Giám đốc nhìn biểu đồ Real-time gật gù, lập tức cấp thêm ngân sách mở rộng rinh AI cho toàn công ty.
 
 ---
 

@@ -117,9 +117,34 @@ Giọng điệu: Đồng cảm, nhưng thúc giục quyết liệt.
 Không dùng quá 3 Emoji. Dùng cấu trúc: Tiêu đề giật gân (IN HOA) -> Nỗi đau -> Giải pháp (Ghế M12) -> Call-to-action.
 ```
 
-**Cách thức thực hiện (Execution):**
+**Cách Thức Thực Hiện Từng Bước (Step-by-Step Execution):**
 
-1. Nhân sự mở Terminal của Antigravity.
-2. Gõ lệnh: `@antigravity chạy file workflows/viet-ads.md với tham số Giảm Giá 20%`.
-3. AI đọc kỹ luồng thiết kế System Design Prompt kể trên và nhổ ra Output.
-4. **Kết quả mới:** *"Cột sống bạn đang giá bao nhiêu tiền? 300 ngàn mua thuốc giảm đau mỗi tháng không bằng 15 phút ngả lưng trên M12..."*. CTR (Tỷ lệ click) tăng gấp 4 lần.
+**Bước 1: Khởi Tạo File Kỹ Năng Trong Workspace**
+
+- Mở VS Code hoặc Trình Quản lý Tệp (File Explorer) trên máy tính.
+- Tìm đến thư mục chứa mã nguồn Antigravity (Ví dụ: `D:\antigravity\skills\`).
+- Tạo một thư mục mới tên là `viet_bai_fb_ads`.
+- Bên trong thư mục này, tạo một file văn bản trơn đặt tên là `SKILL.md`.
+
+**Bước 2: Nạp Hệ Lệnh (System Prompt) Vào File**
+
+- Mở file `SKILL.md` vừa tạo.
+- Copy/Paste đoạn Code YAML và System Role ở mục trên vào File này. Nhấn `Ctrl + S` để Lưu file lại.
+*(Bằng hành động này, bạn đã đóng gói vĩnh viễn tư duy tư vấn Marketing vào trong lõi Antigravity).*
+
+**Bước 3: Thao Tác Gọi Trợ Lý Ảo (Trigger)**
+
+- Bật giao diện Phần mềm Antigravity hoặc mở Cửa sổ Terminal.
+- Trên thanh chat, bạn không cần gõ dài dòng nữa. Hãy gọi lệnh tắt (Slash Command) hệ thống.
+- Gõ chính xác cú pháp sau:
+
+  ```text
+  @antigravity chạy file skills/viet_bai_fb_ads/SKILL.md với Sản phẩm = Máy chạy bộ; Giảm giá = 30%
+  ```
+
+**Bước 4: Nghiệm Thu Kết Quả**
+
+- AI sẽ im lặng đọc toàn bộ file `SKILL.md` trong nền (đây là lợi thế cực lớn của Agentic AI so với ChatGPT: Nó có khả năng tự Load File nội bộ).
+- Nó nhẩm theo Framework C.R.E.A.T.E, giữ đúng Giọng Điệu (Tone) Đanh Thép, và tuân thủ Định Dạng (Format) 3 Emoji.
+- **Kết quả trả về trên màn hình:** *"Đừng mua rẻ tính mạng bạn bằng mỡ máu! Thanh lý Máy chạy bộ tại nhà X10 - Duy nhất 3 suất giảm 30%. Chốt ngay."*
+- Giám đốc nhấp môi ngụm trà. CTR (Tỷ lệ click) quảng cáo tăng vọt gấp 4 lần so với cách nhân sự content chat lảm nhảm ngày xưa.

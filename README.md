@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 30 Ngày Làm Chủ Antigravity cho SME Việt Nam
+# 🚀 Làm Chủ Antigravity cho SME Việt Nam
 
 ### Cẩm Nang AI Thực Chiến Cho Doanh Nghiệp SME Việt Nam
 

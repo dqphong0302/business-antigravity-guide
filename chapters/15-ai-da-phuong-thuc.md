@@ -105,6 +105,27 @@ curl -X POST https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID} \
 
 ```
 
-**Cách thức thực hiện (Execution Method):**
-- Sếp rảnh rỗi lúc 23h đêm, mở Antigravity lên và gõ: `@antigravity thực thi luồng auto-media-shorts.md lặp lại 30 vòng cho 30 từ vựng khác nhau`.
-- Cỗ máy chạy rầm rập xuyên đêm. Sáng dậy 7h, trên thư mục `/exports` của máy tính đã có sẵn 30 Video MP4 chuẩn chỉ có mặt Giáo viên Tây đọc bài. Bạn chỉ việc ném lên Tiktok lập lịch. Đáng sợ và Hoàn mỹ!
+**Cách Thức Thực Hiện Từng Bước (Step-by-Step Execution):**
+
+**Bước 1: Lấy Mã Kích Hoạt (API Key) Từ Nguồn Cấp**
+- Truy cập trang web `elevenlabs.io`. Đăng nhập bằng tài khoản Google.
+- Nhấn vào Cài đặt (Profile Icon) góc cực phải màn hình $\rightarrow$ Chọn **Profile + API key**.
+- Bấm biểu tượng 👁 (Con mắt), Copy chuỗi ký tự mật mã (Ví dụ: `sk_5d93...`).
+
+**Bước 2: Nạp Mã Bảo Mật Vào Não Bộ Antigravity**
+- Mở thư mục chứa mã nguồn hệ thống Antigravity.
+- Mở file tên là `.env` (File môi trường).
+- Dán lệnh dòng cấu hình vào: `ELEVENLABS_KEY="sk_5d93..."`.
+*(Hành động này giúp Antigravity có quyền "quẹt thẻ" tiêu tiền của bạn trên nền tảng ElevenLabs).*
+
+**Bước 3: Phát Lệnh Thực Thi Xuyên Đêm**
+- Sếp rảnh rỗi lúc 23h đêm, mở Antigravity lên và gõ lệnh sau ở thanh tin nhắn:
+  ```text
+  @antigravity thực thi luồng auto-media-shorts.md lặp lại 30 vòng cho 30 từ vựng khác nhau
+  ```
+
+**Bước 4: Quyền Lực Brower Agent (Trình Duyệt Đặc Vụ)**
+
+- Vì có từ khóa lặp vòng (Loop), Antigravity sẽ gọi Module Trình duyệt Ảo.
+- Màn hình máy tính của bạn sẽ tự bật lên tab Chrome mới. Chuột tự động di chuyển đến nút `Generate` trên web HeyGen, tự động gõ Text, tự động tải File `.mp4` về mục `/exports`.
+- Sáng dậy 7h, bạn mở máy và có sẵn 30 Video Tiktok chuẩn chỉ. Bạn chỉ việc ném lên Mạng xã hội. Đáng sợ và Hoàn mỹ!

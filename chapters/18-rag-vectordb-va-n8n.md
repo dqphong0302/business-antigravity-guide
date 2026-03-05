@@ -6,6 +6,8 @@
 
 > *Một con AI nguyên bản giống như một sinh viên Harvard mới ra trường: Rất thông minh nhưng không biết công ty bạn kinh doanh cái gì. RAG là cách bạn nạp hàng ngàn cuốn Quy trình của công ty vào đầu cậu sinh viên đó chỉ trong chớp mắt.*
 
+![Kiến trúc RAG và Tự Động Hóa n8n Webhook](images/rag_n8n_architecture_diagram.png)
+
 ## 18.1. Bí Mật Đằng Sau "Custom Chatbot": RAG & VectorDB
 
 Nhiều SME có lầm tưởng rùng rợn: *"Tôi mua tài khoản ChatGPT Plus xong, tôi tải 500 file PDF hợp đồng công ty lên để dạy nó thành Chatbot nội bộ"*.
@@ -88,5 +90,36 @@ Output MỘT VÀ CHỈ MỘT mã JSON thuần tủy, không bọc bởi Markdown
 ```
 
 Khi Antigravity trả về đúng cấu trúc này, n8n sẽ dùng Node `Parse JSON` để tách Lỗi Mạng đẩy cho Phòng Kỹ Thuật, Mua Thêm Gói đẩy cho Phòng Sales.
+
+---
+
+## 18.5. Hướng Dẫn Kéo Thả (Step-by-Step) Webhook Tự Động Hóa
+
+Đừng hoảng sợ khi nghe chữ "Webhook" hay "JSON". Nó đơn giản là cách 2 phần mềm "Nếm Dữ Liệu" của nhau thay vì bắt con người phải Copy/Paste mỏi tay.
+
+**Bước 1: Thiết Lập Rào Hứng Tin Nhắn Trên n8n**
+
+- Cài đặt và Mở màn hình làm việc chính của phần mềm `n8n`.
+- Bấm nút dấu (+) to chà bá. Tìm và kéo Thẻ (Node) tên là **"Webhook"** vào màn hình.
+- Kích đúp vào Thẻ Webhook. Nó sẽ cho bạn 1 đường link Test (ví dụ: `http://localhost:5678/webhook-test/du-lieu-zalo`). Copy link này.
+
+**Bước 2: Gắn Nòng Súng Cho Antigravity**
+
+- Trong Antigravity, tạo một thẻ Kỹ năng (Skill) tên là `/phan_loai_ticket`. Dán đoạn System Prompt ép ra định dạng JSON ở Phân Đoạn 18.4 vào Skill này.
+- Cuối dòng Lệnh (Prompt), gọi lệnh thao túng Terminal `cURL` để Bắn kết quả JSON vừa nhận được vào đường link n8n.
+
+  ```bash
+  # Lệnh Hệ Thống của Antigravity
+  curl -X POST http://localhost:5678/webhook-test/du-lieu-zalo \
+       -H "Content-Type: application/json" \
+       -d '{"sentiment": "Tiêu cực", "category": "Lỗi mạng"}'
+  ```
+
+**Bước 3: Mở Cầu Dao Tự Động (Automation On)**
+
+- Quay trở lại n8n, kéo thêm các Thẻ (Node) tiếp theo: Gắn Node `Trello` phía sau Webhook. Nối dây chúng lại.
+- Bấm Nút Play (Test Workflow).
+- **Kết quả siêu tốc độ:** Khách hàng chửi rát bên Zalo $\rightarrow$ n8n đón được $\rightarrow$ Đắp Kỹ thuật RAG + Prompt ép JSON của Antigravity $\rightarrow$ Ra Mã JSON Lỗi Mạng $\rightarrow$ n8n tiếp nhận và văng Trello Card yêu cầu Sửa Chữa cho Kỹ Thuật.
+- 0 Đồng Nhân Sự Vận Hành!
 
 Sự kết hợp giữa: **Trí thông minh RAG/Antigravity + Cước phí 0 đồng của n8n** chính là Chìa Khóa Tối Thượng đập bẹp mọi rào cản chuyển đổi số của SME Việt Nam! Đã tới lúc xây dựng một nhà máy công xưởng phần mềm không bóng người.

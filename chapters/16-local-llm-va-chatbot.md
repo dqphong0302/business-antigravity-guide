@@ -74,36 +74,37 @@ Antigravity là một môi trường linh hoạt bậc nhất. Nếu SME không 
 - **Não LLM:** Chạy LM Studio nạp mô hình `Llama-3-8B-Instruct` (Phiên bản chuyên Y Tế).
 - **Phần mềm thực thi:** Cài đặt Antigravity vào chính máy chủ này. Thiết lập Base URL của Antigravity trỏ về Local.
 
-**Cách Thức Thực Hiện & File Config Hệ Thống:**
-Giám đốc IT mở bảng điều khiển Antigravity (Cài đặt `.env` hoặc Setting Giao diện) và tráo đổi đường dẫn API:
+**Cách Thức Thực Hiện Từng Bước (Step-by-Step Execution):**
 
-```json
-// Cấu trúc cấu hình Hệ thống Antigravity cho Local LLM
-{
-  "api_endpoint": "http://127.0.0.1:1234/v1",
-  "api_key": "không-cần-thiết-vì-chạy-offline",
-  "model_name": "Llama-3-8B-Instruct-GGUF",
-  "temperature": 0.0,
-  "max_tokens": 4096
-}
-```
+**Bước 1: Tải Khởi Trọng Tâm LM Studio**
 
-**Sudo Prompt / Lệnh Mẫu Cho Agent Y Tế:**
-File Kỹ năng: `skills/phan_tich_benh_an_offline/SKILL.md`
+- Trên máy chủ nội bộ, truy cập `lmstudio.ai` và tải bộ cài đặt.
+- Mở LM Studio lên. Trên thanh tìm kiếm, gõ đúng từ khóa: `Llama-3-8B-Instruct-GGUF`. Bấm **Download**.
+- Đợi khoảng 10 phút để tải file 5GB về máy cứng.
 
-```md
-# Lệnh: `/phan-tich-benh-an`
+**Bước 2: Bật Cổng Mạng Cục Bộ (Inference Server)**
 
-## System Role
-Bạn là một Giáo sư Y khoa 20 năm kinh nghiệm. Bạn xử lý dữ liệu Y Tế CỤC BỘ tuyệt mật. Phải tuyệt đối trung thành với hồ sơ, Cấm Suy Diễn.
+- Trong LM Studio, nhìn sang cột Menu bên trái, chọn Biểu tượng "Hai Dấu Ngoặc Kép" (Local Server).
+- Chọn model **Llama 3** vừa tải ở khung phía trên.
+- Nhấn nút **Start Server** ở cột bên phải.
+- Màn hình Console sẽ hiện ra dòng chữ xanh: `Server listening on http://127.0.0.1:1234/v1`. Copy đường dẫn này!
 
-## Task
-Tôi cung cấp nội dung quét OCR từ Bệnh Án số `PT-2024-X`. Hãy trích xuất:
-1. Tiền sử dị ứng thuốc.
-2. Nồng độ Ure trong máu (Kèm Cảnh báo nếu vượt ngưỡng 8.0 mmol/L).
+**Bước 3: Nối Liên Tế Bào Antigravity**
 
-## Format
-Trả kết quả dưới dạng File JSON để đổ thẳng vào Database Bệnh viện nội bộ.
-```
+- Mở bảng điều khiển của Antigravity (hoặc file `.env`).
+- Thiết lập lại 3 thông số duy nhất:
 
-**Kết quả:** Hệ thống xử lý 5000 Bệnh án trong 2 tiếng rưỡi với Chi phí Token = 0 VND. Data bệnh nhân không hề ló mặt ra Mạng lưới Toàn Cầu Internet.
+  ```json
+  // Cấu trúc cấu hình Hệ thống Antigravity cho Local LLM
+  {
+    "api_endpoint": "http://127.0.0.1:1234/v1",
+    "api_key": "không-cần-thiết-vì-chạy-offline",
+    "model_name": "Llama-3-8B-Instruct-GGUF"
+  }
+  ```
+
+**Bước 4: Trọng Pháo Khai Hỏa**
+
+- Cắm USB chứa 5000 file PDF Bệnh án (Đã quét OCR) vào máy chủ.
+- Mở Terminal Antigravity. Gõ lệnh: `@antigravity chạy luồng /phan-tich-benh-an đối chiếu tất cả file PDF trong ổ USB`.
+- Máy chủ sẽ hú quạt. Thẻ nhớ nháy đèn cực mạnh. AI bắt đầu nuốt từng chữ của bệnh án, truy xuất và nhả về JSON vào database Y tế. Zero Bytes rời khỏi mạng LAN. Zero Vietnam Đồng tiền token. Tuyệt mật tuyệt đối!
