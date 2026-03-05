@@ -99,35 +99,38 @@
 | PL2 | [Kho Prompt Multi-Agent Mẫu](chapters/phu-luc-prompt-multi-agent.md) | 5 SUDO PROMPT nâng cao để ép AI đóng vai trò Đội Trưởng. |
 | PL3 | [Quy Tông Lệnh: 20 Prompt Thực Chiến](chapters/phu-luc-3-tuyen-tap-lenh.md) | Kho mẫu Prompt Copy-Paste Cầm Tay Chỉ Việc cho 6 Phòng Ban. |
 | PL4 | [Khảo Sát Thực Trạng Ứng Dụng AI](chapters/phu-luc-4-khao-sat-thuc-trang-ai.md) | Bảng câu hỏi đánh giá mức độ trưởng thành số dành cho Lãnh Đạo SME. |
+
 ---
 
 ## 🔧 Kho Skills Mẫu
 
-> 📂 Thư mục [`skills/`](skills/) chứa **16 Skills sẵn sàng sử dụng**. Mỗi skill có file `SKILL.md` hướng dẫn AI thực hiện quy trình nghiệp vụ từ A-Z.
+> 📂 Thư mục [`skills/`](skills/) chứa **22 Skills sẵn sàng sử dụng**. Mỗi skill có file `SKILL.md` hướng dẫn AI thực hiện quy trình nghiệp vụ từ A-Z.
 
 <details>
-<summary><b>🏦 Kế Toán & Tài Chính</b> (3 skills)</summary>
+<summary><b>🏦 Kế Toán & Tài Chính</b> (4 skills)</summary>
 
 | Skill | Mô tả |
 | :--- | :--- |
 | [`doi_soat_ngan_hang`](skills/doi_soat_ngan_hang/) | Đối chiếu Sổ nội bộ ↔ Sao kê NH → Báo cáo chênh lệch tô đỏ |
 | [`trich_xuat_hoa_don`](skills/trich_xuat_hoa_don/) | OCR hàng loạt hóa đơn PDF → Trích MST, Tiền hàng, VAT |
 | [`bao_cao_doanh_thu`](skills/bao_cao_doanh_thu/) | Gộp file Excel → Tổng hợp theo chi nhánh → Biểu đồ cảnh báo |
+| [`lap_to_khai_thue`](skills/lap_to_khai_thue/) | Đối chiếu bảng kê mua vào/bán ra → Lập tự động Tờ Khai 01/GTGT |
 
 </details>
 
 <details>
-<summary><b>👥 Nhân Sự</b> (2 skills)</summary>
+<summary><b>👥 Nhân Sự</b> (3 skills)</summary>
 
 | Skill | Mô tả |
 | :--- | :--- |
 | [`loc_cv_ung_vien`](skills/loc_cv_ung_vien/) | Quét 300 CV → Chấm điểm theo JD → Xếp hạng & phân loại |
 | [`quan_ly_hop_dong`](skills/quan_ly_hop_dong/) | Soạn hợp đồng lao động → Thay placeholder → Xuất DOCX |
+| [`danh_gia_kpi`](skills/danh_gia_kpi/) | Quét bảng chấm công & doanh số → Chấm điểm & sinh Feedback |
 
 </details>
 
 <details>
-<summary><b>📢 Marketing & Kinh Doanh</b> (4 skills)</summary>
+<summary><b>📢 Marketing & Kinh Doanh</b> (6 skills)</summary>
 
 | Skill | Mô tả |
 | :--- | :--- |
@@ -135,11 +138,13 @@
 | [`tao_bao_gia`](skills/tao_bao_gia/) | Đọc danh mục SP + chiết khấu → Xuất báo giá Excel chuyên nghiệp |
 | [`email_marketing`](skills/email_marketing/) | Đọc DS khách → Cá nhân hóa nội dung → Gửi email SMTP hàng loạt |
 | [`phan_tich_review`](skills/phan_tich_review/) | Phân loại Tích cực/Tiêu cực → Word Cloud → Tìm vấn đề phổ biến |
+| [`cham_soc_vip`](skills/cham_soc_vip/) | Quét CRM → Lên kịch bản chúc mừng sinh nhật, thăng hạng KH VIP |
+| [`tao_content_calendar`](skills/tao_content_calendar/) | Spy SEO đối thủ → Gen 30 chủ đề Content Đa Kênh cho nguyên tháng |
 
 </details>
 
 <details>
-<summary><b>🎯 Lãnh Đạo & Chiến Lược</b> (5 skills)</summary>
+<summary><b>🎯 Lãnh Đạo & Chiến Lược</b> (6 skills)</summary>
 
 | Skill | Mô tả |
 | :--- | :--- |
@@ -148,6 +153,7 @@
 | [`cham_soc_khach_hang`](skills/cham_soc_khach_hang/) | Phân loại ticket CSKH → Tự động phản hồi → Thống kê |
 | [`phan_tich_quyet_dinh`](skills/phan_tich_quyet_dinh/) | Chạy mô hình thống kê → Mô phỏng 3 kịch bản → Khuyến nghị CEO |
 | [`dich_thuat_tai_lieu`](skills/dich_thuat_tai_lieu/) | Dịch hợp đồng/báo giá sang Anh • Nhật • Hàn → Giữ nguyên format |
+| [`bao_cao_ceo`](skills/bao_cao_ceo/) | Gom Doanh thu / Kho bãi trong 24h → Tóm tắt Brief sáng sớm cho BOD |
 
 </details>
 
@@ -165,30 +171,36 @@
 
 ## ⚡ Kho Workflows
 
-> 📂 Thư mục [`workflows/`](workflows/) chứa **17 Workflows** — mỗi workflow là một "nút bấm" Slash Command chạy tự động.
+> 📂 Thư mục [`workflows/`](workflows/) chứa **23 Workflows** — mỗi workflow là một "nút bấm" Slash Command chạy tự động.
 
 <details>
-<summary><b>Xem danh sách 17 Workflows</b></summary>
+<summary><b>Xem danh sách 23 Workflows</b></summary>
 
 | Workflow | Lệnh | Mô tả |
 | :--- | :--- | :--- |
+| [Báo Cáo Nhắn Cho Sếp](workflows/bao-cao-ceo.md) | `/bao-cao-ceo` | Gom Data vẽ bức tranh lãi lỗ 6h sáng |
 | [Cào Data B2B](workflows/cao-data-b2b.md) | `/cao-data-b2b` | Cào thông tin công ty từ web |
 | [Cào Giá Đối Thủ](workflows/cao-gia-doi-thu.md) | `/cao-gia-doi-thu` | Giám sát giá trên TMĐT |
 | [Cảnh Báo Tồn Kho](workflows/canh-bao-ton-kho.md) | `/canh-bao-ton-kho` | Phát hiện hàng sắp hết |
+| [Chăm Sóc VIP](workflows/cham-soc-vip.md) | `/cham-soc-vip` | Phân tích CRM, gen kịch bản tặng quà |
 | [Đăng Bài Social](workflows/dang-bai-social.md) | `/dang-bai-social` | Soạn & lên lịch bài đăng |
+| [Đánh Giá KPI Nhóm](workflows/danh-gia-kpi.md) | `/cham-kpi` | Chấm báo cáo & sinh Feedback nhân sự |
 | [Data Masking](workflows/data-masking.md) | `/data-masking` | Che dữ liệu nhạy cảm |
 | [Deploy Server](workflows/deploy-server.md) | `/deploy-server` | Build & deploy không downtime |
 | [Dịch Thuật](workflows/dich-thuat-tai-lieu.md) | `/dich-thuat` | Dịch tài liệu đa ngôn ngữ |
 | [Đối Soát COD](workflows/doi-soat-cod.md) | `/doi-soat-cod` | So khớp đơn COD với ngân hàng |
 | [Kiểm Tra Web](workflows/kiem-tra-suc-khoe-web.md) | `/kiem-tra-web` | Kiểm tra uptime & hiệu suất |
+| [Lập Tờ Khai Thuế](workflows/lap-to-khai-thue.md) | `/lap-to-khai-thue` | Thu thập hóa đơn đầu ra/vào báo Thuế |
 | [Lọc CV](workflows/loc-cv-ung-vien.md) | `/loc-cv` | Lọc & chấm điểm CV hàng loạt |
 | [Onboard NV](workflows/onboard-nhan-vien.md) | `/onboard` | Tạo hồ sơ nhân sự mới tự động |
 | [Phân Tích Doanh Thu](workflows/phan-tich-doanh-thu.md) | `/phan-tich-dt` | Tổng hợp & vẽ biểu đồ cuối tháng |
 | [Phân Tích Quyết Định](workflows/phan-tich-quyet-dinh.md) | `/phan-tich-qd` | Mô phỏng kịch bản lãi/lỗ |
 | [Phân Tích Review](workflows/phan-tich-review.md) | `/phan-tich-review` | Phân loại đánh giá khách hàng |
 | [Soạn Hợp Đồng](workflows/soan-hop-dong.md) | `/soan-hd` | Tạo hợp đồng từ template |
+| [Tạo Content Calendar](workflows/tao-content-calendar.md) | `/tao-content-calendar` | Cào SEO Trend, đẻ 30 idea 4 tuần |
 | [Tạo Proposal](workflows/tao-proposal.md) | `/tao-proposal` | Soạn đề xuất kinh doanh |
 | [Trích Xuất HĐ](workflows/trich-xuat-hoa-don.md) | `/trich-xuat-hd` | OCR hóa đơn PDF hàng loạt |
+| [Xử Lý Khiếu Nại Phốt](workflows/xu-ly-khieu-nai.md) | `/xu-ly-khieu-nai` | Bắt Email Gắt gỏng, Draft thư xin lỗi + Voucher |
 
 </details>
 
