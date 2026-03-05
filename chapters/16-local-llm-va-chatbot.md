@@ -61,3 +61,49 @@ Antigravity là một môi trường linh hoạt bậc nhất. Nếu SME không 
 3. **AI Xử lý Bằng Gì?** Bằng Card Đồ Họa VRAM nội bộ (như RTX 3090/4090 hoặc Apple Silicon Unified Memory). Tốc độ đáp ứng Text Output phụ thuộc cực mạnh vào chip GPU đắt hay rẻ.
 4. **Lỗi Hoang Tưởng (Hallucination Cục Bộ) Xử Sao?** LLaMA 3 8B dễ cãi ngang hơn Opus. Sếp khắc phục bằng cách Thiết kế "Temperature = 0" và dùng kỹ thuật RAG (Kẹp File PDF cục bộ đè lên lệnh cấm suy luận ra ngoài File) (Xem Chương 11).
 5. **Dòng Tiền Ra Sao (ROAI)?** Phí duy trì Model Hàng Tháng là 0 Đồng. Phí "Nuôi" duy nhất là hóa đơn Tiền Điện Khấu Hao mua dàn máy chủ nội bộ. Hoàn Vốn (Break-even) trong 6 tháng nếu Công ty có cường độ xử lý hơn triệu từ/ngày.
+
+---
+
+## 16.4. Case Study Thực Chiến Y Tế: Tự Động Hóa Chẩn Đoán Tại Bệnh Viện Tâm Anh
+
+**Bối cảnh:** Bệnh viện Tâm Anh có 5000 bệnh án giấy mỗi ngày. Giám đốc muốn AI tự động đọc file Ảnh chụp X-Quang và Bệnh Án PDF để tổng hợp Báo cáo Y khoa ban đầu. Tuy nhiên, Luật Bảo vệ Thông tin Y Tế (HIPAA) nghiêm cấm việc tải thông tin bệnh nhân lên Google hay OpenAI.
+
+**Hệ Thống Thiết Kế (System Design - Cấu trúc Local Security):**
+
+- **Hardware:** 1 Máy Chủ Local (Intel Xeon, 128GB RAM, 2x NVIDIA RTX 4090). Không gắn dây mạng Internet.
+- **Não LLM:** Chạy LM Studio nạp mô hình `Llama-3-8B-Instruct` (Phiên bản chuyên Y Tế).
+- **Phần mềm thực thi:** Cài đặt Antigravity vào chính máy chủ này. Thiết lập Base URL của Antigravity trỏ về Local.
+
+**Cách Thức Thực Hiện & File Config Hệ Thống:**
+Giám đốc IT mở bảng điều khiển Antigravity (Cài đặt `.env` hoặc Setting Giao diện) và tráo đổi đường dẫn API:
+
+```json
+// Cấu trúc cấu hình Hệ thống Antigravity cho Local LLM
+{
+  "api_endpoint": "http://127.0.0.1:1234/v1",
+  "api_key": "không-cần-thiết-vì-chạy-offline",
+  "model_name": "Llama-3-8B-Instruct-GGUF",
+  "temperature": 0.0,
+  "max_tokens": 4096
+}
+```
+
+**Sudo Prompt / Lệnh Mẫu Cho Agent Y Tế:**
+File Kỹ năng: `skills/phan_tich_benh_an_offline/SKILL.md`
+
+```md
+# Lệnh: `/phan-tich-benh-an`
+
+## System Role
+Bạn là một Giáo sư Y khoa 20 năm kinh nghiệm. Bạn xử lý dữ liệu Y Tế CỤC BỘ tuyệt mật. Phải tuyệt đối trung thành với hồ sơ, Cấm Suy Diễn.
+
+## Task
+Tôi cung cấp nội dung quét OCR từ Bệnh Án số `PT-2024-X`. Hãy trích xuất:
+1. Tiền sử dị ứng thuốc.
+2. Nồng độ Ure trong máu (Kèm Cảnh báo nếu vượt ngưỡng 8.0 mmol/L).
+
+## Format
+Trả kết quả dưới dạng File JSON để đổ thẳng vào Database Bệnh viện nội bộ.
+```
+
+**Kết quả:** Hệ thống xử lý 5000 Bệnh án trong 2 tiếng rưỡi với Chi phí Token = 0 VND. Data bệnh nhân không hề ló mặt ra Mạng lưới Toàn Cầu Internet.

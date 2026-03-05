@@ -63,3 +63,48 @@ Vũ khí mạnh nhất trong mảng này là **ElevenLabs**.
 3. **AI Lấy Nguồn Ở Đâu?** Ảnh được sinh từ các Model khuếch tán (Diffusion) học từ hàng tỷ bức tranh; Giọng nói học từ mô hình Neural Speech Synthesis.
 4. **Lỗi Thì Tính Sao (Hallucination Hình mờ)?** Ảnh sẽ dính lỗi (thừa ngón tay, mờ mặt). Giải pháp: Nhân sự Marketing phải biết xài các công cụ (Upscaler/Inpainting) để khoanh vùng nhờ AI sửa lại đúng chỗ hỏng.
 5. **Dòng Tiền Ra Sao (ROAI)?** Phí duy trì gói Premium HeyGen/Midjourney khoảng $30-$50/Tháng. Trả lại Sản lượng = 1 Đội Ngũ Setup Ánh Sáng, Quay Phim, Thu Âm vất vả lương chục triệu mỗi tháng. Lãi ròng khổng lồ.
+
+---
+
+## 15.5. Case Study: Hệ Thống Auto-Media Triển Khai Xuyên Đêm
+
+**Bối cảnh:** Một Trung tâm Tiếng Anh muốn tung ra chuỗi "1 Từ Vựng Mỗi Ngày" (Shorts/Reels) nhưng không có tiền thuê giáo viên Bản ngữ ghi hình liên tục.
+
+**Hệ Thống Thiết Kế (System Design - Auto Media Pipeline):**
+Đây là một hệ thống Multi-Agent nối tiếp:
+
+1. **Agent Text (Gemini):** Đẻ ra kịch bản 1 từ vựng, tự đưa thêm 예문 (Câu ví dụ).
+2. **Agent Voice (ElevenLabs API):** Nhận kịch bản Text, gọi API chuyển thành Giọng Nam Mỹ chuẩn trị giá (File `audio.mp3`).
+3. **Agent Video (HeyGen API / D-ID):** Ép File `audio.mp3` vào ảnh Avatar Giáo viên để sinh khẩu hình miệng khớp 100% (File `video.mp4`).
+
+**Cấu trúc File Mẫu: `workflows/auto-media-shorts.md`**
+
+```md
+---
+description: "Tự động sản xuất Video Reels Kèm Giọng Bản Ngữ"
+---
+# Lệnh: `/auto-media-shorts`
+
+## Kịch Bản Luồng Chạy (Workflow Execution)
+
+1. Tự khởi tạo 1 Sudo Prompt gửi Gemini: "Sinh cho tôi 1 từ vựng Tiếng Anh cấp độ IELTS 6.5 chủ đề Môi Trường. Yêu cầu có định nghĩa và 1 câu ví dụ. Lưu vào file `kịch_bản.txt`."
+// turbo
+
+2. Gọi MCP Server hoặc dùng Bash Script: Gửi nội dung file `kịch_bản.txt` qua cồng ElevenLabs API.
+```bash
+# Ví dụ Lệnh Hệ Thống Antigravity thao túng cURL
+curl -X POST https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID} \
+  -H "xi-api-key: $ELEVENLABS_KEY" \
+  --data "{\"text\": \"$(cat kịch_bản.txt)\"}" \
+  -o "output_voice.mp3"
+```
+
+// turbo
+
+1. Bắn tín hiệu sang HeyGen (hoặc dùng Trình duyệt Browser Agent của Antigravity để tự thao tác mở web HeyGen, upload `output_voice.mp3` và bấm [Generate Video]).
+
+```
+
+**Cách thức thực hiện (Execution Method):**
+- Sếp rảnh rỗi lúc 23h đêm, mở Antigravity lên và gõ: `@antigravity thực thi luồng auto-media-shorts.md lặp lại 30 vòng cho 30 từ vựng khác nhau`.
+- Cỗ máy chạy rầm rập xuyên đêm. Sáng dậy 7h, trên thư mục `/exports` của máy tính đã có sẵn 30 Video MP4 chuẩn chỉ có mặt Giáo viên Tây đọc bài. Bạn chỉ việc ném lên Tiktok lập lịch. Đáng sợ và Hoàn mỹ!

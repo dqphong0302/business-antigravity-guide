@@ -101,6 +101,7 @@
 | 15 | [AI Đa Phương Thức (Multimodal)](chapters/15-ai-da-phuong-thuc.md) | Sinh HÌNH ẢNH (Midjourney), GIỌNG NÓI (ElevenLabs), VIDEO ẢO (HeyGen). |
 | 16 | [Local LLMs & Tự Tạo Chatbot](chapters/16-local-llm-va-chatbot.md) | Cài LM Studio chạy ngập mạng LLaMA 3. Giải pháp nội bộ Tuyệt Mật. |
 | 17 | [Đo Lường Biên Lợi Nhuận ROAI](chapters/17-do-luong-roai.md) | Hệ thống đo lường Return on AI. Định giá Giờ Công vs Phí Cày API. |
+| 18 | [Kỹ Thuật RAG, VectorDB & n8n](chapters/18-rag-vectordb-va-n8n.md) | Xây Chatbot đọc tài liệu Hợp đồng riêng bằng RAG + VectorDB. Tự Động Hóa n8n. |
 
 ### 📎 Phụ Lục
 

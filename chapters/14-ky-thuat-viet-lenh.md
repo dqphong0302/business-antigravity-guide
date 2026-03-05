@@ -79,3 +79,47 @@ Bằng cách bắt AI phải viết ra các bước trung gian 1, 2, 3... bạn 
 - [ ] Mở buổi họp thứ hai đầu tuần, bắt toàn bộ nhân sự Marketing luyện tập viết lệnh chia ba cấu trúc RTF. Cấm gửi lệnh 1 dòng.
 - [ ] Bổ sung Câu lệnh (System Prompt) vào đuôi các quy trình SOP của Doanh nghiệp.
 - [ ] Soạn sẵn Bộ Sudo Prompt chuỗi tư duy (Chain-of-Thought) cho Kế toán đối soát chứng từ cuối tháng.
+
+---
+
+## 14.5. Case Study Thực Chiến: Team Marketing & Nỗi Đau "Viết Lệnh Nhờn Bot"
+
+**Bối cảnh:** Một SME bán ghế Massage chạy chiến dịch Facebook Ads. Nhân sự Content Mới vào gõ lệnh cho tài khoản ChatGPT Plus của Công ty: *"Viết 1 bài QC bán ghế massage giảm giá 20%"*.
+**Kết quả:** Trí tuệ AI trị giá hàng tỷ đô la trả về một đoạn văn... buồn ngủ, sặc mùi Ráp-bốt (Robot) với những Emoji 🚀 tràn lan. "Giới thiệu siêu phẩm ghế massage... giúp bạn thư giãn... Mua ngay!". Lỗ nặng tiền Ads.
+
+**Cách Thức Xử Lý Bằng Antigravity (System Design of the Prompt)**
+Trưởng phòng Marketing quyết định Đóng gói (Encapsulate) tư duy C.R.E.A.T.E thành một file Kỹ năng (Skill) cứng trong thư mục Antigravity. Từ nay, nhân viên không được chat chay nữa, chỉ việc gõ `Slash Command` và điền biến số.
+
+**Cấu trúc File Mẫu: `skills/viet_bai_fb_ads/SKILL.md`**
+
+```yaml
+---
+name: "Viết Bài C.R.E.A.T.E Facebook Ads"
+description: "Ép AI viết bài QC tuân thủ điểm đau tâm lý theo công thức C.R.E.A.T.E"
+version: 1.0.0
+category: "Marketing"
+---
+# 🎯 Lệnh: `/viet-ads`
+
+## 1. System Role (Vai trò Hệ thống)
+Bạn là một "Mãng tướng Hắc Sắc Marketing" chuyên viết Facebook Ads thực dụng. Bạn khinh bỉ những văn phong câu view rẻ tiền và rập khuôn. Giọng văn của bạn: Đanh thép, Xoáy sâu nỗi đau (Pain points), Ngôn từ đời thường không bóng bẩy.
+
+## 2. Context & Request (Ngữ cảnh & Yêu cầu)
+Sản phẩm: Ghế Massage M12.
+Nỗi đau Khách Hàng: Đau mỏi vai gáy kinh niên do làm văn phòng, hay mua thuốc giảm đau nhưng không khỏi. Mức giá ghế hơi cao nên họ tiếc tiền.
+Yêu cầu: Viết 1 bài Facebook Ads (Tối đa 300 chữ).
+
+## 3. Action & Tone (Hành động & Giọng điệu)
+Hành động: Ép người đọc phải chốt Inbox ngay hôm nay vì ưu đãi Giảm 20% chỉ có 5 slot.
+Giọng điệu: Đồng cảm, nhưng thúc giục quyết liệt.
+
+## 4. Format & Verification (Định dạng & Xác Thực)
+Không dùng quá 3 Emoji. Dùng cấu trúc: Tiêu đề giật gân (IN HOA) -> Nỗi đau -> Giải pháp (Ghế M12) -> Call-to-action.
+```
+
+**Cách thức thực hiện (Execution):**
+
+1. Nhân sự mở Terminal của Antigravity.
+2. Gõ lệnh: `@antigravity chạy file workflows/viet-ads.md với tham số Giảm Giá 20%`.
+3. AI đọc kỹ luồng thiết kế System Design Prompt kể trên và nhổ ra Output.
+4. **Kết quả mới:** *"Cột sống bạn đang giá bao nhiêu tiền? 300 ngàn mua thuốc giảm đau mỗi tháng không bằng 15 phút ngả lưng trên M12..."*. CTR (Tỷ lệ click) tăng gấp 4 lần.

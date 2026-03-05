@@ -64,6 +64,34 @@ Thay vì giao KPI: *"Tháng này em phải viết 30 bài SEO"*. Hãy giao OKRs 
 
 ---
 
+## 17.4. Case Study Thực Chiến: Hệ Thống Đo Lường ROI Phòng Nhân Sự (HR)
+
+**Bối cảnh:** Trưởng phòng HR bị Sếp chất vấn: *"Mua AI tốn 100$ API cho phòng mày tháng này, cuối cùng mang lại lợi ích mẹ gì bằng con số?"* Trưởng phòng HR quyết định thiết lập một File CSV Tracking Cứng.
+
+**Hệ Thống Thiết Kế Tự Động Đo Lường (ROAI Tracking System Design):**
+Mỗi khi Antigravity chạy xong 1 lệnh (Ví dụ lệnh `/loc-cv-ung-vien`), nó tự động kích hoạt 1 con Bot phụ (Webhook) ghi log thẳng vào một bảng Google Sheets chung của Công ty. Bảng này công chiếu Real-time cho Giám Đốc xem.
+
+**Cấu Trúc File Mẫu (Google Sheets / `roai_report.csv`):**
+
+```csv
+ID_Lệnh,Người_Chạy,Tên_Nghiệp_Vụ,Số_Lượng_Xử_Lý,Thời_Gian_Máy_Chạy,Thời_Gian_Người_Tương_Đương,Phí_API_Token(VNĐ),Giá_Trị_Tiết_Kiệm(VNĐ)
+CMD-001,Nguyen_Van_A,Lọc 500 CV IT,12 phút,40 Giờ (40*85k),25,000, 3,375,000
+CMD-002,Tran_Thi_B,Chấm KPI 50 User,5 phút, 18 Giờ (18*85k),12,000, 1,518,000
+CMD-003,Nguyen_Van_A,Viết 30 Hợp Đồng,3 phút, 10 Giờ (10*85k),5,000, 845,000
+```
+
+**Cách thức thực thi bằng Lệnh Mẫu:**
+Chèn đoạn bash script nhỏ này vào đuôi của bất kỳ file Skill nào (Ví dụ `SKILL.md` của HR), để AI tự báo cáo thành tích của mình vào cuối ngày:
+
+```bash
+# Đoạn mã ghi Log ROAI tự động sau khi AI làm xong việc
+echo "$(date +%Y-%m-%d), Lọc CV, $TOTAL_CV_PROCESSED, $TIME_ELAPSED, $HUMAN_HOURS_SAVED, $API_COST_ESTIMATE, $MONEY_SAVED" >> /exports/roai_report.csv
+```
+
+**Kết quả:** Cứ đều đặn chiều Thứ 6 hàng tuần, Trưởng phòng HR cầm bảng Báo cáo gõ cửa phòng Giám đốc: *"Tuần này AI chạy tiền điện mất 42.000 Đồng, tiết kiệm cho phòng ta 5.738.000 Đồng phí làm thêm giờ cuối tuần (OT)."* Ban Giám đốc gật gù, cấp thêm ngân sách mở rộng rinh AI cho toàn công ty.
+
+---
+
 ### [TỔNG KẾT EBOOK] Sứ Mệnh Antigravity & Đế Chế SME Tự Động
 
 Cuộc đua trong 5 năm tới của SME Việt Nam không phải là ai thuê xưởng bự hơn hay tuyển được nhiều Sales hơn.
