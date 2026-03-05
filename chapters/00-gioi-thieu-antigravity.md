@@ -161,11 +161,11 @@ Thay vì mướn 5 thực tập sinh ngồi dò mắt lướt hằng giờ trên
 
 Đã hiểu lý thuyết, giờ Sếp chắc đang hỏi: *"Nó ở đâu? Tôi bật lên bằng cách nào? Nó trông ra sao?"*
 
-Antigravity **không phải một Website** (như ChatGPT). Nó là một **tiện ích mở rộng (Extension)** được cài đặt và hoạt động bên trong phần mềm **Visual Studio Code (VS Code)** — Trình soạn thảo mã nguồn số 1 thế giới, hoàn toàn MIỄN PHÍ, do Microsoft phát triển.
+Antigravity **không phải một Website** (như ChatGPT). Nó là một **tiện ích nền tảng** được cài đặt và hoạt động trực tiếp trên máy tính của bạn — không giới hạn như một ứng dụng độc lập, mà là một hệ điều hành Agentic AI hoàn chỉnh.
 
-Khi mở VS Code với Antigravity, bạn sẽ thấy giao diện chia thành **4 vùng chiến lược**:
+Khi mở Antigravity, bạn sẽ thấy giao diện chia thành **4 vùng chiến lược**:
 
-![Tổng quan giao diện Antigravity trong VS Code](images/antigravity_overview.png)
+![Tổng quan giao diện Antigravity](images/antigravity_overview.png)
 
 ### 🗂️ Vùng 1 — Trình Quản Lý File (File Explorer - Bên Trái)
 

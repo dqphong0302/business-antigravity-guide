@@ -114,7 +114,7 @@ Không dùng quá 3 Emoji. Dùng cấu trúc: Tiêu đề giật gân (IN HOA) -
 
 **Bước 1: Khai phá Thư mục Skill**
 
-- 📁 Mở VS Code, tìm đến thư mục `D:\antigravity\skills\`.
+- 📁 Mở Antigravity, tìm đến thư mục `D:\antigravity\skills\`.
 - 📁 Tạo thư mục mới: `viet_bai_fb_ads`.
 
 **Bước 2: Đúc khuôn trí tuệ (SKILL.md)**
