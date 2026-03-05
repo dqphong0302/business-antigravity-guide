@@ -55,6 +55,16 @@
 
 ---
 
+## 📈 Khối Đầu Tư & Chứng Khoán
+
+| # | Tên Skill | Thư mục | Mô tả ngắn |
+| :-- | :--------- | :------- | :----------- |
+| 17 | **Lọc Cổ Phiếu Đạt Chuẩn** | `skills/loc_co_phieu/` | Lọc cổ phiếu theo tiêu chí cơ bản/kỹ thuật → Xuất báo cáo Excel |
+| 18 | **Phân Tích BCTC (Financial Deep Dive)** | `skills/phan_tich_bao_cao_tai_chinh/` | Rút trích BCTC PDF → Đánh giá sức khỏe tài chính & rủi ro |
+| 19 | **Cảnh Báo Biến Động Giá** | `skills/canh_bao_bien_dong_gia/` | Theo dõi giá real-time → Gửi cảnh báo điểm Mua/Bán qua Telegram |
+
+---
+
 ## 🔧 Cách Sử Dụng
 
 ### Cách 1: Để Antigravity tự nhận diện

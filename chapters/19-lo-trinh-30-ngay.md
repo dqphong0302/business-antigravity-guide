@@ -1,4 +1,4 @@
-# Chương 18: Lộ Trình 30 Ngày — Từ "Người Dùng" Đến "Đế Chế AI-Driven"
+# Chương 19: Lộ Trình 30 Ngày — Từ "Người Dùng" Đến "Đế Chế AI-Driven"
 
 > [!IMPORTANT]
 > Chuyển đổi số không phải là thay đổi công cụ, mà là thay đổi thói quen hành vi. Lộ trình 30 ngày này là kỷ luật sắt để đưa doanh nghiệp của bạn vào quỹ đạo tự đông hóa vĩnh cửu.
@@ -9,7 +9,7 @@
 
 ---
 
-## 18.2. Mở Đầu: Tiếng Thở Dài Của Sự Chuyển Đổi Số "Nửa Vời"
+## 19.2. Mở Đầu: Tiếng Thở Dài Của Sự Chuyển Đổi Số "Nửa Vời"
 
 ### 📖 Câu Chuyện Đau Đớn: Ảo Ảnh Của "Tháng Đầu Tiên"
 
@@ -39,7 +39,7 @@ Nếu công ty của Sếp đã vượt qua 3 lệnh Cấm Cửa trên, và Data
 
 ---
 
-## 18.4. [Phương Pháp Cốt Lõi & Hướng Dẫn Kỹ Thuật] Bản Đồ Tác Chiến 30 Ngày (The 30-Day SME Onboarding Roadmap)
+## 19.4. [Phương Pháp Cốt Lõi & Hướng Dẫn Kỹ Thuật] Bản Đồ Tác Chiến 30 Ngày (The 30-Day SME Onboarding Roadmap)
 
 ![Lộ trình 30 ngày áp dụng AI cho SME — từ Sếp dẫn đầu đến Hệ thống hóa toàn công ty](images/kpi_30_day_railway.png)
 
@@ -58,7 +58,7 @@ Nếu công ty của Sếp đã vượt qua 3 lệnh Cấm Cửa trên, và Data
 
 ---
 
-## 18.5. [Kết Luận & Action Items] Lời Dặn Trọng Niệm Của Người Đi Trước (Outro Ebook)
+## 19.5. [Kết Luận & Action Items] Lời Dặn Trọng Niệm Của Người Đi Trước (Outro Ebook)
 
 Khi bạn khép lại những trang cuối cùng của Cuốn Bí Kíp Của Cuộc Chuyển Đổi Số Giữa Ngã Ba Phân Hóa Đẳng Cấp Xã Hội Doanh Nghiệp Này.
 

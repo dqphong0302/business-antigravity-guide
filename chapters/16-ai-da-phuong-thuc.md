@@ -9,7 +9,7 @@
 
 ---
 
-## 15.2. Mở Đầu: Khi Văn Bản Gọi Hình Ảnh & Âm Thanh Chào Đời
+## 16.2. Mở Đầu: Khi Văn Bản Gọi Hình Ảnh & Âm Thanh Chào Đời
 
 > [!NOTE]
 > **Ogilvy 2025:** 75% Agency quảng cáo hàng đầu đã chuyển ngân sách sang tích hợp API Đa Phương Thức. SME Việt Nam có thể sở hữu sức mạnh truyền thông ngang ngửa tập đoàn chỉ với chi phí bằng một ly trà đá cho mỗi thành phẩm.
@@ -23,7 +23,7 @@ Sẽ là một sai lầm khủng khiếp nếu Lãnh đạo SME (đặc biệt l
 
 ---
 
-## 15.3. [Phương Pháp Cốt Lõi] Chân Vạc Thứ 1: Kiến Tạo Hình Ảnh Bằng Text-to-Image (Midjourney/DALL-E)
+## 16.3. [Phương Pháp Cốt Lõi] Chân Vạc Thứ 1: Kiến Tạo Hình Ảnh Bằng Text-to-Image (Midjourney/DALL-E)
 
 Phòng ban sử dụng nhiều nhất: **Marketing (Quảng Cáo), Thiết Kế Bao Bì (R&D).**
 
@@ -34,7 +34,7 @@ Hãy quên việc lên Google xin xỏ những tấm ảnh Stock mờ tịt và 
 
 ---
 
-## 15.4. [Phương Pháp Cốt Lõi] Chân Vạc Thứ 2: Nhân Bản Giọng Nói (Text-to-Speech) Với ElevenLabs
+## 16.4. [Phương Pháp Cốt Lõi] Chân Vạc Thứ 2: Nhân Bản Giọng Nói (Text-to-Speech) Với ElevenLabs
 
 Sử dụng AI biến văn bản thành giọng đọc (Chị Google) đã là chuyện của những năm 2018. Công nghệ Voice Cloning của năm 2024-2025 vượt qua mọi giới hạn: Nó hiểu được hơi thở, biết luyến láy khi buồn, biết gầm gừ khi giận dữ.
 
@@ -45,7 +45,7 @@ Vũ khí mạnh nhất trong mảng này là **ElevenLabs**.
 
 ---
 
-## 15.5. [Ví Dụ Mẫu & Case Study] Chân Vạc Thứ 3: Đại Sứ Ảo Lên Sóng (HeyGen / D-ID)
+## 16.5. [Ví Dụ Mẫu & Case Study] Chân Vạc Thứ 3: Đại Sứ Ảo Lên Sóng (HeyGen / D-ID)
 
 Đây là ranh giới Tự Động Hóa Nhận Thức tối thượng cho ngành Sáng Tạo Nội Dung. Bạn không cần Bấm Máy Quay cũng có thể sản xuất mỗi ngày 50 Video Tiktok dài 1 phút.
 
@@ -70,7 +70,7 @@ Vũ khí mạnh nhất trong mảng này là **ElevenLabs**.
 
 ---
 
-## 15.6. [Cách Làm Chi Tiết & Hướng Dẫn Kỹ Thuật] Thực Chiến: Hệ Thống Auto-Media Triển Khai Xuyên Đêm
+## 16.6. [Cách Làm Chi Tiết & Hướng Dẫn Kỹ Thuật] Thực Chiến: Hệ Thống Auto-Media Triển Khai Xuyên Đêm
 
 **Bối cảnh:** Một Trung tâm Tiếng Anh muốn tung ra chuỗi "1 Từ Vựng Mỗi Ngày" (Shorts/Reels) nhưng không có tiền thuê giáo viên Bản ngữ ghi hình liên tục.
 
@@ -129,7 +129,7 @@ curl -X POST https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID} \
 
 Từ Chương 00 đến Chương 15 này, bạn đã không còn là một Sếp SMEs loay hoay với sổ sách. Bạn đã nắm trong tay một Binh Đoàn Vô Hình — Nơi Text kích hoạt số liệu, số liệu kích hoạt Hình ảnh, và Hình ảnh hóa thành Lời Nói. Bạn không còn quản lý Nhân viên nữa, bạn đang **Quản trị Một Hệ Tế Bào Thần Kinh**.
 
-⏭ *(Hãy bước sang chương tiếp theo về **Bảo Mật (Chương 16)** và **Đạo Đức (Chương 17)** để đảm bảo cỗ máy quyền lực này không bị hack hoặc mất kiểm soát).*
+⏭ *(Hãy bước sang chương tiếp theo về **Bảo Mật (Chương 17)** và **Đạo Đức (Chương 17)** để đảm bảo cỗ máy quyền lực này không bị hack hoặc mất kiểm soát).*
 
 ---
 

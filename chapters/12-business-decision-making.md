@@ -176,7 +176,7 @@ Sếp à, Đôi khi thứ Giữ Sự Ổn Đinh Phát Triển Bền Vững (Sust
 
 Đừng làm Tướng Gặp Thời. Hãy làm Khổng Minh Đo Quẻ Đo Trận Bằng Toán Có Căn Cứ Antigravity Hệ Số Chắc Ăn 80%. Nhờ Bộ Bọc Nhớ Kiến Thức Trăm Năm (Knowledge Bases - RAG).
 
-⏭ *(Lật cánh cửa tiếp theo sang **Chương 13: Local LLM — Xây Dựng Chatbot Nội Bộ** — Nơi chúng ta đưa trí tuệ AI về "nằm vùng" ngay trên máy tính của sếp).*
+⏭ *(Lật cánh cửa tiếp theo sang **Chương 14: Local LLM — Xây Dựng Chatbot Nội Bộ** — Nơi chúng ta đưa trí tuệ AI về "nằm vùng" ngay trên máy tính của sếp).*
 
 ---
 

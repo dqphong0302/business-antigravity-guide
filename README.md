@@ -9,9 +9,9 @@
 [![Update](https://img.shields.io/badge/Cập_nhật-Tháng_3/2026-blueviolet.svg)](#)
 [![Language](https://img.shields.io/badge/Ngôn_ngữ-Tiếng_Việt-blue.svg)](#)
 [![AI](https://img.shields.io/badge/Công_nghệ-Agentic_AI-purple.svg)](https://antigravity.google)
-[![Chapters](https://img.shields.io/badge/Chương-19-orange.svg)](#-mục-lục)
-[![Skills](https://img.shields.io/badge/Skills-18-red.svg)](#-kho-skills-mẫu)
-[![Workflows](https://img.shields.io/badge/Workflows-20-yellow.svg)](#-kho-workflows)
+[![Chapters](https://img.shields.io/badge/Chương-20-orange.svg)](#-mục-lục)
+[![Skills](https://img.shields.io/badge/Skills-25-red.svg)](#-kho-skills-mẫu)
+[![Workflows](https://img.shields.io/badge/Workflows-26-yellow.svg)](#-kho-workflows)
 
 [![Video Giới Thiệu Antigravity](https://img.youtube.com/vi/_SH7_MEpdSc/maxresdefault.jpg)](https://youtu.be/_SH7_MEpdSc)
 *[Xem Video Giới Thiệu Antigravity trên YouTube](https://youtu.be/_SH7_MEpdSc)*
@@ -96,6 +96,7 @@
 | 10 | **Sales B2B & Kinh Doanh**| [Siêu Dự Án Mở Rộng](chapters/10-mega-projects.md) | Cào Data giám đốc B2B qua Browser, Lọc Lead Zalo tự động xuyên đêm. |
 | 11 | **Tài Chính (CFO) & Data Analyst** | [Khai Khoáng Dữ Liệu](chapters/11-data-pipeline.md) | Xây dựng Data Pipeline đối soát chéo COD vs KiotViet, xuất Excel báo cáo lỗi. |
 | 12 | **Ban Giám Đốc (CEO/BOD)** | [Ra Quyết Định Kinh Doanh](chapters/12-business-decision-making.md) | Tháp Lãnh đạo DSS, Mô phỏng Monte Carlo dự báo ROI, AI phản biện. |
+| 13 | **Cá Nhân Sếp** | [Đầu Tư Chứng Khoán SME](chapters/13-dau-tu-chung-khoan.md) | Phân tích cơ bản (FA), kỹ thuật (TA) và bắt ngưỡng vào tiền rổ VN30. |
 
 ### 🛠️ Phần V — Mở Rộng Hệ Sinh Thái AI
 
@@ -103,9 +104,9 @@
 
 | # | Chương | Nội dung chính |
 | :---: | :--- | :--- |
-| 13 | [Local LLMs & Tự Tạo Chatbot](chapters/13-local-llm-va-chatbot.md) | Cài LM Studio chạy ngập mạng LLaMA 3. Giải pháp nội bộ Tuyệt Mật. |
-| 14 | [Kỹ Thuật RAG, VectorDB & n8n](chapters/14-rag-vectordb-va-n8n.md) | Xây Chatbot đọc tài liệu Hợp đồng riêng bằng RAG + VectorDB. Tự Động Hóa n8n. |
-| 15 | [AI Đa Phương Thức (Multimodal)](chapters/15-ai-da-phuong-thuc.md) | Sinh HÌNH ẢNH (Midjourney), GIỌNG NÓI (ElevenLabs), VIDEO ẢO (HeyGen). |
+| 14 | [Local LLMs & Tự Tạo Chatbot](chapters/14-local-llm-va-chatbot.md) | Cài LM Studio chạy ngập mạng LLaMA 3. Giải pháp nội bộ Tuyệt Mật. |
+| 15 | [Kỹ Thuật RAG, VectorDB & n8n](chapters/15-rag-vectordb-va-n8n.md) | Xây Chatbot đọc tài liệu Hợp đồng riêng bằng RAG + VectorDB. Tự Động Hóa n8n. |
+| 16 | [AI Đa Phương Thức (Multimodal)](chapters/16-ai-da-phuong-thuc.md) | Sinh HÌNH ẢNH (Midjourney), GIỌNG NÓI (ElevenLabs), VIDEO ẢO (HeyGen). |
 
 ### 🛡️ Phần VI — Quản Trị Rủi Ro & Lộ Trình
 
@@ -113,9 +114,9 @@
 
 | # | Chương | Nội dung chính |
 | :---: | :--- | :--- |
-| 16 | [Bảo Mật & AI Governance](chapters/16-bao-mat.md) | 3 Tấm Khiên: Data Masking, Prompt Injection, Self-Verify. |
-| 17 | [Đạo Đức AI Trong Doanh Nghiệp](chapters/17-dao-duc-ai.md) | Quyền lực số, Human-in-the-Loop, Guardrails rủi ro đạo đức. |
-| 18 | [Lộ Trình 30 Ngày Chi Tiết](chapters/18-lo-trinh-30-ngay.md) | Kế hoạch từng tuần, KPI đo lường, milestone kiểm tra. |
+| 17 | [Bảo Mật & AI Governance](chapters/17-bao-mat.md) | 3 Tấm Khiên: Data Masking, Prompt Injection, Self-Verify. |
+| 18 | [Đạo Đức AI Trong Doanh Nghiệp](chapters/18-dao-duc-ai.md) | Quyền lực số, Human-in-the-Loop, Guardrails rủi ro đạo đức. |
+| 19 | [Lộ Trình 30 Ngày Chi Tiết](chapters/19-lo-trinh-30-ngay.md) | Kế hoạch từng tuần, KPI đo lường, milestone kiểm tra. |
 
 ### 📎 Phụ Lục
 
@@ -130,7 +131,7 @@
 
 ## 🔧 Kho Skills Mẫu
 
-> 📂 Thư mục [`skills/`](skills/) chứa **22 Skills sẵn sàng sử dụng**. Mỗi skill có file `SKILL.md` hướng dẫn AI thực hiện quy trình nghiệp vụ từ A-Z.
+> 📂 Thư mục [`skills/`](skills/) chứa **25 Skills sẵn sàng sử dụng**. Mỗi skill có file `SKILL.md` hướng dẫn AI thực hiện quy trình nghiệp vụ từ A-Z.
 
 <details>
 <summary><b>🏦 Kế Toán & Tài Chính</b> (4 skills)</summary>
@@ -193,14 +194,25 @@
 
 </details>
 
+<details>
+<summary><b>📈 Đầu Tư & Chứng Khoán</b> (3 skills)</summary>
+
+| Skill | Mô tả |
+| :--- | :--- |
+| [`loc_co_phieu`](skills/loc_co_phieu/) | Lọc cổ phiếu theo tiêu chí cơ bản/kỹ thuật → Xuất Excel |
+| [`phan_tich_bao_cao_tai_chinh`](skills/phan_tich_bao_cao_tai_chinh/) | Rút trích BCTC PDF → Phân tích sức khỏe tài chính |
+| [`canh_bao_bien_dong_gia`](skills/canh_bao_bien_dong_gia/) | Quét giá thời gian thực → Cảnh báo Telegram khi thủng đáy / nổ Vol |
+
+</details>
+
 ---
 
 ## ⚡ Kho Workflows
 
-> 📂 Thư mục [`workflows/`](workflows/) chứa **23 Workflows** — mỗi workflow là một "nút bấm" Slash Command chạy tự động.
+> 📂 Thư mục [`workflows/`](workflows/) chứa **26 Workflows** — mỗi workflow là một "nút bấm" Slash Command chạy tự động.
 
 <details>
-<summary><b>Xem danh sách 23 Workflows</b></summary>
+<summary><b>Xem danh sách 26 Workflows</b></summary>
 
 | Workflow | Lệnh | Mô tả |
 | :--- | :--- | :--- |
@@ -227,6 +239,9 @@
 | [Tạo Proposal](workflows/tao-proposal.md) | `/tao-proposal` | Soạn đề xuất kinh doanh |
 | [Trích Xuất HĐ](workflows/trich-xuat-hoa-don.md) | `/trich-xuat-hd` | OCR hóa đơn PDF hàng loạt |
 | [Xử Lý Khiếu Nại Phốt](workflows/xu-ly-khieu-nai.md) | `/xu-ly-khieu-nai` | Bắt Email Gắt gỏng, Draft thư xin lỗi + Voucher |
+| [Lọc Cổ Phiếu](workflows/loc-co-phieu.md) | `/loc-co-phieu` | Tự động quét thị trường lọc mã |
+| [Phân Tích BCTC](workflows/phan-tich-bctc.md) | `/phan-tich-bctc` | Soi BCTC cổ phiếu trích xuất Red Flags |
+| [Cảnh Báo Giá](workflows/canh-bao-gia.md) | `/canh-bao-gia` | Daemon theo dõi giá bắn thông báo Zalo/Tele |
 
 </details>
 
@@ -237,12 +252,12 @@
 ```text
 business-antigravity-guide/
 ├── 📄 README.md
-├── 📂 chapters/               ← 13 chương + 2 phụ lục
-│   ├── 00 → 13 (.md)
+├── 📂 chapters/               ← 20 chương + 4 phụ lục
+│   ├── 00 → 19 (.md)
 │   ├── phu-luc-*.md
-│   └── 📂 images/             ← 15 hình minh họa
-├── 📂 skills/                 ← 16 Skills mẫu (SKILL.md)
-├── 📂 workflows/              ← 17 Workflows (Slash Commands)
+│   └── 📂 images/             ← Hình minh họa
+├── 📂 skills/                 ← 25 Skills mẫu (SKILL.md)
+├── 📂 workflows/              ← 26 Workflows (Slash Commands)
 └── 📂 demo-project/           ← Dự án mẫu chạy được
     ├── data/ (CSV mẫu)
     └── skills/ (Skill mẫu)
