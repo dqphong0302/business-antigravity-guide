@@ -12,6 +12,7 @@
 [![Workflows](https://img.shields.io/badge/Workflows-20-yellow.svg)](#-kho-workflows)
 
 [![Video Giới Thiệu Antigravity](https://img.youtube.com/vi/_SH7_MEpdSc/maxresdefault.jpg)](https://youtu.be/_SH7_MEpdSc)
+*[Xem Video Giới Thiệu Antigravity trên YouTube](https://youtu.be/_SH7_MEpdSc)*
 
 **Từ CEO đến Kế toán, từ Marketing đến HR — Ai cũng có thể biến AI thành "Nhân viên Tự trị" làm việc 24/7.**
 
